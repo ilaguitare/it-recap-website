@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-RECAP 2026 | International Workshop on Intelligent Technologies for Reconstruction and Capacity Building</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cairo:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1a4d6d;
+            --primary-light: #2a6d8f;
+            --accent: #d4af37;
+            --accent-light: #f0d98c;
+            --dark: #0f1419;
+            --text: #2c3e50;
+            --text-light: #546e7a;
+            --bg: #fafbfc;
+            --white: #ffffff;
+            --shadow: rgba(26, 77, 109, 0.1);
+            --shadow-strong: rgba(26, 77, 109, 0.2);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', 'Cairo', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background: var(--bg);
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+        body[dir="rtl"] {
+            font-family: 'Cairo', 'Work Sans', sans-serif;
+        }
+
+        /* Language Toggle */
+        .lang-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: var(--white);
+            border-radius: 50px;
+            box-shadow: 0 4px 20px var(--shadow);
+            padding: 8px;
+            display: flex;
+            gap: 5px;
+        }
+
+        body[dir="rtl"] .lang-toggle {
+            left: 20px;
+            right: auto;
+        }
+
+        .lang-btn {
+            padding: 10px 20px;
+            border: none;
+            background: transparent;
+            color: var(--text);
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+
+        .lang-btn.active {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        .lang-btn:hover:not(.active) {
+            background: var(--bg);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            padding: 120px 20px 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('images/AdobeStock_1621805281_Preview.jpeg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(15, 20, 25, 0.5);
+            z-index: 0;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .workshop-label {
+            display: inline-block;
+            padding: 8px 24px;
+            background: rgba(212, 175, 55, 0.2);
+            border: 1px solid var(--accent-light);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            animation: fadeInDown 0.8s ease;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease 0.2s backwards;
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
+            font-weight: 300;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: fadeInUp 0.8s ease 0.4s backwards;
+        }
+
+        .event-info {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            animation: fadeInUp 0.8s ease 0.6s backwards;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-icon {
+            font-size: 1.5rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Section */
+        section {
+            padding: 80px 20px;
+        }
+
+        section:nth-child(even) {
+            background: var(--white);
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        /* Topics Grid */
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .topic-card {
+            background: var(--white);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow);
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--accent);
+        }
+
+        section:nth-child(even) .topic-card {
+            background: var(--bg);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px var(--shadow-strong);
+        }
+
+        .topic-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .topic-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        .topic-card ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .topic-card li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+            color: var(--text-light);
+        }
+
+        body[dir="rtl"] .topic-card li {
+            padding-left: 0;
+            padding-right: 25px;
+        }
+
+        .topic-card li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        body[dir="rtl"] .topic-card li::before {
+            content: '←';
+            left: auto;
+            right: 0;
+        }
+
+        /* Dates Timeline */
+        .timeline {
+            max-width: 800px;
+            margin: 60px auto;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--accent);
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            display: flex;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item:nth-child(odd) {
+            flex-direction: row;
+        }
+
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        body[dir="rtl"] .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+
+        body[dir="rtl"] .timeline-item:nth-child(even) {
+            flex-direction: row;
+        }
+
+        .timeline-content {
+            background: var(--white);
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow);
+            width: calc(50% - 40px);
+            position: relative;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            border: 4px solid var(--white);
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px var(--accent-light);
+            z-index: 1;
+        }
+
+        .timeline-date {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        .timeline-title {
+            color: var(--text-light);
+        }
+
+        /* Organizers */
+        .organizers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .organizer-card {
+            text-align: center;
+            padding: 30px;
+            background: var(--white);
+            border-radius: 12px;
+            box-shadow: 0 4px 20px var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        section:nth-child(even) .organizer-card {
+            background: var(--bg);
+        }
+
+        .organizer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px var(--shadow-strong);
+        }
+
+        .organizer-logo {
+            width: 120px;
+            height: 120px;
+            background: var(--white);
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .organizer-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .organizer-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .organizer-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 20%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+        }
+
+        .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 45px;
+            background: var(--accent);
+            color: var(--dark);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+            border: 2px solid var(--accent);
+        }
+
+        .btn:hover {
+            background: var(--accent-light);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+            margin-left: 15px;
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 60px 20px 30px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        .copyright {
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .event-info {
+                gap: 20px;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                flex-direction: row !important;
+            }
+
+            .timeline-content {
+                width: calc(100% - 80px);
+                margin-left: 50px;
+            }
+
+            body[dir="rtl"] .timeline-content {
+                margin-left: 0;
+                margin-right: 50px;
+            }
+
+            .timeline-dot {
+                left: 30px;
+                transform: translateX(0);
+            }
+
+            body[dir="rtl"] .timeline-dot {
+                left: auto;
+                right: 30px;
+            }
+
+            .btn-secondary {
+                margin-left: 0;
+                margin-top: 15px;
+            }
+        }
+
+        /* Hide/Show content based on language */
+        .lang-en { display: block; }
+        .lang-ar { display: none; }
+
+        [dir="rtl"] .lang-en { display: none; }
+        [dir="rtl"] .lang-ar { display: block; }
+    </style>
+</head>
+<body dir="ltr">
+    <!-- Language Toggle -->
+    <div class="lang-toggle">
+        <button class="lang-btn active" onclick="setLanguage('en')">English</button>
+        <button class="lang-btn" onclick="setLanguage('ar')">العربية</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <div class="workshop-label lang-en">1st International Workshop</div>
+            <div class="workshop-label lang-ar">ورشة العمل الدولية الأولى</div>
+            
+            <h1 class="lang-en">IT-RECAP'2026</h1>
+            <h1 class="lang-ar">IT-RECAP'2026</h1>
+            
+            <div class="subtitle lang-en">
+                International Workshop on Intelligent Technologies for<br>Reconstruction and Capacity Building
+            </div>
+            <div class="subtitle lang-ar">
+                ورشة العمل الدولية حول التقنيات الذكية<br>لإعادة الإعمار وبناء القدرات
+            </div>
+
+            <div class="event-info">
+                <div class="info-item">
+                    <span class="info-icon">📅</span>
+                    <div>
+                        <div class="lang-en"><strong>October 13-15, 2026</strong></div>
+                        <div class="lang-ar"><strong>13-15 أكتوبر 2026</strong></div>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <div class="lang-en"><strong>Damascus, Syria</strong></div>
+                        <div class="lang-ar"><strong>دمشق، سوريا</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title lang-en">About the Workshop</h2>
+            <h2 class="section-title lang-ar">حول ورشة العمل</h2>
+            
+            <div class="section-intro lang-en">
+                In an era defined by rapid environmental changes and the need for post-conflict recovery, the rehabilitation of social, economic, and educational structures is a global priority. This workshop centers on the intersection of Smart Planning, Advanced Technology, and Capacity Building. The aim is to highlight how integrated approaches, utilizing Artificial Intelligence, Big Data, and Robotics, can revolutionize the way we rebuild communities affected by disasters and conflict.
+            </div>
+            <div class="section-intro lang-ar">
+                في عصر يتميز بالتغيرات البيئية السريعة والحاجة إلى التعافي بعد الصراعات، أصبحت إعادة تأهيل الهياكل الاجتماعية والاقتصادية والتعليمية أولوية عالمية. تركز ورشة العمل هذه على تقاطع التخطيط الذكي والتكنولوجيا المتقدمة وبناء القدرات. الهدف هو تسليط الضوء على كيفية قيام النهج المتكاملة، باستخدام الذكاء الاصطناعي والبيانات الضخمة والروبوتات، بإحداث ثورة في الطريقة التي نعيد بها بناء المجتمعات المتأثرة بالكوارث والصراعات.
+            </div>
+
+            <div class="section-intro lang-en">
+                Crucially, the workshop identifies capacity building as a core pillar of successful reconstruction. Beyond presenting technical solutions, the main target is to foster knowledge transfer that empowers local engineers, planners, and stakeholders. By bringing together international experts and local academics, the workshop aims to develop tailored, actionable solutions that ensure sustainable infrastructure and long-term improvements in quality of life.
+            </div>
+            <div class="section-intro lang-ar">
+                والأمر الأكثر أهمية هو أن ورشة العمل تحدد بناء القدرات كركيزة أساسية لإعادة الإعمار الناجحة. بالإضافة إلى تقديم الحلول التقنية، فإن الهدف الرئيسي هو تعزيز نقل المعرفة الذي يمكّن المهندسين والمخططين وأصحاب المصلحة المحليين. من خلال الجمع بين الخبراء الدوليين والأكاديميين المحليين، تهدف ورشة العمل إلى تطوير حلول مخصصة وقابلة للتنفيذ تضمن البنية التحتية المستدامة والتحسينات طويلة الأمد في نوعية الحياة.
+            </div>
+        </div>
+    </section>
+
+    <!-- Topics Section -->
+    <section id="topics">
+        <div class="container">
+            <h2 class="section-title lang-en">Topics of Interest</h2>
+            <h2 class="section-title lang-ar">موضوعات الاهتمام</h2>
+            
+            <div class="topics-grid">
+                <!-- Topic 1 -->
+                <div class="topic-card">
+                    <div class="topic-number">1</div>
+                    <h3 class="lang-en">Autonomous Systems for Reconstruction</h3>
+                    <h3 class="lang-ar">الأنظمة المستقلة لإعادة الإعمار</h3>
+                    <ul class="lang-en">
+                        <li>3D reconstruction, segmentation, and perception for damage assessment</li>
+                        <li>Autonomous mobile robots and UAVs for rapid site surveying</li>
+                        <li>Intelligent transportation, navigation, tracking, and control in unstructured environments</li>
+                    </ul>
+                    <ul class="lang-ar">
+                        <li>إعادة البناء ثلاثي الأبعاد والتجزئة والإدراك لتقييم الأضرار</li>
+                        <li>الروبوتات المتنقلة المستقلة والطائرات بدون طيار للمسح السريع للموقع</li>
+                        <li>النقل الذكي والملاحة والتتبع والتحكم في البيئات غير المهيكلة</li>
+                    </ul>
+                </div>
+
+                <!-- Topic 2 -->
+                <div class="topic-card">
+                    <div class="topic-number">2</div>
+                    <h3 class="lang-en">Intelligent Signal Processing and Sensing</h3>
+                    <h3 class="lang-ar">معالجة الإشارات الذكية والاستشعار</h3>
+                    <ul class="lang-en">
+                        <li>Artificial Intelligence for signal recovery and restoration</li>
+                        <li>Robust communication and processing in high-noise emergency settings</li>
+                        <li>Deep learning for advanced medical imaging and structural scanning</li>
+                    </ul>
+                    <ul class="lang-ar">
+                        <li>الذكاء الاصطناعي لاستعادة الإشارات وإصلاحها</li>
+                        <li>الاتصالات القوية والمعالجة في إعدادات الطوارئ عالية الضوضاء</li>
+                        <li>التعلم العميق للتصوير الطبي المتقدم والمسح الهيكلي</li>
+                    </ul>
+                </div>
+
+                <!-- Topic 3 -->
+                <div class="topic-card">
+                    <div class="topic-number">3</div>
+                    <h3 class="lang-en">Smart Infrastructure and Resilient Networks</h3>
+                    <h3 class="lang-ar">البنية التحتية الذكية والشبكات المرنة</h3>
+                    <ul class="lang-en">
+                        <li>IoT-enabled structural health monitoring and predictive maintenance</li>
+                        <li>Resilient network architectures and cybersecurity for critical infrastructure</li>
+                        <li>Construction technologies and smart materials</li>
+                    </ul>
+                    <ul class="lang-ar">
+                        <li>مراقبة صحة الهياكل والصيانة التنبؤية بتقنية إنترنت الأشياء</li>
+                        <li>معماريات الشبكات المرنة والأمن السيبراني للبنية التحتية الحيوية</li>
+                        <li>تقنيات البناء والمواد الذكية</li>
+                    </ul>
+                </div>
+
+                <!-- Topic 4 -->
+                <div class="topic-card">
+                    <div class="topic-number">4</div>
+                    <h3 class="lang-en">Human-Centric AI and Strategic Planning</h3>
+                    <h3 class="lang-ar">الذكاء الاصطناعي المتمحور حول الإنسان والتخطيط الاستراتيجي</h3>
+                    <ul class="lang-en">
+                        <li>AI education capacity building, strategic links with the industry</li>
+                        <li>AI-driven strategies for resource allocation and post-disaster urban design</li>
+                        <li>Human-robot interaction and safety in industrial recovery zones</li>
+                        <li>Decision support systems and models for local capacity building</li>
+                    </ul>
+                    <ul class="lang-ar">
+                        <li>بناء قدرات التعليم في الذكاء الاصطناعي والروابط الاستراتيجية مع الصناعة</li>
+                        <li>الاستراتيجيات المدفوعة بالذكاء الاصطناعي لتخصيص الموارد والتصميم الحضري بعد الكوارث</li>
+                        <li>التفاعل بين الإنسان والروبوت والسلامة في مناطق الاستعادة الصناعية</li>
+                        <li>أنظمة دعم القرار ونماذج بناء القدرات المحلية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section id="dates">
+        <div class="container">
+            <h2 class="section-title lang-en">Important Dates</h2>
+            <h2 class="section-title lang-ar">التواريخ المهمة</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date lang-en">May 15, 2026</div>
+                        <div class="timeline-date lang-ar">15 مايو 2026</div>
+                        <div class="timeline-title lang-en">Paper Submission Deadline</div>
+                        <div class="timeline-title lang-ar">الموعد النهائي لتقديم الأوراق</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date lang-en">July 1, 2026</div>
+                        <div class="timeline-date lang-ar">1 يوليو 2026</div>
+                        <div class="timeline-title lang-en">Notification of Acceptance</div>
+                        <div class="timeline-title lang-ar">إخطار القبول</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date lang-en">July 15, 2026</div>
+                        <div class="timeline-date lang-ar">15 يوليو 2026</div>
+                        <div class="timeline-title lang-en">Camera Ready Manuscript</div>
+                        <div class="timeline-title lang-ar">المخطوطة النهائية للطباعة</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date lang-en">October 13-15, 2026</div>
+                        <div class="timeline-date lang-ar">13-15 أكتوبر 2026</div>
+                        <div class="timeline-title lang-en">Workshop Event</div>
+                        <div class="timeline-title lang-ar">فعالية ورشة العمل</div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers">
+        <div class="container">
+            <h2 class="section-title lang-en">Organizers & Partners</h2>
+            <h2 class="section-title lang-ar">المنظمون والشركاء</h2>
+
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <div class="organizer-logo">
+                        <img src="images/hiast.png" alt="HIAST Logo">
+                    </div>
+                    <h3>HIAST</h3>
+                    <p class="lang-en">Higher Institute for Applied Sciences and Technology</p>
+                    <p class="lang-ar">المعهد العالي للعلوم التطبيقية والتكنولوجيا</p>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-logo">
+                        <img src="images/asast.png" alt="ASAST Logo">
+                    </div>
+                    <h3>ASAST</h3>
+                    <p class="lang-en">Arab School of Science and Technology</p>
+                    <p class="lang-ar">المدرسة العربية للعلوم والتكنولوجيا</p>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-logo">
+                        <img src="images/svu.png" alt="SVU Logo">
+                    </div>
+                    <h3>SVU</h3>
+                    <p class="lang-en">Syrian Virtual University</p>
+                    <p class="lang-ar">الجامعة الافتراضية السورية</p>
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-logo">
+                        <img src="images/ieee.png" alt="IEEE Logo">
+                    </div>
+                    <h3>IEEE</h3>
+                    <p class="lang-en">IEEE Tunisia Section<br>(Technical Co-Sponsorship - To be confirmed)</p>
+                    <p class="lang-ar">قسم IEEE تونس<br>(الرعاية الفنية - سيتم التأكيد)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Submission -->
+    <section id="submission">
+        <div class="container">
+            <h2 class="section-title lang-en">Submission Guidelines</h2>
+            <h2 class="section-title lang-ar">إرشادات التقديم</h2>
+            
+            <div class="section-intro lang-en">
+                <p style="margin-bottom: 20px;">The program committee invites authors to submit original, unpublished papers to be peer-reviewed for technical quality and relevance.</p>
+                <p style="margin-bottom: 20px;"><strong>Requirements:</strong></p>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto; list-style: none;">
+                    <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--accent); font-weight: 600;">→</span>
+                        Submissions must be formatted according to the conference templates
+                    </li>
+                    <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--accent); font-weight: 600;">→</span>
+                        Maximum six pages for final camera-ready versions
+                    </li>
+                    <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--accent); font-weight: 600;">→</span>
+                        Extended abstracts are welcome for initial evaluation
+                    </li>
+                    <li style="padding: 10px 0; padding-left: 25px; position: relative;">
+                        <span style="position: absolute; left: 0; color: var(--accent); font-weight: 600;">→</span>
+                        All accepted papers require at least one full author registration and presentation
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-intro lang-ar">
+                <p style="margin-bottom: 20px;">تدعو لجنة البرنامج المؤلفين إلى تقديم أوراق بحثية أصلية وغير منشورة ليتم مراجعتها من قبل الأقران من حيث الجودة الفنية والصلة بالموضوع.</p>
+                <p style="margin-bottom: 20px;"><strong>المتطلبات:</strong></p>
+                <ul style="text-align: right; max-width: 600px; margin: 0 auto; list-style: none;">
+                    <li style="padding: 10px 0; padding-right: 25px; position: relative;">
+                        <span style="position: absolute; right: 0; color: var(--accent); font-weight: 600;">←</span>
+                        يجب تنسيق المقالات وفقاً لقوالب المؤتمر
+                    </li>
+                    <li style="padding: 10px 0; padding-right: 25px; position: relative;">
+                        <span style="position: absolute; right: 0; color: var(--accent); font-weight: 600;">←</span>
+                        ستة صفحات كحد أقصى للنسخ النهائية الجاهزة للطباعة
+                    </li>
+                    <li style="padding: 10px 0; padding-right: 25px; position: relative;">
+                        <span style="position: absolute; right: 0; color: var(--accent); font-weight: 600;">←</span>
+                        الملخصات الموسعة مرحب بها للتقييم الأولي
+                    </li>
+                    <li style="padding: 10px 0; padding-right: 25px; position: relative;">
+                        <span style="position: absolute; right: 0; color: var(--accent); font-weight: 600;">←</span>
+                        تتطلب جميع الأوراق المقبولة تسجيل مؤلف واحد على الأقل وتقديم العرض
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Program -->
+    <section id="cultural">
+        <div class="container">
+            <h2 class="section-title lang-en">Cultural Program</h2>
+            <h2 class="section-title lang-ar">البرنامج الثقافي</h2>
+            
+            <div class="section-intro lang-en">
+                A dedicated cultural program will be organized, offering participants guided tours of Old Damascus, providing a unique opportunity to explore one of the world's oldest continuously inhabited cities. Experience the rich history, architecture, and culture of this ancient civilization.
+            </div>
+            <div class="section-intro lang-ar">
+                سيتم تنظيم برنامج ثقافي مخصص، يقدم للمشاركين جولات إرشادية في دمشق القديمة، مما يوفر فرصة فريدة لاستكشاف واحدة من أقدم المدن المأهولة بشكل مستمر في العالم. اختبر التاريخ الغني والعمارة والثقافة لهذه الحضارة القديمة.
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2 class="lang-en">Ready to Contribute?</h2>
+            <h2 class="lang-ar">مستعد للمساهمة؟</h2>
+            
+            <p class="lang-en">Join us in shaping the future of reconstruction and capacity building</p>
+            <p class="lang-ar">انضم إلينا في تشكيل مستقبل إعادة الإعمار وبناء القدرات</p>
+            
+            <div>
+                <a href="mailto:asainska@gmail.com?subject=Paper%20Submission%20-%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Organizing%20Committee%2C%0D%0A%0D%0AI%20would%20like%20to%20submit%20my%20paper%20for%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20university%2Forganization%3A%20%0D%0AMy%20research%20field%3A%20%0D%0A%0D%0APaper%20topic%3A%20%5BPlease%20select%3A%20Autonomous%20Systems%20%2F%20Signal%20Processing%20%2F%20Smart%20Infrastructure%20%2F%20Human-Centric%20AI%20%2F%20Other%5D%0D%0A%0D%0APlease%20find%20my%20paper%20attached%20to%20this%20email.%0D%0A%0D%0ABest%20regards" class="btn lang-en">Submit Your Paper</a>
+                <a href="mailto:asainska@gmail.com?subject=تقديم%20ورقة%20بحثية%20-%20IT-RECAP%202026&body=لجنة%20تنظيم%20IT-RECAP%20المحترمة%2C%0D%0A%0D%0Aأود%20تقديم%20ورقتي%20البحثية%20لـ%20IT-RECAP%202026.%0D%0A%0D%0Aاسمي%3A%20%0D%0Aجامعتي%2Fمؤسستي%3A%20%0D%0Aمجال%20بحثي%3A%20%0D%0A%0D%0Aموضوع%20الورقة%3A%20%5Bالرجاء%20الاختيار%3A%20الأنظمة%20المستقلة%20%2F%20معالجة%20الإشارات%20%2F%20البنية%20التحتية%20الذكية%20%2F%20الذكاء%20الاصطناعي%20المتمحور%20حول%20الإنسان%20%2F%20أخرى%5D%0D%0A%0D%0Aالرجاء%20العثور%20على%20ورقتي%20البحثية%20مرفقة%20مع%20هذا%20البريد%20الإلكتروني.%0D%0A%0D%0Aمع%20أطيب%20التحيات" class="btn lang-ar">قدم ورقتك البحثية</a>
+                <a href="mailto:asainska@gmail.com?subject=Question%20about%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Team%2C%0D%0A%0D%0AI%20have%20a%20question%20about%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20question%20is%20about%3A%20%5BPlease%20select%3A%20Registration%20%2F%20Paper%20Submission%20%2F%20Program%20%2F%20Venue%20%2F%20Other%5D%0D%0A%0D%0AMy%20question%3A%0D%0A%0D%0A%0D%0ABest%20regards" class="btn btn-secondary lang-en">A Question? Contact Us!</a>
+                <a href="mailto:asainska@gmail.com?subject=سؤال%20حول%20IT-RECAP%202026&body=فريق%20IT-RECAP%20المحترم%2C%0D%0A%0D%0Aلدي%20سؤال%20حول%20IT-RECAP%202026.%0D%0A%0D%0Aاسمي%3A%20%0D%0Aسؤالي%20يتعلق%20بـ%3A%20%5Bالرجاء%20الاختيار%3A%20التسجيل%20%2F%20تقديم%20الأوراق%20%2F%20البرنامج%20%2F%20المكان%20%2F%20أخرى%5D%0D%0A%0D%0Aسؤالي%3A%0D%0A%0D%0A%0D%0Aمع%20أطيب%20التحيات" class="btn btn-secondary lang-ar">سؤال؟ اتصل بنا!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">IT-RECAP'2026</div>
+            
+            <div class="footer-links">
+                <a href="#about" class="lang-en">About</a>
+                <a href="#about" class="lang-ar">حول</a>
+                
+                <a href="#topics" class="lang-en">Topics</a>
+                <a href="#topics" class="lang-ar">المواضيع</a>
+                
+                <a href="#dates" class="lang-en">Important Dates</a>
+                <a href="#dates" class="lang-ar">التواريخ</a>
+                
+                <a href="#organizers" class="lang-en">Organizers</a>
+                <a href="#organizers" class="lang-ar">المنظمون</a>
+                
+                <a href="#submission" class="lang-en">Submission</a>
+                <a href="#submission" class="lang-ar">التقديم</a>
+            </div>
+
+            <div class="copyright">
+                <p class="lang-en">&copy; 2026 IT-RECAP. All rights reserved. | Damascus, Syria</p>
+                <p class="lang-ar">© 2026 IT-RECAP. جميع الحقوق محفوظة. | دمشق، سوريا</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function setLanguage(lang) {
+            const html = document.documentElement;
+            const body = document.body;
+            const buttons = document.querySelectorAll('.lang-btn');
+            
+            if (lang === 'ar') {
+                html.setAttribute('lang', 'ar');
+                body.setAttribute('dir', 'rtl');
+                buttons[0].classList.remove('active');
+                buttons[1].classList.add('active');
+            } else {
+                html.setAttribute('lang', 'en');
+                body.setAttribute('dir', 'ltr');
+                buttons[0].classList.add('active');
+                buttons[1].classList.remove('active');
+            }
+
+            // Smooth scroll to top when switching languages
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation for elements
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.topic-card, .timeline-item, .organizer-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
