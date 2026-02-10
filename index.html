@@ -39,7 +39,7 @@
             font-family: 'Cairo', 'Work Sans', sans-serif;
         }
 
-        /* Language Toggle */
+        /* Language Toggle - CORRIGÉ */
         .lang-toggle {
             position: fixed;
             top: 20px;
@@ -51,11 +51,8 @@
             padding: 8px;
             display: flex;
             gap: 5px;
-        }
-
-        body[dir="rtl"] .lang-toggle {
-            left: 20px;
-            right: auto;
+            /* Cette ligne force l'ordre Anglais (G) -> Arabe (D) peu importe la langue du site */
+            direction: ltr !important; 
         }
 
         .lang-btn {
@@ -426,6 +423,75 @@
             font-size: 0.9rem;
         }
 
+        /* CAROUSEL STYLES */
+        .carousel-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px var(--shadow-strong);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+            height: 700px; /* Hauteur des images */
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            height: 100%;
+        }
+
+        .carousel-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Boutons de navigation du carrousel */
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.8);
+            color: var(--primary);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .carousel-btn:hover {
+            background: var(--accent);
+            color: var(--white);
+        }
+
+        /* Force les boutons à rester à Gauche/Droite indépendamment du mode Arabe */
+        .carousel-container[dir="ltr"] .carousel-btn.prev { left: 20px; right: auto; }
+        .carousel-container[dir="ltr"] .carousel-btn.next { right: 20px; left: auto; }
+
+        @media (max-width: 768px) {
+            .carousel-track {
+                height: 300px;
+            }
+            .carousel-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
+
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
@@ -443,8 +509,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: 
-                linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%)
         }
 
         .cta-content {
@@ -462,6 +527,13 @@
             font-size: 1.2rem;
             margin-bottom: 40px;
             opacity: 0.95;
+        }
+
+        .cta-buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .btn {
@@ -488,7 +560,6 @@
             background: transparent;
             color: var(--white);
             border: 2px solid var(--white);
-            margin-left: 15px;
         }
 
         .btn-secondary:hover {
@@ -565,46 +636,6 @@
             }
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .event-info {
-                gap: 20px;
-            }
-
-            .timeline::before {
-                left: 30px;
-            }
-
-            .timeline-item {
-                flex-direction: row !important;
-            }
-
-            .timeline-content {
-                width: calc(100% - 80px);
-                margin-left: 50px;
-            }
-
-            body[dir="rtl"] .timeline-content {
-                margin-left: 0;
-                margin-right: 50px;
-            }
-
-            .timeline-dot {
-                left: 30px;
-                transform: translateX(0);
-            }
-
-            body[dir="rtl"] .timeline-dot {
-                left: auto;
-                right: 30px;
-            }
-
-            .btn-secondary {
-                margin-left: 0;
-                margin-top: 15px;
-            }
-        }
-
         /* Hide/Show content based on language */
         .lang-en { display: block; }
         .lang-ar { display: none; }
@@ -614,13 +645,11 @@
     </style>
 </head>
 <body dir="ltr">
-    <!-- Language Toggle -->
     <div class="lang-toggle">
         <button class="lang-btn active" onclick="setLanguage('en')">English</button>
         <button class="lang-btn" onclick="setLanguage('ar')">العربية</button>
     </div>
 
-    <!-- Header -->
     <header>
         <div class="header-content">
             <div class="workshop-label lang-en">1st International Workshop</div>
@@ -655,7 +684,6 @@
         </div>
     </header>
 
-    <!-- About Section -->
     <section id="about">
         <div class="container">
             <h2 class="section-title lang-en">About the Workshop</h2>
@@ -677,14 +705,12 @@
         </div>
     </section>
 
-    <!-- Topics Section -->
     <section id="topics">
         <div class="container">
             <h2 class="section-title lang-en">Topics of Interest</h2>
             <h2 class="section-title lang-ar">موضوعات الاهتمام</h2>
             
             <div class="topics-grid">
-                <!-- Topic 1 -->
                 <div class="topic-card">
                     <div class="topic-number">1</div>
                     <h3 class="lang-en">Autonomous Systems for Reconstruction</h3>
@@ -700,8 +726,6 @@
                         <li>النقل الذكي والملاحة والتتبع والتحكم في البيئات غير المهيكلة</li>
                     </ul>
                 </div>
-
-                <!-- Topic 2 -->
                 <div class="topic-card">
                     <div class="topic-number">2</div>
                     <h3 class="lang-en">Intelligent Signal Processing and Sensing</h3>
@@ -717,8 +741,6 @@
                         <li>التعلم العميق للتصوير الطبي المتقدم والمسح الهيكلي</li>
                     </ul>
                 </div>
-
-                <!-- Topic 3 -->
                 <div class="topic-card">
                     <div class="topic-number">3</div>
                     <h3 class="lang-en">Smart Infrastructure and Resilient Networks</h3>
@@ -734,8 +756,6 @@
                         <li>تقنيات البناء والمواد الذكية</li>
                     </ul>
                 </div>
-
-                <!-- Topic 4 -->
                 <div class="topic-card">
                     <div class="topic-number">4</div>
                     <h3 class="lang-en">Human-Centric AI and Strategic Planning</h3>
@@ -757,7 +777,6 @@
         </div>
     </section>
 
-    <!-- Important Dates -->
     <section id="dates">
         <div class="container">
             <h2 class="section-title lang-en">Important Dates</h2>
@@ -773,7 +792,6 @@
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date lang-en">July 1, 2026</div>
@@ -783,7 +801,6 @@
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date lang-en">July 15, 2026</div>
@@ -793,7 +810,6 @@
                     </div>
                     <div class="timeline-dot"></div>
                 </div>
-
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date lang-en">October 13-15, 2026</div>
@@ -807,8 +823,7 @@
         </div>
     </section>
 
-    <!-- Chairs Section -->
-<section id="chairs">
+    <section id="chairs">
         <div class="container">
             <h2 class="section-title lang-en">Workshop Chairs</h2>
             <h2 class="section-title lang-ar">رؤساء ورشة العمل</h2>
@@ -826,7 +841,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">Basel Solaiman</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">باسل سليمان</p>
-                            
                             <p class="lang-en" style="font-size: 0.9rem; color: var(--text-light);">IMT Atlantique, France</p>
                             <p class="lang-ar" style="font-size: 0.9rem; color: var(--text-light);">IMT Atlantique، فرنسا</p>
                         </div>
@@ -836,9 +850,8 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">Mohamed-Ali Alsayed-Ali</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">محمد علي السيد علي</p>
-                            
                             <p class="lang-en" style="font-size: 0.9rem; color: var(--text-light);">HIAST, Syria</p>
-                            <p class="lang-ar" style="font-size: 0.9rem; color: var(--text-light);">المعهد العالي للعلوم التطبيقية والتكنولوجيا, سوريا</p>
+                            <p class="lang-ar" style="font-size: 0.9rem; color: var(--text-light);">HIAST، سوريا</p>
                         </div>
                         <div style="padding: 20px;">
                             <div style="width: 120px; height: 120px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary);">
@@ -846,9 +859,8 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">Ali Kazem</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">علي كاظم</p>
-                            
                             <p class="lang-en" style="font-size: 0.9rem; color: var(--text-light);">HIAST, Syria</p>
-                            <p class="lang-ar" style="font-size: 0.9rem; color: var(--text-light);">المعهد العالي للعلوم التطبيقية والتكنولوجيا, سوريا</p>
+                            <p class="lang-ar" style="font-size: 0.9rem; color: var(--text-light);">HIAST، سوريا</p>
                         </div>
                         <div style="padding: 20px;">
                             <div style="width: 120px; height: 120px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary);">
@@ -856,7 +868,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">Amer Baghdadi</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px;">عامر بغدادي</p>
-                            
                             <p class="lang-en" style="font-size: 0.9rem; color: var(--text-light);">Institut Mines-Télécom, France</p>
                             <p class="lang-ar" style="font-size: 0.9rem; color: var(--text-light);">معهد مين تيليكوم، فرنسا</p>
                         </div>
@@ -875,7 +886,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Mohammad Moammar Karjo</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">محمد معمر كرجو</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">Kingspan Insulation, Belgium</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">Kingspan Insulation، بلجيكا</p>
                         </div>
@@ -885,7 +895,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Abdullatif Baba</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">عبد اللطيف بابا</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">College of Science and Technology, Kuwait</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">كلية العلوم والتكنولوجيا، الكويت</p>
                         </div>
@@ -895,7 +904,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Ahmad Al Farra</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">أحمد الفرا</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">TotalEnergies, ENS Paris-Saclay, France</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">TotalEnergies، ENS Paris-Saclay، فرنسا</p>
                         </div>
@@ -905,7 +913,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Moustafa Alhazouri</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">مصطفى الحزوري</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">Damascus University, Syria</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">جامعة دمشق، سوريا</p>
                         </div>
@@ -915,7 +922,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Iyad Alusta Halabi</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">إياد الاسطة حلبي</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">Alastool Oil Field Company, UAE</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">شركة الأسطول لخدمات حقول النفط، الإمارات</p>
                         </div>
@@ -925,7 +931,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Hussein Charara</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">حسين شرارة</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">Lebanese University, Beirut, Lebanon</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">الجامعة اللبنانية، بيروت، لبنان</p>
                         </div>
@@ -935,7 +940,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Charles Lim</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">شارل ليم</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">Geometer in IGN, France</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">مساح في IGN، فرنسا</p>
                         </div>
@@ -945,7 +949,6 @@
                             </div>
                             <p class="lang-en" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">Gregory Lesouble</p>
                             <p class="lang-ar" style="font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem;">غريغوري لوزوبل</p>
-                            
                             <p class="lang-en" style="font-size: 0.85rem; color: var(--text-light);">RATP Paris, France</p>
                             <p class="lang-ar" style="font-size: 0.85rem; color: var(--text-light);">RATP باريس، فرنسا</p>
                         </div>
@@ -955,7 +958,6 @@
         </div>
     </section>
 
-    <!-- Organizers -->
     <section id="organizers">
         <div class="container">
             <h2 class="section-title lang-en">Organizers & Partners</h2>
@@ -1001,7 +1003,6 @@
         </div>
     </section>
 
-    <!-- Submission -->
     <section id="submission">
         <div class="container">
             <h2 class="section-title lang-en">Submission Guidelines</h2>
@@ -1055,7 +1056,6 @@
         </div>
     </section>
 
-    <!-- Cultural Program -->
     <section id="cultural">
         <div class="container">
             <h2 class="section-title lang-en">Cultural Program</h2>
@@ -1067,10 +1067,30 @@
             <div class="section-intro lang-ar">
                 سيتم تنظيم برنامج ثقافي مخصص، يقدم للمشاركين جولات إرشادية في دمشق القديمة، مما يوفر فرصة فريدة لاستكشاف واحدة من أقدم المدن المأهولة بشكل مستمر في العالم. اختبر التاريخ الغني والعمارة والثقافة لهذه الحضارة القديمة.
             </div>
+
+            <div class="carousel-container" dir="ltr">
+                <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_1.jpg" alt="Damascus 1"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_2.jpg" alt="Damascus 2"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_3.jpg" alt="Damascus 3"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_4.jpg" alt="Damascus 4"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_5.jpg" alt="Damascus 5"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_6.jpg" alt="Damascus 6"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_7.jpg" alt="Damascus 7"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_8.jpg" alt="Damascus 8"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_9.jpg" alt="Damascus 9"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_10.jpg" alt="Damascus 10"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_11.jpg" alt="Damascus 11"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_12.jpg" alt="Damascus 12"></div>
+                    <div class="carousel-slide"><img src="images/cultural_damascus/cultural_damas_13.jpg" alt="Damascus 13"></div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
     <section class="cta-section">
         <div class="cta-content">
             <h2 class="lang-en">Ready to Contribute?</h2>
@@ -1079,7 +1099,7 @@
             <p class="lang-en">Join us in shaping the future of reconstruction and capacity building</p>
             <p class="lang-ar">انضم إلينا في تشكيل مستقبل إعادة الإعمار وبناء القدرات</p>
             
-            <div>
+            <div class="cta-buttons-container">
                 <a href="mailto:it-recap2026@hiast.edu.sy?subject=Paper%20Submission%20-%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Organizing%20Committee%2C%0D%0A%0D%0AI%20would%20like%20to%20submit%20my%20paper%20for%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20university%2Forganization%3A%20%0D%0AMy%20research%20field%3A%20%0D%0A%0D%0APaper%20topic%3A%20%5BPlease%20select%3A%20Autonomous%20Systems%20%2F%20Signal%20Processing%20%2F%20Smart%20Infrastructure%20%2F%20Human-Centric%20AI%20%2F%20Other%5D%0D%0A%0D%0APlease%20find%20my%20paper%20attached%20to%20this%20email.%0D%0A%0D%0ABest%20regards" class="btn lang-en">Submit Your Paper</a>
                 <a href="mailto:it-recap2026@hiast.edu.sy?subject=تقديم%20ورقة%20بحثية%20-%20IT-RECAP%202026&body=لجنة%20تنظيم%20IT-RECAP%20المحترمة%2C%0D%0A%0D%0Aأود%20تقديم%20ورقتي%20البحثية%20لـ%20IT-RECAP%202026.%0D%0A%0D%0Aاسمي%3A%20%0D%0Aجامعتي%2Fمؤسستي%3A%20%0D%0Aمجال%20بحثي%3A%20%0D%0A%0D%0Aموضوع%20الورقة%3A%20%5Bالرجاء%20الاختيار%3A%20الأنظمة%20المستقلة%20%2F%20معالجة%20الإشارات%20%2F%20البنية%20التحتية%20الذكية%20%2F%20الذكاء%20الاصطناعي%20المتمحور%20حول%20الإنسان%20%2F%20أخرى%5D%0D%0A%0D%0Aالرجاء%20العثور%20على%20ورقتي%20البحثية%20مرفقة%20مع%20هذا%20البريد%20الإلكتروني.%0D%0A%0D%0Aمع%20أطيب%20التحيات" class="btn lang-ar">قدم ورقتك البحثية</a>
                 <a href="mailto:it-recap2026@hiast.edu.sy?subject=Question%20about%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Team%2C%0D%0A%0D%0AI%20have%20a%20question%20about%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20question%20is%20about%3A%20%5BPlease%20select%3A%20Registration%20%2F%20Paper%20Submission%20%2F%20Program%20%2F%20Venue%20%2F%20Other%5D%0D%0A%0D%0AMy%20question%3A%0D%0A%0D%0A%0D%0ABest%20regards" class="btn btn-secondary lang-en">A Question? Contact Us!</a>
@@ -1088,7 +1108,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">IT-RECAP'2026</div>
@@ -1121,6 +1140,7 @@
     </footer>
 
     <script>
+        // Language Toggle Logic
         function setLanguage(lang) {
             const html = document.documentElement;
             const body = document.body;
@@ -1141,6 +1161,30 @@
             // Smooth scroll to top when switching languages
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
+
+        // Carousel Logic
+        let currentIndex = 0;
+        const track = document.getElementById('carouselTrack');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+
+        function moveSlide(direction) {
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+
+            const offset = -currentIndex * 100;
+            track.style.transform = `translateX(${offset}%)`;
+        }
+
+        // Auto slide
+        setInterval(() => {
+            moveSlide(1);
+        }, 4000); // Change image every 4 seconds
 
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1171,7 +1215,7 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.topic-card, .timeline-item, .organizer-card').forEach(el => {
+        document.querySelectorAll('.topic-card, .timeline-item, .organizer-card, .carousel-container').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
