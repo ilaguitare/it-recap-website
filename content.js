@@ -116,7 +116,7 @@ const content = {
             { "name": { "en": "Iyad Alusta Halabi", "ar": "إياد الاسطة حلبي" }, "aff": { "en": "Alastool Oil Field Company, UAE", "ar": "شركة الأسطول، الإمارات" }, "img": "images/chairs/iyad-halabi.jpg" },
             { "name": { "en": "Hussein Charara", "ar": "حسين شرارة" }, "aff": { "en": "Lebanese University, Lebanon", "ar": "الجامعة اللبنانية، لبنان" }, "img": "images/chairs/hussein-charara.jpg" },
             { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "مساح في IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
-            { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوزوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
+            { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
             { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
         ]
     },
