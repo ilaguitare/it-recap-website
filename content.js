@@ -107,10 +107,6 @@ const content = {
             { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
             { "name": { "en": "Amer Baghdadi", "ar": "عامر بغدادي" }, "aff": { "en": "Institut Mines-Télécom, France", "ar": "معهد مين تيليكوم، فرنسا" }, "img": "images/chairs/amer-baghdadi.jpg" }
         ],
-        "tpc1Title": { "en": "TPC1 Chairs", "ar": "رؤساء اللجان  " },
-        "tpc1Chairs": [
-            { "name": { "en": "Mohammad ", "ar": "محمر " }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
-        ],
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية " },
         "tpcChairs": [
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
