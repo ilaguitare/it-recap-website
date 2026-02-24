@@ -107,6 +107,13 @@ const content = {
             { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
             { "name": { "en": "Amer Baghdadi", "ar": "عامر بغدادي" }, "aff": { "en": "Institut Mines-Télécom, France", "ar": "معهد مين تيليكوم، فرنسا" }, "img": "images/chairs/amer-baghdadi.jpg" }
         ],
+        "general2Title": { "en": "General Chairs", "ar": "الرؤساء العامون" },
+        "general2Chairs": [
+            { "name": { "en": "Basel Solaiman", "ar": "باسل سليمان" }, "aff": { "en": "IMT Atlantique, France", "ar": "IMT Atlantique، فرنسا" }, "img": "images/chairs/basel-solaiman.jpg" },
+            { "name": { "en": "Mohamed-Ali Alsayed-Ali", "ar": "محمد علي السيد علي" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
+            { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
+            { "name": { "en": "Amer Baghdadi", "ar": "عامر بغدادي" }, "aff": { "en": "Institut Mines-Télécom, France", "ar": "معهد مين تيليكوم، فرنسا" }, "img": "images/chairs/amer-baghdadi.jpg" }
+        ],
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية " },
         "tpcChairs": [
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
