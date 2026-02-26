@@ -1,7 +1,7 @@
 const content = {
     // --- Configuration Globale ---
     "settings": {
-        "defaultLang": "en", // 'en' ou 'ar'
+        "defaultLang": "en",
         "email": "itrecap@hiast.edu.sy",
         "phone": "0963-11-5140030"
     },
@@ -98,9 +98,10 @@ const content = {
         ]
     },
 
-    // --- Présidents (Chairs) ---
+    // --- Présidents (Chairs & Committees) ---
     "chairsSection": {
         "title": { "en": "Workshop Committees", "ar": "لجان ورشة العمل" },
+        
         "generalTitle": { "en": "General Chairs", "ar": "الرؤساء العامون" },
         "generalChairs": [
             { "name": { "en": "Basel Solaiman", "ar": "باسل سليمان" }, "aff": { "en": "IMT Atlantique, France", "ar": "IMT Atlantique، فرنسا" }, "img": "images/chairs/basel-solaiman.jpg" },
@@ -108,6 +109,7 @@ const content = {
             { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
             { "name": { "en": "Amer Baghdadi", "ar": "عامر بغدادي" }, "aff": { "en": "Institut Mines-Télécom, France", "ar": "معهد مين تيليكوم، فرنسا" }, "img": "images/chairs/amer-baghdadi.jpg" }
         ],
+        
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية" },
         "tpcChairs": [
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
@@ -120,6 +122,7 @@ const content = {
             { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
             { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
         ],
+
         "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
         "adminCommittee": [
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
@@ -193,30 +196,22 @@ const content = {
         ]
     },
 
-    // --- Textes des Emails (Mailto) ---
-    "emailTemplates": {
-        "submitSubject": { 
-            "en": "Paper Submission - IT-RECAP 2026", 
-            "ar": "تقديم ورقة بحثية - IT-RECAP 2026" 
+    // --- Liens complets des boutons ---
+    "buttonsLinks": {
+        "submit": {
+            "en": "mailto:itrecap@hiast.edu.sy?subject=Paper%20Submission%20-%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Organizing%20Committee%2C%0D%0A%0D%0AI%20would%20like%20to%20submit%20my%20paper%20for%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20university%2Forganization%3A%20%0D%0AMy%20research%20field%3A%20%0D%0A%0D%0APaper%20topic%3A%20%5BPlease%20select%3A%20Autonomous%20Systems%20%2F%20Signal%20Processing%20%2F%20Smart%20Infrastructure%20%2F%20Human-Centric%20AI%20%2F%20Other%5D%0D%0A%0D%0APlease%20find%20my%20paper%20attached%20to%20this%20email.%0D%0A%0D%0ABest%20regards",
+            "ar": "mailto:itrecap@hiast.edu.sy?subject=تقديم%20ورقة%20بحثية%20-%20IT-RECAP%202026&body=لجنة%20تنظيم%20IT-RECAP%20المحترمة%2C%0D%0A%0D%0Aأود%20تقديم%20ورقتي%20البحثية%20لـ%20IT-RECAP%202026.%0D%0A%0D%0Aاسمي%3A%20%0D%0Aجامعتي%2Fمؤسستي%3A%20%0D%0Aمجال%20بحثي%3A%20%0D%0A%0D%0Aموضوع%20الورقة%3A%20%5Bالرجاء%20الاختيار%3A%20الأنظمة%20المستقلة%20%2F%20معالجة%20الإشارات%20%2F%20البنية%20التحتية%20الذكية%20%2F%20الذكاء%20الاصطناعي%20المتمحور%20حول%20الإنسان%20%2F%20أخرى%5D%0D%0A%0D%0Aالرجاء%20العثور%20على%20ورقتي%20البحثية%20مرفقة%20مع%20هذا%20البريد%20الإلكتروني.%0D%0A%0D%0Aمع%20أطيب%20التحيات"
         },
-        "submitBody": {
-            "en": "Dear IT-RECAP Organizing Committee,\n\nI would like to submit my paper for IT-RECAP 2026.\n\nMy name:\nMy university/organization:\nMy research field:\n\nPaper topic: [Please select: Autonomous Systems / Signal Processing / Smart Infrastructure / Human-Centric AI / Other]\n\nPlease find my paper attached to this email.\n\nBest regards",
-            "ar": "لجنة تنظيم IT-RECAP المحترمة،\n\nأود تقديم ورقتي البحثية لـ IT-RECAP 2026.\n\nاسمي:\nجامعتي/مؤسستي:\nمجال بحثي:\n\nموضوع الورقة: [الرجاء الاختيار: الأنظمة المستقلة / معالجة الإشارات / البنية التحتية الذكية / الذكاء الاصطناعي المتمحور حول الإنسان / أخرى]\n\nالرجاء العثور على ورقتي البحثية مرفقة مع هذا البريد الإلكتروني.\n\nمع أطيب التحيات"
-        },
-        "contactSubject": { 
-            "en": "Question about IT-RECAP 2026", 
-            "ar": "سؤال حول IT-RECAP 2026" 
-        },
-        "contactBody": {
-            "en": "Dear IT-RECAP Team,\n\nI have a question about IT-RECAP 2026.\n\nMy name:\nMy question is about: [Please select: Registration / Paper Submission / Program / Venue / Other]\n\nMy question:\n\n\nBest regards",
-            "ar": "فريق IT-RECAP المحترم،\n\nلدي سؤال حول IT-RECAP 2026.\n\nاسمي:\nسؤالي يتعلق بـ: [الرجاء الاختيار: التسجيل / تقديم الأوراق / البرنامج / المكان / أخرى]\n\nسؤالي:\n\n\nمع أطيب التحيات"
+        "contact": {
+            "en": "mailto:itrecap@hiast.edu.sy?subject=Question%20about%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Team%2C%0D%0A%0D%0AI%20have%20a%20question%20about%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20question%20is%20about%3A%20%5BPlease%20select%3A%20Registration%20%2F%20Paper%20Submission%20%2F%20Program%20%2F%20Venue%20%2F%20Other%5D%0D%0A%0D%0AMy%20question%3A%0D%0A%0D%0A%0D%0ABest%20regards",
+            "ar": "mailto:itrecap@hiast.edu.sy?subject=سؤال%20حول%20IT-RECAP%202026&body=فريق%20IT-RECAP%20المحترم%2C%0D%0A%0D%0Aلدي%20سؤال%20حول%20IT-RECAP%202026.%0D%0A%0D%0Aاسمي%3A%20%0D%0Aسؤالي%20يتعلق%20بـ%3A%20%5Bالرجاء%20الاختيار%3A%20التسجيل%20%2F%20تقديم%20الأوراق%20%2F%20البرنامج%20%2F%20المكان%20%2F%20أخرى%5D%0D%0A%0D%0Aسؤالي%3A%0D%0A%0D%0A%0D%0Aمع%20أطيب%20التحيات"
         }
     },
 
     // --- Pied de page ---
     "footer": {
         "rights": {
-            "en": "© 2026 IT-RECAP. All rights reserved. Damascus, Syria. By Ithar KAZEM ",
+            "en": "© 2026 IT-RECAP. All rights reserved. Damascus, Syria. By Ithar KAZEM",
             "ar": "© 2026 IT-RECAP. جميع الحقوق محفوظة. دمشق، سوريا. الموقع برمجة وتصميم ايثار كاظم"
         },
         "menu": {
@@ -229,7 +224,7 @@ const content = {
         }
     },
 
-    // --- Boutons ---
+    // --- Textes des Boutons ---
     "buttons": {
         "submit": { "en": "Submit Your Paper", "ar": "قدم ورقتك البحثية" },
         "contact": { "en": "A Question? Contact Us!", "ar": "سؤال؟ اتصل بنا!" },

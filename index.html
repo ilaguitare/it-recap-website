@@ -84,8 +84,23 @@
 
         /* Chairs Specific */
         .chair-card { padding: 20px; text-align: center; }
-        .chair-img-container { width: 120px; height: 120px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); background-color: var(--bg); }
-        .chair-img { width: 100%; height: 100%; object-fit: cover; }
+        .chair-img-container { 
+            width: 120px; 
+            height: 120px; 
+            margin: 0 auto 15px; 
+            border-radius: 50%; 
+            overflow: hidden; 
+            border: 3px solid var(--primary); 
+            background-color: var(--white); /* Fond blanc pour unknown.jpg si png transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .chair-img { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* Remplit tout le cercle ! */
+        }
         .chair-name { font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem; }
         .chair-aff { font-size: 0.85rem; color: var(--text-light); }
 
@@ -267,7 +282,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             if (typeof content === 'undefined') {
-                alert("Erreur : Le fichier content.js est manquant !");
+                alert("Erreur : Le fichier content.js est manquant ou contient une erreur !");
                 return;
             }
             setLanguage(content.settings.defaultLang);
@@ -295,6 +310,9 @@
             populateChairs(lang);
             populateOrganizers(lang);
             populateFooter(lang);
+
+            // Scroll Top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function populateText(lang) {
@@ -328,6 +346,7 @@
             document.getElementById('cta-title').textContent = content.buttons.ready[lang];
             document.getElementById('cta-subtitle').textContent = content.buttons.join[lang];
 
+            // Re-affectation des boutons avec les vrais liens mailto
             const btnSubmit = document.getElementById('btn-submit');
             btnSubmit.textContent = content.buttons.submit[lang];
             btnSubmit.href = content.buttonsLinks.submit[lang];
@@ -388,20 +407,19 @@
             });
         }
 
-        // AUTO-GENERATION DU NOM DE FICHIER IMAGE + FALLBACK UNKNOWN.JPG
+        // AUTO-GENERATION IMAGE ET FALLBACK UNKNOWN
         function populateChairs(lang) {
             const createChairHTML = (chair) => {
-                // 1. Si une image est renseignée dans content.js, on l'utilise.
-                // 2. Sinon, on génère un nom à partir du nom anglais (ex: "Dr. Ali Kazem" -> "ali-kazem.jpg")
                 let imgSrc = chair.img;
                 
+                // S'il n'y a pas d'image configurée, on devine son nom (ex: "Dr. Ali Kazem" -> "ali-kazem.jpg")
                 if (!imgSrc) {
-                    let cleanName = chair.name.en.replace(/^(Dr\.|Mr\.|Ms\.|Prof\.)\s+/i, ''); // Enlève le titre
-                    cleanName = cleanName.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^a-z0-9\-]/g, ''); // Transforme en format fichier
+                    let cleanName = chair.name.en.replace(/^(Dr\.|Mr\.|Ms\.|Prof\.)\s+/i, ''); 
+                    cleanName = cleanName.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^a-z0-9\-]/g, ''); 
                     imgSrc = `images/chairs/${cleanName}.jpg`;
                 }
 
-                // L'attribut onerror affichera automatiquement unknown.jpg si le fichier généré n'existe pas.
+                // S'il ne trouve pas le fichier JPG généré, le "onerror" affichera "unknown.jpg" à la place.
                 return `
                     <div class="chair-card">
                         <div class="chair-img-container">
