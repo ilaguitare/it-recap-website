@@ -2,7 +2,8 @@ const content = {
     // --- Configuration Globale ---
     "settings": {
         "defaultLang": "en", // 'en' ou 'ar'
-        "email": "it-recap2026@hiast.edu.sy"
+        "email": "itrecap@hiast.edu.sy",
+        "phone": "0963-11-5140030"
     },
 
     // --- En-tête (Header) ---
@@ -99,7 +100,7 @@ const content = {
 
     // --- Présidents (Chairs) ---
     "chairsSection": {
-        "title": { "en": "Workshop Chairs", "ar": "رؤساء ورشة العمل" },
+        "title": { "en": "Workshop Committees", "ar": "لجان ورشة العمل" },
         "generalTitle": { "en": "General Chairs", "ar": "الرؤساء العامون" },
         "generalChairs": [
             { "name": { "en": "Basel Solaiman", "ar": "باسل سليمان" }, "aff": { "en": "IMT Atlantique, France", "ar": "IMT Atlantique، فرنسا" }, "img": "images/chairs/basel-solaiman.jpg" },
@@ -107,7 +108,7 @@ const content = {
             { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
             { "name": { "en": "Amer Baghdadi", "ar": "عامر بغدادي" }, "aff": { "en": "Institut Mines-Télécom, France", "ar": "معهد مين تيليكوم، فرنسا" }, "img": "images/chairs/amer-baghdadi.jpg" }
         ],
-        "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية " },
+        "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية" },
         "tpcChairs": [
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
             { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
@@ -119,6 +120,18 @@ const content = {
             { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
             { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
         ],
+        "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
+        "adminCommittee": [
+            { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
+            { "name": { "en": "Dr. Ali Kazem", "ar": "الدكتور علي كاظم" }, "aff": { "en": "Co-Chair", "ar": "معاوناً للرئيس" }, "img": "images/chairs/ali-kazem.jpg" },
+            { "name": { "en": "Dr. Abdallah Hourieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Khaldoun Kharzoum", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Samer Aldaqqaq", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Yaman Alsayed Souleyman Alatasi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Mr. Abdelmalek Alsayed", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Ms. Marwa Alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" } }
+        ]
     },
 
     // --- Organisateurs ---
@@ -156,7 +169,7 @@ const content = {
         }
     },
 
-    // --- Programme Culturel (Images du carrousel ici) ---
+    // --- Programme Culturel ---
     "culturalSection": {
         "title": { "en": "Cultural Program", "ar": "البرنامج الثقافي" },
         "text": {
@@ -178,6 +191,26 @@ const content = {
             "images/cultural_damascus/cultural_damas_12.jpg",
             "images/cultural_damascus/cultural_damas_13.jpg"
         ]
+    },
+
+    // --- Textes des Emails (Mailto) ---
+    "emailTemplates": {
+        "submitSubject": { 
+            "en": "Paper Submission - IT-RECAP 2026", 
+            "ar": "تقديم ورقة بحثية - IT-RECAP 2026" 
+        },
+        "submitBody": {
+            "en": "Dear IT-RECAP Organizing Committee,\n\nI would like to submit my paper for IT-RECAP 2026.\n\nMy name:\nMy university/organization:\nMy research field:\n\nPaper topic: [Please select: Autonomous Systems / Signal Processing / Smart Infrastructure / Human-Centric AI / Other]\n\nPlease find my paper attached to this email.\n\nBest regards",
+            "ar": "لجنة تنظيم IT-RECAP المحترمة،\n\nأود تقديم ورقتي البحثية لـ IT-RECAP 2026.\n\nاسمي:\nجامعتي/مؤسستي:\nمجال بحثي:\n\nموضوع الورقة: [الرجاء الاختيار: الأنظمة المستقلة / معالجة الإشارات / البنية التحتية الذكية / الذكاء الاصطناعي المتمحور حول الإنسان / أخرى]\n\nالرجاء العثور على ورقتي البحثية مرفقة مع هذا البريد الإلكتروني.\n\nمع أطيب التحيات"
+        },
+        "contactSubject": { 
+            "en": "Question about IT-RECAP 2026", 
+            "ar": "سؤال حول IT-RECAP 2026" 
+        },
+        "contactBody": {
+            "en": "Dear IT-RECAP Team,\n\nI have a question about IT-RECAP 2026.\n\nMy name:\nMy question is about: [Please select: Registration / Paper Submission / Program / Venue / Other]\n\nMy question:\n\n\nBest regards",
+            "ar": "فريق IT-RECAP المحترم،\n\nلدي سؤال حول IT-RECAP 2026.\n\nاسمي:\nسؤالي يتعلق بـ: [الرجاء الاختيار: التسجيل / تقديم الأوراق / البرنامج / المكان / أخرى]\n\nسؤالي:\n\n\nمع أطيب التحيات"
+        }
     },
 
     // --- Pied de page ---
