@@ -127,11 +127,11 @@ const content = {
         "adminCommittee": [
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
             { "name": { "en": "Dr. Ali Kazem", "ar": "الدكتور علي كاظم" }, "aff": { "en": "Co-Chair", "ar": "معاوناً للرئيس" }, "img": "images/chairs/ali-kazem.jpg" },
-            { "name": { "en": "Dr. Yomen atassi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/Yomen-atassi.jpg" },
+            { "name": { "en": "Dr. Yomen atassi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/Yomen-Atassi.jpg" },
             { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/samer-dakak.jpg" },
             { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdallah-hourieh.jpg" },
-            { "name": { "en": "Dr. Khaldoun Khorzom", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/Khaldoun-khorzom.jpg" },
-            { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/Riad-sonbol.jpg" },
+            { "name": { "en": "Dr. Khaldoun Khorzom", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/Khaldoun-Khorzom.jpg" },
+            { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/Riad-Sonbol.jpg" },
             { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdulmalek-alsaid.jpg" },
             { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" }, "img": "images/chairs/marwa-alsamara.jpg" }
         ]
