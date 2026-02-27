@@ -127,13 +127,13 @@ const content = {
         "adminCommittee": [
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
             { "name": { "en": "Dr. Ali Kazem", "ar": "الدكتور علي كاظم" }, "aff": { "en": "Co-Chair", "ar": "معاوناً للرئيس" }, "img": "images/chairs/ali-kazem.jpg" },
-            { "name": { "en": "Dr. Abdallah Hourieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdallah-hourieh.jpg" },
-            { "name": { "en": "Dr. Khaldoun Kharzoum", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/khaldoun-kharzoum.jpg" },
-            { "name": { "en": "Dr. Samer Aldaqqaq", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/samer-aldaqqaq.jpg" },
-            { "name": { "en": "Dr. Yaman Alsayed Souleyman Alatasi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/yaman-alsayed-souleyman-alatas.jpg" },
+            { "name": { "en": "Dr. Yomen atassi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/yomen-atassi.jpg" },
+            { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/samer-dakak.jpg" },
+            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdallah-hourieh.jpg" },
+            { "name": { "en": "Dr. Khaldoun Khorzom", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/khaldoun-khorzom.jpg" },
             { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/riad-sonbol.jpg" },
-            { "name": { "en": "Mr. Abdelmalek Alsayed", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdelmalek-alsayed.jpg" },
-            { "name": { "en": "Ms. Marwa Alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" }, "img": "images/chairs/marwa-alsamara.jpg" }
+            { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdulmalek-alsaid.jpg" },
+            { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" }, "img": "images/chairs/marwa-alsamara.jpg" }
         ]
     },
 
