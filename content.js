@@ -122,7 +122,7 @@ const content = {
             { "name": { "en": "Bassam Kurdy", "ar": "بسام كردي" }, "aff": { "en": "Mines ParisTech, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/bassam-kurdy.jpg" },
             { "name": { "en": "Bassem Alachkar", "ar": "باسم الأشقر" }, "aff": { "en": "Manchester, SKA Observatory, UK", "ar": "مانشيستر, انكلترا" }, "img": "images/chairs/bassem-alachkar.jpg" },
             { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
-            { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
+            { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" },
         ],
 
         "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
