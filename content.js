@@ -147,6 +147,7 @@ const content = {
             { "name": { "en": "HIAST", "ar": "HIAST" }, "desc": { "en": "Higher Institute for Applied Sciences and Technology", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا" }, "logo": "images/hiast.png" },
             { "name": { "en": "ASAST", "ar": "ASAST" }, "desc": { "en": "Arab School of Science and Technology", "ar": "المدرسة العربية للعلوم والتكنولوجيا" }, "logo": "images/asast.png" },
             { "name": { "en": "SVU", "ar": "SVU" }, "desc": { "en": "Syrian Virtual University", "ar": "الجامعة الافتراضية السورية" }, "logo": "images/svu.png" },
+            { "name": { "en": "IPU", "ar": "IPU" }, "desc": { "en": "Ithad Private University", "ar": "جامعة الاتحاد الخاصة" }, "logo": "images/ipu.png" },
             { "name": { "en": "IEEE", "ar": "IEEE" }, "desc": { "en": "IEEE Tunisia Section (Technical Co-Sponsorship)", "ar": "قسم IEEE تونس (الرعاية الفنية)" }, "logo": "images/ieee.png" }
         ]
     },
