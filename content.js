@@ -123,6 +123,7 @@ const content = {
             { "name": { "en": "Bassem Alachkar", "ar": "باسم الأشقر" }, "aff": { "en": "Manchester, SKA Observatory, UK", "ar": "مانشيستر, انكلترا" }, "img": "images/chairs/bassem-alachkar.jpg" },
             { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
             { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
+            { "name": { "en": "Mohamad Khalil", "ar": " محمد خليل" }, "aff": { "en": "Lebanese Universityو Faculty of engineerin", "ar": "الجامعة اللبنانية-كلية الهندسة" }, "img": "images/chairs/mohamad-khalil.jpg" },
             { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
             { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" },
         ],
