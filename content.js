@@ -124,6 +124,8 @@ const content = {
             { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
             { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
             { "name": { "en": "Mohamad Khalil", "ar": " محمد خليل" }, "aff": { "en": "Lebanese Universityو Faculty of engineering", "ar": "الجامعة اللبنانية-كلية الهندسة" }, "img": "images/chairs/mohamad-khalil.jpg" },
+            { "name": { "en": "Abdulhalim Dandoush", "ar": " عبد الحليم دندش" }, "aff": { "en": " UDST-Qatar", "ar": "قطرجامعة الدوحة للعلوم والتكنولوجيا" }, "img": "images/chairs/abdulhalim-dandoush.jpg" },
+            { "name": { "en": "Ammar Aryan", "ar": " عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
             { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
             { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" },
         ],
