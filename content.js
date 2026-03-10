@@ -112,7 +112,7 @@ const content = {
         
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية" },
         "tpcChairs": [
-            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - Université de Lorraine-France", "ar": "LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
+            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - Université de Lorraine-France, Prix Nobel de physique et chimie 2024", "ar": "LORIA -فرنسا، حاصل على جائزة نوبل بالفيزياء 2024" }, "img": "images/chairs/jean-paul.jpg" },
             { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia ", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
             { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Montreal, Canada", "ar": "جامعة كونكورديا-مونيريال-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
             { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
