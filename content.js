@@ -112,6 +112,8 @@ const content = {
         
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية" },
         "tpcChairs": [
+            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - Université de Lorraine-France", "ar": "LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
+            { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": ", Manouba University, Tunisia ", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
             { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
             { "name": { "en": "Ahmad Al Farra", "ar": "أحمد الفرا" }, "aff": { "en": "TotalEnergies, France", "ar": "TotalEnergies، فرنسا" }, "img": "images/chairs/ahmad-alfarra.jpg" },
