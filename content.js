@@ -117,6 +117,7 @@ const content = {
             { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Montreal, Canada", "ar": "جامعة كونكورديا-مونيريال-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
             { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
             { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
+            { "name": { "en": " Maryam Saei", "ar":"مريم ساعي" }, "aff": { "en": "Latakia University", "ar": " جامعة اللاذقية" }, "img": "images/chairs/maryam-saei.jpg" },
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
             { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
             { "name": { "en": "Ahmad Al Farra", "ar": "أحمد الفرا" }, "aff": { "en": "TotalEnergies, France", "ar": "TotalEnergies، فرنسا" }, "img": "images/chairs/ahmad-alfarra.jpg" },
