@@ -101,7 +101,7 @@ const content = {
     // --- Présidents (Chairs & Committees) ---
     "chairsSection": {
         "title": { "en": "Workshop Committees", "ar": "لجان ورشة العمل" },
-        
+
         "generalTitle": { "en": "General Chairs", "ar": "الرؤساء العامون" },
         "generalChairs": [
             { "name": { "en": "Basel Solaiman", "ar": "باسل سليمان" }, "aff": { "en": "IMT Atlantique, France", "ar": "IMT Atlantique، فرنسا" }, "img": "images/chairs/basel-solaiman.jpg" },
@@ -109,7 +109,7 @@ const content = {
             { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "ali.kazem.fr, HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
             { "name": { "en": "Amer Baghdadi", "ar": "عامر بغدادي" }, "aff": { "en": "Institut Mines-Télécom, France", "ar": "معهد مين تيليكوم، فرنسا" }, "img": "images/chairs/amer-baghdadi.jpg" }
         ],
-        
+
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية" },
         "tpcChairs": [
             { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - Université de Lorraine-France, Prix Nobel de physique et chimie 2024", "ar": "LORIA -فرنسا، حاصل على جائزة نوبل بالفيزياء 2024" }, "img": "images/chairs/jean-paul.jpg" },
@@ -117,7 +117,7 @@ const content = {
             { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Montreal, Canada", "ar": "جامعة كونكورديا-مونيريال-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
             { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
             { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
-            { "name": { "en": " Maryam Saei", "ar":"مريم ساعي" }, "aff": { "en": "Latakia University", "ar": " جامعة اللاذقية" }, "img": "images/chairs/maryam-saei.jpg" },
+            { "name": { "en": " Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": " جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
             { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
             { "name": { "en": "Ahmad Al Farra", "ar": "أحمد الفرا" }, "aff": { "en": "TotalEnergies, France", "ar": "TotalEnergies، فرنسا" }, "img": "images/chairs/ahmad-alfarra.jpg" },
