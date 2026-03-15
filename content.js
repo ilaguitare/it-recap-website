@@ -118,7 +118,7 @@ const content = {
             { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
             { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
             { "name": { "en": " Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": " جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
-            { "name": { "en": "Ranez Koudsiah", "ar": "رامز قدسية" }, "aff": { "en": "Manara University latakia-Syria", "ar": "جامعة المنارة-اللاذقية-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" },
+            { "name": { "en": "Ramez Koudsiah", "ar": "رامز قدسية" }, "aff": { "en": "Manara University latakia-Syria", "ar": "جامعة المنارة-اللاذقية-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" },
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
             { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
             { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Faculty of Information Technology Engineering; Damascus University", "ar": "كلية المعلوماتية-جامعة دمشق-سزريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
