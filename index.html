@@ -248,7 +248,7 @@
                 
                 <div style="margin-bottom: 50px;">
                     <h3 id="tpc-chairs-title" style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary); text-align: center; margin-bottom: 30px;"></h3>
-                    <div id="tpc-chairs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;"></div>
+                    <div id="tpc-tracks-container"></div>
                 </div>
 
                 <div>
@@ -420,14 +420,18 @@
             document.getElementById('cta-title').textContent = content.buttons.ready[lang];
             document.getElementById('cta-subtitle').textContent = content.buttons.join[lang];
 
-            // Re-affectation propre des boutons avec la fonction sécurisée
-            const btnSubmit = document.getElementById('btn-submit');
-            btnSubmit.textContent = content.buttons.submit[lang];
-            btnSubmit.href = generateMailto(content.emailTemplates.submit.subject[lang], content.emailTemplates.submit.body[lang]);
+            // Boutons réparés et sécurisés
+                        const btnSubmit = document.getElementById('btn-submit');
+                        btnSubmit.textContent = content.buttons.submit[lang];
+                        if (content.buttonsLinks && content.buttonsLinks.submit) {
+                            btnSubmit.setAttribute('href', content.buttonsLinks.submit[lang]);
+                        }
 
-            const btnContact = document.getElementById('btn-contact');
-            btnContact.textContent = content.buttons.contact[lang];
-            btnContact.href = generateMailto(content.emailTemplates.contact.subject[lang], content.emailTemplates.contact.body[lang]);
+                        const btnContact = document.getElementById('btn-contact');
+                        btnContact.textContent = content.buttons.contact[lang];
+                        if (content.buttonsLinks && content.buttonsLinks.contact) {
+                            btnContact.setAttribute('href', content.buttonsLinks.contact[lang]);
+                        }
 
             document.getElementById('footer-logo').textContent = content.header.title;
             document.getElementById('footer-contact').innerHTML = `&#9993; <a href="mailto:${content.settings.email}" style="color:var(--accent-light); text-decoration:none;">${content.settings.email}</a> &nbsp; | &nbsp; &#9742; <span dir="ltr">${content.settings.phone}</span>`;
@@ -494,30 +498,48 @@
         }
 
         function populateChairs(lang) {
-            const createChairHTML = (chair) => {
-                let imgSrc = chair.img;
-                if (!imgSrc) {
-                    let cleanName = chair.name.en.replace(/^(Dr\.|Mr\.|Ms\.|Prof\.)\s+/i, ''); 
-                    cleanName = cleanName.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^a-z0-9\-]/g, ''); 
-                    imgSrc = `images/chairs/${cleanName}.jpg`;
+                    const createChairHTML = (chair) => {
+                        let imgSrc = chair.img;
+                        
+                        if (!imgSrc) {
+                            let cleanName = chair.name.en.replace(/^(Dr\.|Mr\.|Ms\.|Prof\.)\s+/i, ''); 
+                            cleanName = cleanName.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^a-z0-9\-]/g, ''); 
+                            imgSrc = `images/chairs/${cleanName}.jpg`;
+                        }
+
+                        return `
+                            <div class="chair-card">
+                                <div class="chair-img-container">
+                                    <img src="${imgSrc}" alt="${chair.name[lang]}" class="chair-img" onerror="this.onerror=null; this.src='images/chairs/unknown.jpg';">
+                                </div>
+                                <p class="chair-name">${chair.name[lang]}</p>
+                                <p class="chair-aff">${chair.aff[lang]}</p>
+                            </div>
+                        `;
+                    };
+
+                    // Remplissage General Chairs
+                    document.getElementById('general-chairs-grid').innerHTML = content.chairsSection.generalChairs.map(createChairHTML).join('');
+                    
+                    // Remplissage TPC divisé en 4 Tracks
+                    const tpcContainer = document.getElementById('tpc-tracks-container');
+                    tpcContainer.innerHTML = '';
+                    if(content.chairsSection.tpcTracks) {
+                        content.chairsSection.tpcTracks.forEach(track => {
+                            tpcContainer.innerHTML += `
+                                <div style="margin-bottom: 40px; padding: 25px; background: rgba(26, 77, 109, 0.02); border-radius: 12px; border-top: 3px solid var(--primary-light);">
+                                    <h4 style="font-family: 'Cairo', 'Work Sans', sans-serif; font-size: 1.2rem; color: var(--primary); text-align: center; margin-bottom: 25px;">${track.trackName[lang]}</h4>
+                                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
+                                        ${track.chairs.map(createChairHTML).join('')}
+                                    </div>
+                                </div>
+                            `;
+                        });
+                    }
+
+                    // Remplissage Admin
+                    document.getElementById('admin-chairs-grid').innerHTML = content.chairsSection.adminCommittee.map(createChairHTML).join('');
                 }
-
-                return `
-                    <div class="chair-card">
-                        <div class="chair-img-container">
-                            <img src="${imgSrc}" alt="${chair.name[lang]}" class="chair-img" onerror="this.onerror=null; this.src='images/chairs/unknown.jpg';">
-                        </div>
-                        <p class="chair-name">${chair.name[lang]}</p>
-                        <p class="chair-aff">${chair.aff[lang]}</p>
-                    </div>
-                `;
-            };
-
-            document.getElementById('general-chairs-grid').innerHTML = content.chairsSection.generalChairs.map(createChairHTML).join('');
-            document.getElementById('tpc-chairs-grid').innerHTML = content.chairsSection.tpcChairs.map(createChairHTML).join('');
-            document.getElementById('admin-chairs-grid').innerHTML = content.chairsSection.adminCommittee.map(createChairHTML).join('');
-        }
-
         function populateOrganizers(lang) {
             const orgGrid = document.getElementById('organizers-grid');
             orgGrid.innerHTML = content.organizersSection.list.map(org => `

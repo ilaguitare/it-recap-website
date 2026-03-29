@@ -111,7 +111,7 @@ const content = {
         ]
     },
 
-    // --- NOUVEAU: Venue (Carte Google) ---
+    // Venue (Carte Google) ---
     "venueSection": {
         "title": { "en": "Venue", "ar": "مكان الانعقاد" },
         "text": { "en": "The workshop will be held in Damascus, Syria. Explore the vibrant and historic capital.", "ar": "ستعقد ورشة العمل في دمشق، سوريا. اكتشف العاصمة النابضة بالحياة والتاريخية." }
@@ -130,33 +130,54 @@ const content = {
         ],
 
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية" },
-        "tpcChairs": [
-            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - Université de Lorraine-France, Prix Nobel de physique et chimie 2024", "ar": "LORIA -فرنسا، حاصل على جائزة نوبل بالفيزياء 2024" }, "img": "images/chairs/jean-paul.jpg" },
-            { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
-            { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Montreal, Canada", "ar": "جامعة كونكورديا-مونيريال-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
-            { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "Brest, Bretagne, France · INSERM", "ar": "المعهد العالمي للأبحاث الطبية-بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
-            { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
-            { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
-            { "name": { "en": "Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": "جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
-            { "name": { "en": "Ramez Koudsieh", "ar": "رامز قدسية" }, "aff": { "en": "Manara University latakia-Syria", "ar": "جامعة المنارة-اللاذقية-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" },
-            { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
-            { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
-            { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Faculty of Information Technology Engineering; Damascus University", "ar": "كلية المعلوماتية-جامعة دمشق-سزريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
-            { "name": { "en": "Ahmad Al Farra", "ar": "أحمد الفرا" }, "aff": { "en": "TotalEnergies, France", "ar": "TotalEnergies، فرنسا" }, "img": "images/chairs/ahmad-alfarra.jpg" },
-            { "name": { "en": "Iyad Alusta Halabi", "ar": "إياد الاسطة حلبي" }, "aff": { "en": "Alastool Oil Field Company, UAE", "ar": "شركة الأسطول، الإمارات" }, "img": "images/chairs/iyad-halabi.jpg" },
-            { "name": { "en": "Hussein Charara", "ar": "حسين شرارة" }, "aff": { "en": "Lebanese University, Lebanon", "ar": "الجامعة اللبنانية، لبنان" }, "img": "images/chairs/hussein-charara.jpg" },
-            { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
-            { "name": { "en": "Bassam Kurdy", "ar": "بسام كردي" }, "aff": { "en": "Mines ParisTech, France", "ar": "باريس، فرنسا" }, "img": "images/chairs/bassam-kurdy.jpg" },
-            { "name": { "en": "Bassem Alachkar", "ar": "باسم الأشقر" }, "aff": { "en": "Manchester, SKA Observatory, UK", "ar": "مانشيستر, انكلترا" }, "img": "images/chairs/bassem-alachkar.jpg" },
-            { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
-            { "name": { "en": "Rami Yared", "ar": "رامي يارد" }, "aff": { "en": "Arab International University-Damas-Syria", "ar": "الجامعة العربية الدولية-سوريا" }, "img": "images/chairs/rami-yared.jpg" },
-            { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
-            { "name": { "en": "Mohamad Khalil", "ar": "محمد خليل" }, "aff": { "en": "Lebanese University, Faculty of engineering", "ar": "الجامعة اللبنانية-كلية الهندسة" }, "img": "images/chairs/mohamad-khalil.jpg" },
-            { "name": { "en": "Abdulhalim Dandoush", "ar": "عبد الحليم دندش" }, "aff": { "en": "UDST-Qatar", "ar": "قطرجامعة الدوحة للعلوم والتكنولوجيا" }, "img": "images/chairs/abdulhalim-dandoush.jpg" },
-            { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
-            { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
-            { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
-        ],
+                // --- NOUVEAU : TPC divisé en 4 catégories ---
+                "tpcTracks": [
+                    {
+                        "trackName": { "en": "Track 1: Autonomous Systems for Reconstruction", "ar": "المسار 1: الأنظمة المستقلة لإعادة الإعمار" },
+                        "chairs": [
+                            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France", "ar": "LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
+                            { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
+                            { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
+                            { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
+                            { "name": { "en": "Mohamad Khalil", "ar": " محمد خليل" }, "aff": { "en": "Lebanese University", "ar": "الجامعة اللبنانية" }, "img": "images/chairs/mohamad-khalil.jpg" }
+                        ]
+                    },
+                    {
+                        "trackName": { "en": "Track 2: Intelligent Signal Processing and Sensing", "ar": "المسار 2: معالجة الإشارات الذكية والاستشعار" },
+                        "chairs": [
+                            { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
+                            { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
+                            { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
+                            { "name": { "en": "Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": "جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
+                            { "name": { "en": "Ramez Koudsieh", "ar": "رامز قدسية" }, "aff": { "en": "Manara University, Syria", "ar": "جامعة المنارة-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" }
+                        ]
+                    },
+                    {
+                        "trackName": { "en": "Track 3: Smart Infrastructure and Resilient Networks", "ar": "المسار 3: البنية التحتية الذكية والشبكات المرنة" },
+                        "chairs": [
+                            { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
+                            { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
+                            { "name": { "en": "Iyad Alusta Halabi", "ar": "إياد الاسطة حلبي" }, "aff": { "en": "Alastool Oil Field Company, UAE", "ar": "شركة الأسطول، الإمارات" }, "img": "images/chairs/iyad-halabi.jpg" },
+                            { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
+                            { "name": { "en": "Abdulhalim Dandoush", "ar": "عبد الحليم دندش" }, "aff": { "en": "UDST-Qatar", "ar": "جامعة الدوحة" }, "img": "images/chairs/abdulhalim-dandoush.jpg" },
+                            { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" }
+                        ]
+                    },
+                    {
+                        "trackName": { "en": "Track 4: Human-Centric AI and Strategic Planning", "ar": "المسار 4: الذكاء الاصطناعي المتمحور حول الإنسان" },
+                        "chairs": [
+                            { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
+                            { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Damascus University", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
+                            { "name": { "en": "Ahmad Al Farra", "ar": "أحمد الفرا" }, "aff": { "en": "TotalEnergies, France", "ar": "TotalEnergies، فرنسا" }, "img": "images/chairs/ahmad-alfarra.jpg" },
+                            { "name": { "en": "Hussein Charara", "ar": "حسين شرارة" }, "aff": { "en": "Lebanese University, Lebanon", "ar": "الجامعة اللبنانية، لبنان" }, "img": "images/chairs/hussein-charara.jpg" },
+                            { "name": { "en": "Bassam Kurdy", "ar": "بسام كردي" }, "aff": { "en": "Mines ParisTech, France", "ar": "باريس، فرنسا" }, "img": "images/chairs/bassam-kurdy.jpg" },
+                            { "name": { "en": "Bassem Alachkar", "ar": "باسم الأشقر" }, "aff": { "en": "SKA Observatory, UK", "ar": "مانشيستر, انكلترا" }, "img": "images/chairs/bassem-alachkar.jpg" },
+                            { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
+                            { "name": { "en": "Rami Yared", "ar": "رامي يارد" }, "aff": { "en": "Arab International University", "ar": "الجامعة العربية الدولية" }, "img": "images/chairs/rami-yared.jpg" },
+                            { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
+                        ]
+                    }
+                ],
 
         "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
         "adminCommittee": [
