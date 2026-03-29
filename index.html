@@ -301,8 +301,8 @@
             <h2 id="cta-title"></h2>
             <p id="cta-subtitle"></p>
             <div class="cta-buttons-container">
-                <a id="btn-submit" href="#" class="btn"></a>
-                <a id="btn-contact" href="#" class="btn btn-secondary"></a>
+                <a id="btn-submit" class="btn"></a>
+                <a id="btn-contact" class="btn btn-secondary"></a>
             </div>
         </div>
     </section>
@@ -420,17 +420,33 @@
             document.getElementById('cta-title').textContent = content.buttons.ready[lang];
             document.getElementById('cta-subtitle').textContent = content.buttons.join[lang];
 
-            // Boutons réparés et sécurisés
+            // --- GESTION DES BOUTONS D'EMAIL SÉCURISÉE ---
                         const btnSubmit = document.getElementById('btn-submit');
-                        btnSubmit.textContent = content.buttons.submit[lang];
-                        if (content.buttonsLinks && content.buttonsLinks.submit) {
-                            btnSubmit.setAttribute('href', content.buttonsLinks.submit[lang]);
+                        if (btnSubmit) {
+                            btnSubmit.textContent = content.buttons.submit[lang];
+                            if (content.emailTemplates) {
+                                btnSubmit.href = generateMailto(content.emailTemplates.submit.subject[lang], content.emailTemplates.submit.body[lang]);
+                            } else if (content.buttonsLinks) {
+                                btnSubmit.href = content.buttonsLinks.submit[lang];
+                            }
                         }
 
                         const btnContact = document.getElementById('btn-contact');
-                        btnContact.textContent = content.buttons.contact[lang];
-                        if (content.buttonsLinks && content.buttonsLinks.contact) {
-                            btnContact.setAttribute('href', content.buttonsLinks.contact[lang]);
+                        if (btnContact) {
+                            btnContact.textContent = content.buttons.contact[lang];
+                            if (content.emailTemplates) {
+                                btnContact.href = generateMailto(content.emailTemplates.contact.subject[lang], content.emailTemplates.contact.body[lang]);
+                            } else if (content.buttonsLinks) {
+                                btnContact.href = content.buttonsLinks.contact[lang];
+                            }
+                        }
+                        
+                        const btnSponsor = document.getElementById('btn-sponsor');
+                        if (btnSponsor && content.sponsorsSection) {
+                            btnSponsor.textContent = content.sponsorsSection.btn[lang];
+                            if (content.emailTemplates) {
+                                btnSponsor.href = generateMailto(content.emailTemplates.sponsor.subject[lang], content.emailTemplates.sponsor.body[lang]);
+                            }
                         }
 
             document.getElementById('footer-logo').textContent = content.header.title;
@@ -590,17 +606,20 @@
         setInterval(() => moveSlide(1), 4000);
 
         // --- Animations & Smooth Scroll ---
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                // Ajuster le scroll en fonction de la navbar sticky (80px)
-                if (target) {
-                    const topPos = target.getBoundingClientRect().top + window.pageYOffset - 80;
-                    window.scrollTo({ top: topPos, behavior: 'smooth' });
-                }
-            });
-        });
+                // On cible uniquement les vrais liens de navigation (menu haut et footer), pas les boutons d'email
+                document.querySelectorAll('.nav-links a, .footer-links a').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        const href = this.getAttribute('href');
+                        if (href && href.startsWith('#')) {
+                            e.preventDefault();
+                            const target = document.querySelector(href);
+                            if (target) {
+                                const topPos = target.getBoundingClientRect().top + window.pageYOffset - 80; // 80 = hauteur du menu
+                                window.scrollTo({ top: topPos, behavior: 'smooth' });
+                            }
+                        }
+                    });
+                });
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
