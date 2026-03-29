@@ -227,14 +227,14 @@
     </section>
 
     <section id="venue">
-        <div class="container">
-            <h2 id="venue-title" class="section-title"></h2>
-            <p id="venue-text" class="section-intro"></p>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106455.51410183187!2d36.20815124021571!3d33.50756778465664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a3%3A0x6b6f8a5bd1c65dc7!2sDamascus%2C%20Syria!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="container">
+                <h2 id="venue-title" class="section-title"></h2>
+                <p id="venue-text" class="section-intro"></p>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106456.66699898858!2d36.20811986429532!3d33.51307065096538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a7%3A0x6b9f66ebd1e394f2!2sDamascus%2C%20Syria!5e0!3m2!1sen!2s!4v1716900000000!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     <section id="chairs">
         <div class="container">
@@ -319,7 +319,7 @@
     <script src="content.js"></script>
 
     <script>
-        // Toggle Mobile Menu
+// Toggle Mobile Menu
         function toggleMenu() {
             document.getElementById('navLinks').classList.toggle('active');
         }
@@ -363,7 +363,7 @@
             populateFooter(lang);
         }
 
-        // Encodeur d'Email 100% sécurisé pour contourner les bugs de messagerie
+        // Fonction pour générer le lien mailto sans bug
         function generateMailto(subject, bodyText) {
             return "mailto:" + content.settings.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(bodyText);
         }
@@ -404,10 +404,6 @@
             document.getElementById('sponsors-title').textContent = content.sponsorsSection.title[lang];
             document.getElementById('sponsors-text').textContent = content.sponsorsSection.text[lang];
             
-            const btnSponsor = document.getElementById('btn-sponsor');
-            btnSponsor.textContent = content.sponsorsSection.btn[lang];
-            btnSponsor.href = generateMailto(content.emailTemplates.sponsor.subject[lang], content.emailTemplates.sponsor.body[lang]);
-
             document.getElementById('organizers-title').textContent = content.organizersSection.title[lang];
             
             document.getElementById('submission-title').textContent = content.submissionSection.title[lang];
@@ -420,173 +416,177 @@
             document.getElementById('cta-title').textContent = content.buttons.ready[lang];
             document.getElementById('cta-subtitle').textContent = content.buttons.join[lang];
 
-            // --- GESTION DES BOUTONS D'EMAIL SÉCURISÉE ---
-                        const btnSubmit = document.getElementById('btn-submit');
-                        if (btnSubmit) {
-                            btnSubmit.textContent = content.buttons.submit[lang];
-                            if (content.emailTemplates) {
-                                btnSubmit.href = generateMailto(content.emailTemplates.submit.subject[lang], content.emailTemplates.submit.body[lang]);
-                            } else if (content.buttonsLinks) {
-                                btnSubmit.href = content.buttonsLinks.submit[lang];
-                            }
-                        }
+            // --- GESTION DES BOUTONS UNIQUE (Plus de doublons ici) ---
+            const btnSponsor = document.getElementById('btn-sponsor');
+            if (btnSponsor && content.emailTemplates) {
+                btnSponsor.textContent = content.sponsorsSection.btn[lang];
+                btnSponsor.href = generateMailto(content.emailTemplates.sponsor.subject[lang], content.emailTemplates.sponsor.body[lang]);
+            }
 
-                        const btnContact = document.getElementById('btn-contact');
-                        if (btnContact) {
-                            btnContact.textContent = content.buttons.contact[lang];
-                            if (content.emailTemplates) {
-                                btnContact.href = generateMailto(content.emailTemplates.contact.subject[lang], content.emailTemplates.contact.body[lang]);
-                            } else if (content.buttonsLinks) {
-                                btnContact.href = content.buttonsLinks.contact[lang];
-                            }
-                        }
-                        
-                        const btnSponsor = document.getElementById('btn-sponsor');
-                        if (btnSponsor && content.sponsorsSection) {
-                            btnSponsor.textContent = content.sponsorsSection.btn[lang];
-                            if (content.emailTemplates) {
-                                btnSponsor.href = generateMailto(content.emailTemplates.sponsor.subject[lang], content.emailTemplates.sponsor.body[lang]);
-                            }
-                        }
+            const btnSubmit = document.getElementById('btn-submit');
+            if (btnSubmit && content.emailTemplates) {
+                btnSubmit.textContent = content.buttons.submit[lang];
+                btnSubmit.href = generateMailto(content.emailTemplates.submit.subject[lang], content.emailTemplates.submit.body[lang]);
+            }
+
+            const btnContact = document.getElementById('btn-contact');
+            if (btnContact && content.emailTemplates) {
+                btnContact.textContent = content.buttons.contact[lang];
+                btnContact.href = generateMailto(content.emailTemplates.contact.subject[lang], content.emailTemplates.contact.body[lang]);
+            }
 
             document.getElementById('footer-logo').textContent = content.header.title;
-            document.getElementById('footer-contact').innerHTML = `&#9993; <a href="mailto:${content.settings.email}" style="color:var(--accent-light); text-decoration:none;">${content.settings.email}</a> &nbsp; | &nbsp; &#9742; <span dir="ltr">${content.settings.phone}</span>`;
+            document.getElementById('footer-contact').innerHTML = `✉ <a href="mailto:${content.settings.email}" style="color:var(--accent-light); text-decoration:none;">${content.settings.email}</a> &nbsp; | &nbsp; ☎ <span dir="ltr">${content.settings.phone}</span>`;
             document.getElementById('copyright').textContent = content.footer.rights[lang];
         }
 
         function populateLists(lang) {
-            // Attendees Grid
             const attGrid = document.getElementById('attendees-grid');
-            attGrid.innerHTML = content.attendeesSection.list.map(att => `
-                <div class="attendee-card">
-                    <div class="attendee-icon">${att.icon}</div>
-                    <h3>${att.title[lang]}</h3>
-                </div>
-            `).join('');
+            if (attGrid) {
+                attGrid.innerHTML = content.attendeesSection.list.map(att => `
+                    <div class="attendee-card">
+                        <div class="attendee-icon">${att.icon}</div>
+                        <h3>${att.title[lang]}</h3>
+                    </div>
+                `).join('');
+            }
 
-            // Topics Grid
             const topicsContainer = document.getElementById('topics-grid');
-            topicsContainer.innerHTML = '';
-            content.topicsSection.list.forEach((topic, index) => {
-                let ulHtml = '';
-                topic.items[lang].forEach(item => {
-                    ulHtml += `<li>${item}</li>`;
-                });
-                topicsContainer.innerHTML += `
-                    <div class="topic-card">
-                        <div class="topic-number">${index + 1}</div>
-                        <h3>${topic.title[lang]}</h3>
-                        <ul>${ulHtml}</ul>
-                    </div>
-                `;
-            });
-
-            // Dates
-            const timelineContainer = document.getElementById('dates-timeline');
-            timelineContainer.innerHTML = '';
-            content.datesSection.timeline.forEach(item => {
-                timelineContainer.innerHTML += `
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-date">${item.date[lang]}</div>
-                            <div class="timeline-title">${item.event[lang]}</div>
+            if (topicsContainer) {
+                topicsContainer.innerHTML = '';
+                content.topicsSection.list.forEach((topic, index) => {
+                    let ulHtml = '';
+                    topic.items[lang].forEach(item => { ulHtml += `<li>${item}</li>`; });
+                    topicsContainer.innerHTML += `
+                        <div class="topic-card">
+                            <div class="topic-number">${index + 1}</div>
+                            <h3>${topic.title[lang]}</h3>
+                            <ul>${ulHtml}</ul>
                         </div>
-                        <div class="timeline-dot"></div>
-                    </div>
-                `;
-            });
+                    `;
+                });
+            }
 
-            // Submissions
+            const timelineContainer = document.getElementById('dates-timeline');
+            if (timelineContainer) {
+                timelineContainer.innerHTML = '';
+                content.datesSection.timeline.forEach(item => {
+                    timelineContainer.innerHTML += `
+                        <div class="timeline-item">
+                            <div class="timeline-content">
+                                <div class="timeline-date">${item.date[lang]}</div>
+                                <div class="timeline-title">${item.event[lang]}</div>
+                            </div>
+                            <div class="timeline-dot"></div>
+                        </div>
+                    `;
+                });
+            }
+
             const subList = document.getElementById('submission-list');
-            subList.innerHTML = '';
-            const paddingSide = lang === 'ar' ? 'padding-right' : 'padding-left';
-            const arrowPos = lang === 'ar' ? 'right' : 'left';
-            const arrowChar = lang === 'ar' ? '←' : '→';
+            if (subList) {
+                subList.innerHTML = '';
+                const paddingSide = lang === 'ar' ? 'padding-right' : 'padding-left';
+                const arrowPos = lang === 'ar' ? 'right' : 'left';
+                const arrowChar = lang === 'ar' ? '←' : '→';
 
-            content.submissionSection.requirements[lang].forEach(req => {
-                subList.innerHTML += `
-                    <li style="padding: 10px 0; ${paddingSide}: 25px; position: relative;">
-                        <span style="position: absolute; ${arrowPos}: 0; color: var(--accent); font-weight: 600;">${arrowChar}</span>
-                        ${req}
-                    </li>
-                `;
-            });
+                content.submissionSection.requirements[lang].forEach(req => {
+                    subList.innerHTML += `
+                        <li style="padding: 10px 0; ${paddingSide}: 25px; position: relative;">
+                            <span style="position: absolute; ${arrowPos}: 0; color: var(--accent); font-weight: 600;">${arrowChar}</span>
+                            ${req}
+                        </li>
+                    `;
+                });
+            }
         }
 
         function populateChairs(lang) {
-                    const createChairHTML = (chair) => {
-                        let imgSrc = chair.img;
-                        
-                        if (!imgSrc) {
-                            let cleanName = chair.name.en.replace(/^(Dr\.|Mr\.|Ms\.|Prof\.)\s+/i, ''); 
-                            cleanName = cleanName.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^a-z0-9\-]/g, ''); 
-                            imgSrc = `images/chairs/${cleanName}.jpg`;
-                        }
-
-                        return `
-                            <div class="chair-card">
-                                <div class="chair-img-container">
-                                    <img src="${imgSrc}" alt="${chair.name[lang]}" class="chair-img" onerror="this.onerror=null; this.src='images/chairs/unknown.jpg';">
-                                </div>
-                                <p class="chair-name">${chair.name[lang]}</p>
-                                <p class="chair-aff">${chair.aff[lang]}</p>
-                            </div>
-                        `;
-                    };
-
-                    // Remplissage General Chairs
-                    document.getElementById('general-chairs-grid').innerHTML = content.chairsSection.generalChairs.map(createChairHTML).join('');
-                    
-                    // Remplissage TPC divisé en 4 Tracks
-                    const tpcContainer = document.getElementById('tpc-tracks-container');
-                    tpcContainer.innerHTML = '';
-                    if(content.chairsSection.tpcTracks) {
-                        content.chairsSection.tpcTracks.forEach(track => {
-                            tpcContainer.innerHTML += `
-                                <div style="margin-bottom: 40px; padding: 25px; background: rgba(26, 77, 109, 0.02); border-radius: 12px; border-top: 3px solid var(--primary-light);">
-                                    <h4 style="font-family: 'Cairo', 'Work Sans', sans-serif; font-size: 1.2rem; color: var(--primary); text-align: center; margin-bottom: 25px;">${track.trackName[lang]}</h4>
-                                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
-                                        ${track.chairs.map(createChairHTML).join('')}
-                                    </div>
-                                </div>
-                            `;
-                        });
-                    }
-
-                    // Remplissage Admin
-                    document.getElementById('admin-chairs-grid').innerHTML = content.chairsSection.adminCommittee.map(createChairHTML).join('');
+            const createChairHTML = (chair) => {
+                let imgSrc = chair.img;
+                if (!imgSrc) {
+                    let cleanName = chair.name.en.replace(/^(Dr\.|Mr\.|Ms\.|Prof\.)\s+/i, ''); 
+                    cleanName = cleanName.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^a-z0-9\-]/g, ''); 
+                    imgSrc = `images/chairs/${cleanName}.jpg`;
                 }
+
+                return `
+                    <div class="chair-card">
+                        <div class="chair-img-container">
+                            <img src="${imgSrc}" alt="${chair.name[lang]}" class="chair-img" onerror="this.onerror=null; this.src='images/chairs/unknown.jpg';">
+                        </div>
+                        <p class="chair-name">${chair.name[lang]}</p>
+                        <p class="chair-aff">${chair.aff[lang]}</p>
+                    </div>
+                `;
+            };
+
+            const genGrid = document.getElementById('general-chairs-grid');
+            if (genGrid) genGrid.innerHTML = content.chairsSection.generalChairs.map(createChairHTML).join('');
+            
+            // Remplissage TPC Tracks
+            const tpcContainer = document.getElementById('tpc-tracks-container');
+            if (tpcContainer && content.chairsSection.tpcTracks) {
+                tpcContainer.innerHTML = '';
+                content.chairsSection.tpcTracks.forEach(track => {
+                    tpcContainer.innerHTML += `
+                        <div style="margin-bottom: 40px; padding: 25px; background: rgba(26, 77, 109, 0.02); border-radius: 12px; border-top: 3px solid var(--primary-light);">
+                            <h4 style="font-family: 'Cairo', 'Work Sans', sans-serif; font-size: 1.2rem; color: var(--primary); text-align: center; margin-bottom: 25px;">${track.trackName[lang]}</h4>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;">
+                                ${track.chairs.map(createChairHTML).join('')}
+                            </div>
+                        </div>
+                    `;
+                });
+            } else {
+                // Rétrocompatibilité si tu n'as pas encore mis à jour content.js
+                const oldTpcGrid = document.getElementById('tpc-chairs-grid');
+                if(oldTpcGrid && content.chairsSection.tpcChairs) {
+                    oldTpcGrid.innerHTML = content.chairsSection.tpcChairs.map(createChairHTML).join('');
+                }
+            }
+
+            const adminGrid = document.getElementById('admin-chairs-grid');
+            if (adminGrid) adminGrid.innerHTML = content.chairsSection.adminCommittee.map(createChairHTML).join('');
+        }
+
         function populateOrganizers(lang) {
             const orgGrid = document.getElementById('organizers-grid');
-            orgGrid.innerHTML = content.organizersSection.list.map(org => `
-                <div class="organizer-card">
-                    <div class="organizer-logo">
-                        <img src="${org.logo}" alt="${org.name[lang]} Logo">
+            if (orgGrid) {
+                orgGrid.innerHTML = content.organizersSection.list.map(org => `
+                    <div class="organizer-card">
+                        <div class="organizer-logo">
+                            <img src="${org.logo}" alt="${org.name[lang]} Logo">
+                        </div>
+                        <h3>${org.name[lang]}</h3>
+                        <p>${org.desc[lang]}</p>
                     </div>
-                    <h3>${org.name[lang]}</h3>
-                    <p>${org.desc[lang]}</p>
-                </div>
-            `).join('');
+                `).join('');
+            }
         }
 
         function populateFooter(lang) {
             const linksContainer = document.getElementById('footer-links');
             const m = content.footer.menu;
-            linksContainer.innerHTML = `
-                <a href="#about">${m.about[lang]}</a>
-                <a href="#topics">${m.topics[lang]}</a>
-                <a href="#dates">${m.dates[lang]}</a>
-                <a href="#chairs">${m.chairs[lang]}</a>
-                <a href="#organizers">${m.organizers[lang]}</a>
-                <a href="#submission">${m.submission[lang]}</a>
-            `;
+            if (linksContainer) {
+                linksContainer.innerHTML = `
+                    <a href="#about">${m.about[lang]}</a>
+                    <a href="#topics">${m.topics[lang]}</a>
+                    <a href="#dates">${m.dates[lang]}</a>
+                    <a href="#chairs">${m.chairs[lang]}</a>
+                    <a href="#organizers">${m.organizers[lang]}</a>
+                    <a href="#submission">${m.submission[lang]}</a>
+                `;
+            }
         }
 
         function loadStaticImages() {
             const track = document.getElementById('carouselTrack');
-            track.innerHTML = content.culturalSection.images.map(img => `
-                <div class="carousel-slide"><img src="${img}" alt="Cultural Image"></div>
-            `).join('');
+            if (track && content.culturalSection) {
+                track.innerHTML = content.culturalSection.images.map(img => `
+                    <div class="carousel-slide"><img src="${img}" alt="Cultural Image"></div>
+                `).join('');
+            }
         }
 
         // --- Logique Carrousel ---
@@ -606,20 +606,19 @@
         setInterval(() => moveSlide(1), 4000);
 
         // --- Animations & Smooth Scroll ---
-                // On cible uniquement les vrais liens de navigation (menu haut et footer), pas les boutons d'email
-                document.querySelectorAll('.nav-links a, .footer-links a').forEach(anchor => {
-                    anchor.addEventListener('click', function (e) {
-                        const href = this.getAttribute('href');
-                        if (href && href.startsWith('#')) {
-                            e.preventDefault();
-                            const target = document.querySelector(href);
-                            if (target) {
-                                const topPos = target.getBoundingClientRect().top + window.pageYOffset - 80; // 80 = hauteur du menu
-                                window.scrollTo({ top: topPos, behavior: 'smooth' });
-                            }
-                        }
-                    });
-                });
+        document.querySelectorAll('.nav-links a, .footer-links a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const topPos = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                        window.scrollTo({ top: topPos, behavior: 'smooth' });
+                    }
+                }
+            });
+        });
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
