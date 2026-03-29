@@ -145,7 +145,6 @@ const content = {
                             { "name": { "en": "Iyad Alusta Halabi", "ar": "إياد الاسطة حلبي" }, "aff": { "en": "Alastool Oil Field Company, UAE", "ar": "شركة الأسطول، الإمارات" }, "img": "images/chairs/iyad-halabi.jpg" },
                             { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
                             { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
- 
                         ]
                     },
                     {
@@ -185,7 +184,7 @@ const content = {
                     }
                 ],
 
-        "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
+                "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
         "adminCommittee": [
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
             { "name": { "en": "Dr. Ali Kazem", "ar": "الدكتور علي كاظم" }, "aff": { "en": "Co-Chair", "ar": "معاوناً للرئيس" }, "img": "images/chairs/ali-kazem.jpg" },
