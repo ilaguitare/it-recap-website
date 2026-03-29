@@ -6,25 +6,27 @@ const content = {
         "phone": "0963-11-5140030"
     },
 
+    // --- Navigation (Menu) ---
+    "nav": {
+        "about": { "en": "About", "ar": "حول" },
+        "topics": { "en": "Topics", "ar": "المواضيع" },
+        "dates": { "en": "Dates", "ar": "التواريخ" },
+        "venue": { "en": "Venue", "ar": "المكان" },
+        "committees": { "en": "Committees", "ar": "اللجان" },
+        "sponsors": { "en": "Sponsors", "ar": "الرعاة" },
+        "submission": { "en": "Registration", "ar": "التسجيل" }
+    },
+
     // --- En-tête (Header) ---
     "header": {
-        "label": {
-            "en": "1st International Workshop",
-            "ar": "ورشة العمل الدولية الأولى"
-        },
+        "label": { "en": "1st International Workshop", "ar": "ورشة العمل الدولية الأولى" },
         "title": "IT-RECAP'2026",
         "subtitle": {
             "en": "International Workshop on Intelligent Technologies for<br>Reconstruction and Capacity Building",
             "ar": "ورشة العمل الدولية حول التقنيات الذكية<br>لإعادة الإعمار وبناء القدرات"
         },
-        "date": {
-            "en": "October 13-15, 2026",
-            "ar": "13-15 أكتوبر 2026"
-        },
-        "location": {
-            "en": "Damascus, Syria",
-            "ar": "دمشق، سوريا"
-        }
+        "date": { "en": "October 13-15, 2026", "ar": "13-15 أكتوبر 2026" },
+        "location": { "en": "Damascus, Syria", "ar": "دمشق، سوريا" }
     },
 
     // --- Section À Propos (About) ---
@@ -38,6 +40,17 @@ const content = {
             "en": "Crucially, the workshop identifies capacity building as a core pillar of successful reconstruction. Beyond presenting technical solutions, the main target is to foster knowledge transfer that empowers local engineers, planners, and stakeholders. By bringing together international experts and local academics, the workshop aims to develop tailored, actionable solutions that ensure sustainable infrastructure and long-term improvements in quality of life.",
             "ar": "والأمر الأكثر أهمية هو أن ورشة العمل تحدد بناء القدرات كركيزة أساسية لإعادة الإعمار الناجحة. بالإضافة إلى تقديم الحلول التقنية، فإن الهدف الرئيسي هو تعزيز نقل المعرفة الذي يمكّن المهندسين والمخططين وأصحاب المصلحة المحليين. من خلال الجمع بين الخبراء الدوليين والأكاديميين المحليين، تهدف ورشة العمل إلى تطوير حلول مخصصة وقابلة للتنفيذ تضمن البنية التحتية المستدامة والتحسينات طويلة الأمد في نوعية الحياة."
         }
+    },
+
+    // --- NOUVEAU: Who Should Attend ---
+    "attendeesSection": {
+        "title": { "en": "Who Should Attend?", "ar": "من يجب أن يحضر؟" },
+        "list": [
+            { "title": { "en": "Researchers & Academics", "ar": "الباحثون والأكاديميون" }, "icon": "🎓" },
+            { "title": { "en": "Industry Professionals", "ar": "المتخصصون في الصناعة" }, "icon": "💼" },
+            { "title": { "en": "Policymakers", "ar": "صناع القرار" }, "icon": "🏛️" },
+            { "title": { "en": "Students", "ar": "الطلاب" }, "icon": "📚" }
+        ]
     },
 
     // --- Sujets (Topics) ---
@@ -98,6 +111,12 @@ const content = {
         ]
     },
 
+    // --- NOUVEAU: Venue (Carte Google) ---
+    "venueSection": {
+        "title": { "en": "Venue", "ar": "مكان الانعقاد" },
+        "text": { "en": "The workshop will be held in Damascus, Syria. Explore the vibrant and historic capital.", "ar": "ستعقد ورشة العمل في دمشق، سوريا. اكتشف العاصمة النابضة بالحياة والتاريخية." }
+    },
+
     // --- Présidents (Chairs & Committees) ---
     "chairsSection": {
         "title": { "en": "Workshop Committees", "ar": "لجان ورشة العمل" },
@@ -106,22 +125,19 @@ const content = {
         "generalChairs": [
             { "name": { "en": "Basel Solaiman", "ar": "باسل سليمان" }, "aff": { "en": "IMT Atlantique, France", "ar": "IMT Atlantique، فرنسا" }, "img": "images/chairs/basel-solaiman.jpg" },
             { "name": { "en": "Mohamed-Ali Alsayed-Ali", "ar": "محمد علي السيد علي" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
-            { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "ali.kazem.fr, HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
+            { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST, Syria", "ar": "HIAST، سوريا" }, "img": "images/chairs/ali-kazem.jpg" },
             { "name": { "en": "Amer Baghdadi", "ar": "عامر بغدادي" }, "aff": { "en": "Institut Mines-Télécom, France", "ar": "معهد مين تيليكوم، فرنسا" }, "img": "images/chairs/amer-baghdadi.jpg" }
         ],
 
         "tpcTitle": { "en": "TPC Chairs", "ar": "رؤساء اللجان العلمية" },
         "tpcChairs": [
             { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - Université de Lorraine-France, Prix Nobel de physique et chimie 2024", "ar": "LORIA -فرنسا، حاصل على جائزة نوبل بالفيزياء 2024" }, "img": "images/chairs/jean-paul.jpg" },
-            { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia ", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
+            { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
             { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Montreal, Canada", "ar": "جامعة كونكورديا-مونيريال-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
             { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "Brest, Bretagne, France · INSERM", "ar": "المعهد العالمي للأبحاث الطبية-بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
-            { "name": { "en": "Sevil Şen", "ar": "سيفيل سين" }, "aff": { "en": "Hacettepe University;  Ankara, TURKEY", "ar": "جامعة هاسيتيب؛ أنقرة، تركيا" }, "img": "images/chairs/sevil-sen.jpg" },
-            { "name": { "en": "Kashif Ahmad", "ar": "كاشف أحمد" }, "aff": { "en": "Munster Technological University, Cork, Ireland", "ar": "الجامعة التكنولوجية-كورك-ايرلندا " }, "img": "images/chairs/kashif-ahmad.jpg" },
             { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
-            { "name": { "en": "irfan hussain", "ar": "عرفان حسين" }, "aff": { "en": "Khalifa University, Abu Dhabi, UAE", "ar": "جامعة خليفة-أبو ظبي-الامارات العربية المتحدة" }, "img": "images/chairs/irfan-hussain.jpg" },
             { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
-            { "name": { "en": " Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": " جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
+            { "name": { "en": "Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": "جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
             { "name": { "en": "Ramez Koudsieh", "ar": "رامز قدسية" }, "aff": { "en": "Manara University latakia-Syria", "ar": "جامعة المنارة-اللاذقية-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" },
             { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
             { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
@@ -130,35 +146,35 @@ const content = {
             { "name": { "en": "Iyad Alusta Halabi", "ar": "إياد الاسطة حلبي" }, "aff": { "en": "Alastool Oil Field Company, UAE", "ar": "شركة الأسطول، الإمارات" }, "img": "images/chairs/iyad-halabi.jpg" },
             { "name": { "en": "Hussein Charara", "ar": "حسين شرارة" }, "aff": { "en": "Lebanese University, Lebanon", "ar": "الجامعة اللبنانية، لبنان" }, "img": "images/chairs/hussein-charara.jpg" },
             { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
-            { "name": { "en": "Bassam Kurdy", "ar": "بسام كردي" }, "aff": { "en": "Mines ParisTech, France", "ar": " باريس، فرنسا" }, "img": "images/chairs/bassam-kurdy.jpg" },
+            { "name": { "en": "Bassam Kurdy", "ar": "بسام كردي" }, "aff": { "en": "Mines ParisTech, France", "ar": "باريس، فرنسا" }, "img": "images/chairs/bassam-kurdy.jpg" },
             { "name": { "en": "Bassem Alachkar", "ar": "باسم الأشقر" }, "aff": { "en": "Manchester, SKA Observatory, UK", "ar": "مانشيستر, انكلترا" }, "img": "images/chairs/bassem-alachkar.jpg" },
             { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
             { "name": { "en": "Rami Yared", "ar": "رامي يارد" }, "aff": { "en": "Arab International University-Damas-Syria", "ar": "الجامعة العربية الدولية-سوريا" }, "img": "images/chairs/rami-yared.jpg" },
             { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
-            { "name": { "en": "Mohamad Khalil", "ar": " محمد خليل" }, "aff": { "en": "Lebanese Universityو Faculty of engineering", "ar": "الجامعة اللبنانية-كلية الهندسة" }, "img": "images/chairs/mohamad-khalil.jpg" },
-            { "name": { "en": "Abdulhalim Dandoush", "ar": " عبد الحليم دندش" }, "aff": { "en": " UDST-Qatar", "ar": "قطرجامعة الدوحة للعلوم والتكنولوجيا" }, "img": "images/chairs/abdulhalim-dandoush.jpg" },
-            { "name": { "en": "Ammar Aryan", "ar": " عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
+            { "name": { "en": "Mohamad Khalil", "ar": "محمد خليل" }, "aff": { "en": "Lebanese University, Faculty of engineering", "ar": "الجامعة اللبنانية-كلية الهندسة" }, "img": "images/chairs/mohamad-khalil.jpg" },
+            { "name": { "en": "Abdulhalim Dandoush", "ar": "عبد الحليم دندش" }, "aff": { "en": "UDST-Qatar", "ar": "قطرجامعة الدوحة للعلوم والتكنولوجيا" }, "img": "images/chairs/abdulhalim-dandoush.jpg" },
+            { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
             { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
-            { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" },
+            { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
         ],
 
         "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
         "adminCommittee": [
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
             { "name": { "en": "Dr. Ali Kazem", "ar": "الدكتور علي كاظم" }, "aff": { "en": "Co-Chair", "ar": "معاوناً للرئيس" }, "img": "images/chairs/ali-kazem.jpg" },
-            { "name": { "en": "Dr. Yomen atassi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/yomen-atassi.jpg" },
-            { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/samer-dakak.jpg" },
-            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdallah-hourieh.jpg" },
-            { "name": { "en": "Dr. Khaldoun Khorzom", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/khaldoun-khorzom.jpg" },
-            { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/riad-sonbol.jpg" },
-            { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" }, "img": "images/chairs/abdulmalek-alsaid.jpg" },
-            { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" }, "img": "images/chairs/marwa-alsamara.jpg" }
+            { "name": { "en": "Dr. Yomen atassi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Khaldoun Khorzom", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" } }
         ]
     },
 
     // --- Organisateurs ---
     "organizersSection": {
-        "title": { "en": "Organizers & Partners", "ar": "المنظمون والشركاء" },
+        "title": { "en": "Organizers", "ar": "المنظمون" },
         "list": [
             { "name": { "en": "HIAST", "ar": "HIAST" }, "desc": { "en": "Higher Institute for Applied Sciences and Technology", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا" }, "logo": "images/hiast.png" },
             { "name": { "en": "ASAST", "ar": "ASAST" }, "desc": { "en": "Arab School of Science and Technology", "ar": "المدرسة العربية للعلوم والتكنولوجيا" }, "logo": "images/asast.png" },
@@ -168,9 +184,19 @@ const content = {
         ]
     },
 
+    // --- NOUVEAU: Sponsors ---
+    "sponsorsSection": {
+        "title": { "en": "Sponsors & Partners", "ar": "الرعاة والشركاء" },
+        "text": { 
+            "en": "We are currently seeking partners and sponsors to make this event a success. Enhance your brand's visibility by supporting IT-RECAP 2026.", 
+            "ar": "نحن نبحث حاليًا عن شركاء ورعاة لإنجاح هذا الحدث. عزز حضور علامتك التجارية من خلال رعاية IT-RECAP 2026." 
+        },
+        "btn": { "en": "Become a Sponsor", "ar": "كن راعياً" }
+    },
+
     // --- Soumission ---
     "submissionSection": {
-        "title": { "en": "Submission Guidelines", "ar": "إرشادات التقديم" },
+        "title": { "en": "Submission & Registration", "ar": "إرشادات التقديم والتسجيل" },
         "intro": {
             "en": "The program committee invites authors to submit original, unpublished papers to be peer-reviewed for technical quality and relevance.",
             "ar": "تدعو لجنة البرنامج المؤلفين إلى تقديم أوراق بحثية أصلية وغير منشورة ليتم مراجعتها من قبل الأقران."
@@ -216,15 +242,19 @@ const content = {
         ]
     },
 
-    // --- Liens complets des boutons ---
-    "buttonsLinks": {
+    // --- Textes clairs et sécurisés pour les emails ---
+    "emailTemplates": {
         "submit": {
-            "en": "mailto:itrecap@hiast.edu.sy?subject=Paper%20Submission%20-%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Organizing%20Committee%2C%0D%0A%0D%0AI%20would%20like%20to%20submit%20my%20paper%20for%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20university%2Forganization%3A%20%0D%0AMy%20research%20field%3A%20%0D%0A%0D%0APaper%20topic%3A%20%5BPlease%20select%3A%20Autonomous%20Systems%20%2F%20Signal%20Processing%20%2F%20Smart%20Infrastructure%20%2F%20Human-Centric%20AI%20%2F%20Other%5D%0D%0A%0D%0APlease%20find%20my%20paper%20attached%20to%20this%20email.%0D%0A%0D%0ABest%20regards",
-            "ar": "mailto:itrecap@hiast.edu.sy?subject=تقديم%20ورقة%20بحثية%20-%20IT-RECAP%202026&body=لجنة%20تنظيم%20IT-RECAP%20المحترمة%2C%0D%0A%0D%0Aأود%20تقديم%20ورقتي%20البحثية%20لـ%20IT-RECAP%202026.%0D%0A%0D%0Aاسمي%3A%20%0D%0Aجامعتي%2Fمؤسستي%3A%20%0D%0Aمجال%20بحثي%3A%20%0D%0A%0D%0Aموضوع%20الورقة%3A%20%5Bالرجاء%20الاختيار%3A%20الأنظمة%20المستقلة%20%2F%20معالجة%20الإشارات%20%2F%20البنية%20التحتية%20الذكية%20%2F%20الذكاء%20الاصطناعي%20المتمحور%20حول%20الإنسان%20%2F%20أخرى%5D%0D%0A%0D%0Aالرجاء%20العثور%20على%20ورقتي%20البحثية%20مرفقة%20مع%20هذا%20البريد%20الإلكتروني.%0D%0A%0D%0Aمع%20أطيب%20التحيات"
+            "subject": { "en": "IT-RECAP 2026 - Paper Submission", "ar": "تقديم ورقة بحثية - IT-RECAP 2026" },
+            "body": { "en": "Dear IT-RECAP Organizing Committee,\n\nI would like to submit my paper for IT-RECAP 2026.\n\nMy name:\nMy university/organization:\nMy research field:\n\nPaper topic:\n\nPlease find my paper attached to this email.\n\nBest regards,", "ar": "لجنة تنظيم IT-RECAP المحترمة،\n\nأود تقديم ورقتي البحثية لـ IT-RECAP 2026.\n\nاسمي:\nجامعتي/مؤسستي:\nموضوع الورقة:\n\nالرجاء العثور على ورقتي البحثية مرفقة مع هذا البريد.\n\nمع أطيب التحيات،" }
         },
         "contact": {
-            "en": "mailto:itrecap@hiast.edu.sy?subject=Question%20about%20IT-RECAP%202026&body=Dear%20IT-RECAP%20Team%2C%0D%0A%0D%0AI%20have%20a%20question%20about%20IT-RECAP%202026.%0D%0A%0D%0AMy%20name%3A%20%0D%0AMy%20question%20is%20about%3A%20%5BPlease%20select%3A%20Registration%20%2F%20Paper%20Submission%20%2F%20Program%20%2F%20Venue%20%2F%20Other%5D%0D%0A%0D%0AMy%20question%3A%0D%0A%0D%0A%0D%0ABest%20regards",
-            "ar": "mailto:itrecap@hiast.edu.sy?subject=سؤال%20حول%20IT-RECAP%202026&body=فريق%20IT-RECAP%20المحترم%2C%0D%0A%0D%0Aلدي%20سؤال%20حول%20IT-RECAP%202026.%0D%0A%0D%0Aاسمي%3A%20%0D%0Aسؤالي%20يتعلق%20بـ%3A%20%5Bالرجاء%20الاختيار%3A%20التسجيل%20%2F%20تقديم%20الأوراق%20%2F%20البرنامج%20%2F%20المكان%20%2F%20أخرى%5D%0D%0A%0D%0Aسؤالي%3A%0D%0A%0D%0A%0D%0Aمع%20أطيب%20التحيات"
+            "subject": { "en": "IT-RECAP 2026 - Inquiry", "ar": "سؤال حول IT-RECAP 2026" },
+            "body": { "en": "Dear IT-RECAP Team,\n\nI have a question about IT-RECAP 2026.\n\nMy name:\nMy question:\n\nBest regards,", "ar": "فريق IT-RECAP المحترم،\n\nلدي سؤال حول IT-RECAP 2026.\n\nاسمي:\nسؤالي:\n\nمع أطيب التحيات،" }
+        },
+        "sponsor": {
+            "subject": { "en": "IT-RECAP 2026 - Sponsorship Inquiry", "ar": "رعاية IT-RECAP 2026" },
+            "body": { "en": "Dear IT-RECAP Team,\n\nWe are interested in becoming a sponsor for IT-RECAP 2026. Please provide us with more information regarding the sponsorship packages.\n\nCompany Name:\nContact Person:\n\nBest regards,", "ar": "فريق IT-RECAP المحترم،\n\nنحن مهتمون برعاية حدث IT-RECAP 2026. يرجى تزويدنا بمزيد من المعلومات حول باقات الرعاية.\n\nاسم الشركة:\nالشخص المسؤول:\n\nمع أطيب التحيات،" }
         }
     },
 
@@ -233,14 +263,6 @@ const content = {
         "rights": {
             "en": "© 2026 IT-RECAP. All rights reserved. Damascus, Syria. By Ithar KAZEM",
             "ar": "© 2026 IT-RECAP. جميع الحقوق محفوظة. دمشق، سوريا. الموقع برمجة وتصميم ايثار كاظم"
-        },
-        "menu": {
-            "about": { "en": "About", "ar": "حول" },
-            "topics": { "en": "Topics", "ar": "المواضيع" },
-            "dates": { "en": "Dates", "ar": "التواريخ" },
-            "chairs": { "en": "Chairs", "ar": "الرؤساء" },
-            "organizers": { "en": "Organizers", "ar": "المنظمون" },
-            "submission": { "en": "Submission", "ar": "التقديم" }
         }
     },
 

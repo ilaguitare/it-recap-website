@@ -5,37 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IT-RECAP 2026</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cairo:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cairo:wght@300;400;600;700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #1a4d6d;
-            --primary-light: #2a6d8f;
-            --accent: #d4af37;
-            --accent-light: #f0d98c;
-            --dark: #0f1419;
-            --text: #2c3e50;
-            --text-light: #546e7a;
-            --bg: #fafbfc;
-            --white: #ffffff;
-            --shadow: rgba(26, 77, 109, 0.1);
-            --shadow-strong: rgba(26, 77, 109, 0.2);
+            --primary: #1a4d6d; --primary-light: #2a6d8f; --accent: #d4af37; --accent-light: #f0d98c;
+            --dark: #0f1419; --text: #2c3e50; --text-light: #546e7a; --bg: #fafbfc; --white: #ffffff;
+            --shadow: rgba(26, 77, 109, 0.1); --shadow-strong: rgba(26, 77, 109, 0.2);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body { font-family: 'Work Sans', 'Cairo', sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); overflow-x: hidden; transition: all 0.3s ease; }
+        
+        /* Padding top offset to account for the sticky navbar */
+        body { font-family: 'Work Sans', 'Cairo', sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); overflow-x: hidden; transition: all 0.3s ease; padding-top: 80px; }
         body[dir="rtl"] { font-family: 'Cairo', 'Work Sans', sans-serif; }
 
-        /* Language Toggle */
-        .lang-toggle { position: fixed; top: 20px; right: 20px; z-index: 1000; background: var(--white); border-radius: 50px; box-shadow: 0 4px 20px var(--shadow); padding: 8px; display: flex; gap: 5px; direction: ltr !important; }
-        .lang-btn { padding: 10px 20px; border: none; background: transparent; color: var(--text); font-weight: 500; cursor: pointer; border-radius: 50px; transition: all 0.3s ease; font-family: inherit; }
+        /* --- NAVBAR & BURGER MENU --- */
+        .navbar { position: fixed; top: 0; left: 0; right: 0; height: 80px; background: var(--white); box-shadow: 0 2px 15px var(--shadow); z-index: 2000; display: flex; justify-content: space-between; align-items: center; padding: 0 5%; }
+        .nav-brand { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 900; color: var(--primary); text-decoration: none; }
+        
+        .nav-wrapper { display: flex; align-items: center; gap: 20px; }
+        .nav-links { display: flex; gap: 20px; list-style: none; }
+        .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; font-size: 0.95rem; transition: color 0.3s; }
+        .nav-links a:hover { color: var(--accent); }
+        
+        .burger { display: none; cursor: pointer; flex-direction: column; gap: 6px; background: none; border: none; padding: 10px; }
+        .burger span { width: 30px; height: 3px; background-color: var(--primary); transition: 0.3s; border-radius: 5px; }
+
+        .lang-toggle { background: var(--bg); border-radius: 50px; padding: 5px; display: flex; gap: 5px; direction: ltr !important; }
+        .lang-btn { padding: 8px 15px; border: none; background: transparent; color: var(--text); font-weight: 600; cursor: pointer; border-radius: 50px; transition: all 0.3s ease; font-family: inherit; font-size: 0.9rem; }
         .lang-btn.active { background: var(--primary); color: var(--white); }
-        .lang-btn:hover:not(.active) { background: var(--bg); }
+
+        @media (max-width: 992px) {
+            .burger { display: flex; }
+            .nav-links { display: none; flex-direction: column; position: absolute; top: 80px; left: 0; width: 100%; background: var(--white); padding: 20px 0; text-align: center; box-shadow: 0 10px 15px var(--shadow); }
+            .nav-links.active { display: flex; }
+            .nav-links li { padding: 10px 0; }
+        }
 
         /* Header */
-        header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: var(--white); padding: 120px 20px 80px; text-align: center; position: relative; overflow: hidden; }
+        header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%); color: var(--white); padding: 100px 20px 80px; text-align: center; position: relative; overflow: hidden; }
         header::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url('images/header-bg.jpg'); background-size: cover; background-position: center; opacity: 0.3; z-index: 0; }
         header::after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15, 20, 25, 0.5); z-index: 0; }
         .header-content { max-width: 1200px; margin: 0 auto; position: relative; z-index: 2; }
@@ -55,14 +63,17 @@
         .section-intro { text-align: center; max-width: 800px; margin: 0 auto 60px; font-size: 1.1rem; color: var(--text-light); line-height: 1.8; }
 
         /* Grids & Cards */
-        .topics-grid, .organizers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 60px; }
+        .topics-grid, .organizers-grid, .attendees-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
         .organizers-grid { gap: 40px; }
-        .topic-card, .organizer-card { background: var(--white); padding: 40px 30px; border-radius: 12px; box-shadow: 0 4px 20px var(--shadow); transition: all 0.3s ease; }
+        .topic-card, .organizer-card, .attendee-card { background: var(--white); padding: 40px 30px; border-radius: 12px; box-shadow: 0 4px 20px var(--shadow); transition: all 0.3s ease; }
         .topic-card { border-top: 4px solid var(--accent); }
-        section:nth-child(even) .topic-card, section:nth-child(even) .organizer-card { background: var(--bg); }
-        .topic-card:hover, .organizer-card:hover { transform: translateY(-8px); box-shadow: 0 12px 40px var(--shadow-strong); }
+        .attendee-card { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; border-bottom: 4px solid var(--accent-light); }
+        .attendee-icon { font-size: 3rem; margin-bottom: 15px; }
+        section:nth-child(even) .topic-card, section:nth-child(even) .organizer-card, section:nth-child(even) .attendee-card { background: var(--bg); }
+        .topic-card:hover, .organizer-card:hover, .attendee-card:hover { transform: translateY(-8px); box-shadow: 0 12px 40px var(--shadow-strong); }
+        
         .topic-number { display: inline-block; width: 50px; height: 50px; background: var(--primary); color: var(--white); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin-bottom: 20px; }
-        .topic-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary); margin-bottom: 15px; }
+        .topic-card h3, .attendee-card h3 { font-family: 'Playfair Display', serif; font-size: 1.5rem; color: var(--primary); margin-bottom: 15px; }
         .topic-card ul { list-style: none; margin-top: 15px; }
         .topic-card li { padding: 8px 0; padding-left: 25px; position: relative; color: var(--text-light); }
         body[dir="rtl"] .topic-card li { padding-left: 0; padding-right: 25px; }
@@ -84,25 +95,13 @@
 
         /* Chairs Specific */
         .chair-card { padding: 20px; text-align: center; }
-        .chair-img-container { 
-            width: 120px; 
-            height: 120px; 
-            margin: 0 auto 15px; 
-            border-radius: 50%; 
-            overflow: hidden; 
-            border: 3px solid var(--primary); 
-            background-color: var(--white); 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .chair-img { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: cover;
-        }
+        .chair-img-container { width: 120px; height: 120px; margin: 0 auto 15px; border-radius: 50%; overflow: hidden; border: 3px solid var(--primary); background-color: var(--white); display: flex; align-items: center; justify-content: center; }
+        .chair-img { width: 100%; height: 100%; object-fit: cover; }
         .chair-name { font-weight: 600; color: var(--primary); margin-bottom: 5px; font-size: 0.95rem; }
         .chair-aff { font-size: 0.85rem; color: var(--text-light); }
+
+        /* Map specific */
+        .map-container { width: 100%; height: 450px; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px var(--shadow); border: 4px solid var(--white); }
 
         /* Organizers Specific */
         .organizer-logo { width: 120px; height: 120px; background: var(--white); border: 2px solid var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; overflow: hidden; padding: 10px; }
@@ -119,12 +118,9 @@
         .carousel-btn:hover { background: var(--accent); color: var(--white); }
         .carousel-container[dir="ltr"] .carousel-btn.prev { left: 20px; right: auto; }
         .carousel-container[dir="ltr"] .carousel-btn.next { right: 20px; left: auto; }
-        @media (max-width: 768px) { .carousel-track { height: 300px; } .carousel-btn { width: 40px; height: 40px; font-size: 1.2rem; } }
 
         /* CTA Section */
         .cta-section { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%) !important; color: var(--white) !important; padding: 80px 20px; text-align: center; position: relative; overflow: hidden; }
-        .cta-section::before { display: none !important; }
-        .cta-content { position: relative; z-index: 1; }
         .cta-section h2 { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 20px; color: var(--white); }
         .cta-section p { font-size: 1.2rem; margin-bottom: 40px; opacity: 0.95; color: var(--white); }
         .cta-buttons-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
@@ -143,7 +139,6 @@
         .footer-contact { margin: 20px 0; font-size: 1rem; color: var(--accent-light); }
         .copyright { margin-top: 20px; padding-top: 30px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.9rem; }
 
-        /* Responsive Fixes */
         @media (max-width: 768px) {
             .event-info { gap: 20px; }
             .timeline::before { left: 30px; }
@@ -152,15 +147,39 @@
             body[dir="rtl"] .timeline-content { margin-left: 0; margin-right: 50px; }
             .timeline-dot { left: 30px; transform: translateX(0); }
             body[dir="rtl"] .timeline-dot { left: auto; right: 30px; }
+            .carousel-track { height: 300px; } .carousel-btn { width: 40px; height: 40px; font-size: 1.2rem; }
         }
     </style>
 </head>
 
 <body dir="ltr">
-    <div class="lang-toggle">
-        <button class="lang-btn active" onclick="setLanguage('en')">English</button>
-        <button class="lang-btn" onclick="setLanguage('ar')">العربية</button>
-    </div>
+
+    <nav class="navbar">
+        <a href="#" class="nav-brand">IT-RECAP 2026</a>
+        
+        <div class="nav-wrapper">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" id="nav-about"></a></li>
+                <li><a href="#topics" id="nav-topics"></a></li>
+                <li><a href="#dates" id="nav-dates"></a></li>
+                <li><a href="#venue" id="nav-venue"></a></li>
+                <li><a href="#chairs" id="nav-committees"></a></li>
+                <li><a href="#sponsors" id="nav-sponsors"></a></li>
+                <li><a href="#submission" id="nav-submission"></a></li>
+            </ul>
+
+            <div class="lang-toggle">
+                <button class="lang-btn active" onclick="setLanguage('en')">EN</button>
+                <button class="lang-btn" onclick="setLanguage('ar')">AR</button>
+            </div>
+
+            <button class="burger" onclick="toggleMenu()" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
     <header>
         <div class="header-content">
@@ -185,6 +204,11 @@
             <h2 id="about-title" class="section-title"></h2>
             <div id="about-text1" class="section-intro" style="margin-bottom: 30px;"></div>
             <div id="about-text2" class="section-intro"></div>
+
+            <div style="margin-top: 80px;">
+                <h2 id="attendees-title" class="section-title"></h2>
+                <div id="attendees-grid" class="attendees-grid"></div>
+            </div>
         </div>
     </section>
 
@@ -199,6 +223,16 @@
         <div class="container">
             <h2 id="dates-title" class="section-title"></h2>
             <div id="dates-timeline" class="timeline"></div>
+        </div>
+    </section>
+
+    <section id="venue">
+        <div class="container">
+            <h2 id="venue-title" class="section-title"></h2>
+            <p id="venue-text" class="section-intro"></p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106455.51410183187!2d36.20815124021571!3d33.50756778465664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e6dc413cc6a3%3A0x6b6f8a5bd1c65dc7!2sDamascus%2C%20Syria!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
     </section>
 
@@ -221,14 +255,19 @@
                     <h3 id="admin-chairs-title" style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary); text-align: center; margin-bottom: 30px;"></h3>
                     <div id="admin-chairs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center;"></div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <section id="organizers">
+    <section id="sponsors">
         <div class="container">
-            <h2 id="organizers-title" class="section-title"></h2>
+            <h2 id="sponsors-title" class="section-title"></h2>
+            <p id="sponsors-text" class="section-intro"></p>
+            <div style="text-align: center; margin-bottom: 60px;">
+                <a id="btn-sponsor" href="#" class="btn"></a>
+            </div>
+
+            <h3 id="organizers-title" style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: var(--primary); text-align: center; margin-bottom: 30px;"></h3>
             <div id="organizers-grid" class="organizers-grid"></div>
         </div>
     </section>
@@ -262,8 +301,8 @@
             <h2 id="cta-title"></h2>
             <p id="cta-subtitle"></p>
             <div class="cta-buttons-container">
-                <a id="btn-submit" class="btn"></a>
-                <a id="btn-contact" class="btn btn-secondary"></a>
+                <a id="btn-submit" href="#" class="btn"></a>
+                <a id="btn-contact" href="#" class="btn btn-secondary"></a>
             </div>
         </div>
     </section>
@@ -280,6 +319,18 @@
     <script src="content.js"></script>
 
     <script>
+        // Toggle Mobile Menu
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+
         document.addEventListener('DOMContentLoaded', () => {
             if (typeof content === 'undefined') {
                 alert("Erreur : Le fichier content.js est manquant ou contient une erreur !");
@@ -312,7 +363,21 @@
             populateFooter(lang);
         }
 
+        // Encodeur d'Email 100% sécurisé pour contourner les bugs de messagerie
+        function generateMailto(subject, bodyText) {
+            return "mailto:" + content.settings.email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(bodyText);
+        }
+
         function populateText(lang) {
+            // Navbar
+            document.getElementById('nav-about').textContent = content.nav.about[lang];
+            document.getElementById('nav-topics').textContent = content.nav.topics[lang];
+            document.getElementById('nav-dates').textContent = content.nav.dates[lang];
+            document.getElementById('nav-venue').textContent = content.nav.venue[lang];
+            document.getElementById('nav-committees').textContent = content.nav.committees[lang];
+            document.getElementById('nav-sponsors').textContent = content.nav.sponsors[lang];
+            document.getElementById('nav-submission').textContent = content.nav.submission[lang];
+
             document.getElementById('header-label').innerHTML = content.header.label[lang];
             document.getElementById('header-title').textContent = content.header.title;
             document.getElementById('header-subtitle').innerHTML = content.header.subtitle[lang];
@@ -323,34 +388,46 @@
             document.getElementById('about-text1').textContent = content.about.text1[lang];
             document.getElementById('about-text2').textContent = content.about.text2[lang];
 
+            document.getElementById('attendees-title').textContent = content.attendeesSection.title[lang];
+
             document.getElementById('topics-title').textContent = content.topicsSection.title[lang];
             document.getElementById('dates-title').textContent = content.datesSection.title[lang];
-            document.getElementById('chairs-title').textContent = content.chairsSection.title[lang];
             
+            document.getElementById('venue-title').textContent = content.venueSection.title[lang];
+            document.getElementById('venue-text').textContent = content.venueSection.text[lang];
+
+            document.getElementById('chairs-title').textContent = content.chairsSection.title[lang];
             document.getElementById('general-chairs-title').textContent = content.chairsSection.generalTitle[lang];
             document.getElementById('tpc-chairs-title').textContent = content.chairsSection.tpcTitle[lang];
             document.getElementById('admin-chairs-title').textContent = content.chairsSection.adminTitle[lang];
 
-            document.getElementById('organizers-title').textContent = content.organizersSection.title[lang];
-            document.getElementById('submission-title').textContent = content.submissionSection.title[lang];
-            document.getElementById('cultural-title').textContent = content.culturalSection.title[lang];
+            document.getElementById('sponsors-title').textContent = content.sponsorsSection.title[lang];
+            document.getElementById('sponsors-text').textContent = content.sponsorsSection.text[lang];
+            
+            const btnSponsor = document.getElementById('btn-sponsor');
+            btnSponsor.textContent = content.sponsorsSection.btn[lang];
+            btnSponsor.href = generateMailto(content.emailTemplates.sponsor.subject[lang], content.emailTemplates.sponsor.body[lang]);
 
+            document.getElementById('organizers-title').textContent = content.organizersSection.title[lang];
+            
+            document.getElementById('submission-title').textContent = content.submissionSection.title[lang];
             document.getElementById('submission-intro').textContent = content.submissionSection.intro[lang];
             document.getElementById('submission-req-title').textContent = content.submissionSection.requirementsTitle[lang];
 
             document.getElementById('cultural-text').textContent = content.culturalSection.text[lang];
+            document.getElementById('cultural-title').textContent = content.culturalSection.title[lang];
 
             document.getElementById('cta-title').textContent = content.buttons.ready[lang];
             document.getElementById('cta-subtitle').textContent = content.buttons.join[lang];
 
-            // Re-affectation des boutons avec les vrais liens mailto
+            // Re-affectation propre des boutons avec la fonction sécurisée
             const btnSubmit = document.getElementById('btn-submit');
             btnSubmit.textContent = content.buttons.submit[lang];
-            btnSubmit.setAttribute('href', content.buttonsLinks.submit[lang]);
+            btnSubmit.href = generateMailto(content.emailTemplates.submit.subject[lang], content.emailTemplates.submit.body[lang]);
 
             const btnContact = document.getElementById('btn-contact');
             btnContact.textContent = content.buttons.contact[lang];
-            btnContact.setAttribute('href', content.buttonsLinks.contact[lang]);
+            btnContact.href = generateMailto(content.emailTemplates.contact.subject[lang], content.emailTemplates.contact.body[lang]);
 
             document.getElementById('footer-logo').textContent = content.header.title;
             document.getElementById('footer-contact').innerHTML = `&#9993; <a href="mailto:${content.settings.email}" style="color:var(--accent-light); text-decoration:none;">${content.settings.email}</a> &nbsp; | &nbsp; &#9742; <span dir="ltr">${content.settings.phone}</span>`;
@@ -358,6 +435,16 @@
         }
 
         function populateLists(lang) {
+            // Attendees Grid
+            const attGrid = document.getElementById('attendees-grid');
+            attGrid.innerHTML = content.attendeesSection.list.map(att => `
+                <div class="attendee-card">
+                    <div class="attendee-icon">${att.icon}</div>
+                    <h3>${att.title[lang]}</h3>
+                </div>
+            `).join('');
+
+            // Topics Grid
             const topicsContainer = document.getElementById('topics-grid');
             topicsContainer.innerHTML = '';
             content.topicsSection.list.forEach((topic, index) => {
@@ -374,6 +461,7 @@
                 `;
             });
 
+            // Dates
             const timelineContainer = document.getElementById('dates-timeline');
             timelineContainer.innerHTML = '';
             content.datesSection.timeline.forEach(item => {
@@ -388,6 +476,7 @@
                 `;
             });
 
+            // Submissions
             const subList = document.getElementById('submission-list');
             subList.innerHTML = '';
             const paddingSide = lang === 'ar' ? 'padding-right' : 'padding-left';
@@ -404,11 +493,9 @@
             });
         }
 
-        // AUTO-GENERATION IMAGE ET FALLBACK UNKNOWN
         function populateChairs(lang) {
             const createChairHTML = (chair) => {
                 let imgSrc = chair.img;
-                
                 if (!imgSrc) {
                     let cleanName = chair.name.en.replace(/^(Dr\.|Mr\.|Ms\.|Prof\.)\s+/i, ''); 
                     cleanName = cleanName.toLowerCase().replace(/[\s_]+/g, '-').replace(/[^a-z0-9\-]/g, ''); 
@@ -481,12 +568,15 @@
         setInterval(() => moveSlide(1), 4000);
 
         // --- Animations & Smooth Scroll ---
-        // CORRECTIF: on ne cible que les liens du menu (ceux qui ont un # dans l'URL)
-        document.querySelectorAll('.footer-links a[href^="#"]').forEach(anchor => {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                // Ajuster le scroll en fonction de la navbar sticky (80px)
+                if (target) {
+                    const topPos = target.getBoundingClientRect().top + window.pageYOffset - 80;
+                    window.scrollTo({ top: topPos, behavior: 'smooth' });
+                }
             });
         });
 
@@ -500,7 +590,7 @@
         }, { threshold: 0.1 });
 
         setTimeout(() => {
-            document.querySelectorAll('.topic-card, .timeline-item, .organizer-card, .chair-card').forEach(el => {
+            document.querySelectorAll('.topic-card, .timeline-item, .organizer-card, .chair-card, .attendee-card').forEach(el => {
                 el.style.opacity = '0';
                 el.style.transform = 'translateY(30px)';
                 el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
