@@ -184,7 +184,7 @@ const content = {
                     }
                 ],
 
-                "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
+        "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
         "adminCommittee": [
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
             { "name": { "en": "Dr. Ali Kazem", "ar": "الدكتور علي كاظم" }, "aff": { "en": "Co-Chair", "ar": "معاوناً للرئيس" }, "img": "images/chairs/ali-kazem.jpg" },
