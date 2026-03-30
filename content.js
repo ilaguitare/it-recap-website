@@ -171,7 +171,7 @@ const content = {
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
                     { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Damascus University", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
                     { "name": { "en": "Rami Yared", "ar": "رامي يارد" }, "aff": { "en": "Arab International University", "ar": "الجامعة العربية الدولية" }, "img": "images/chairs/rami-yared.jpg" },
-                    { "name": { "en": "Sevil Şen", "ar": "سيفيل سين" }, "aff": { "en": " Hacettepe University-Ankara", "ar": " أنقرة-Hacettepe جامعة" }, "img": "images/chairs/iyad-dayoub.jpg" },
+                    { "name": { "en": "Sevil Şen", "ar": "سيفيل سين" }, "aff": { "en": " Hacettepe University-Ankara", "ar": " أنقرة-Hacettepe جامعة" }, "img": "images/chairs/sevil-sen.jpg" },
                     { "name": { "en": "Ahmad Al Farra", "ar": "أحمد الفرا" }, "aff": { "en": "TotalEnergies, France", "ar": "TotalEnergies، فرنسا" }, "img": "images/chairs/ahmad-alfarra.jpg" },
                 ]
             },
