@@ -133,7 +133,8 @@ const content = {
                 // --- NOUVEAU : TPC divisé en 4 catégories ---
                 "tpcTracks": [
                     {
-                        "trackName": { "en": "Track 1: Autonomous Systems for Reconstruction", "ar": "المسار 1: الأنظمة المستقلة لإعادة الإعمار" },
+                   //     "trackName": { "en": "Track 1: Autonomous Systems for Reconstruction", "ar": "المسار 1: الأنظمة المستقلة لإعادة الإعمار" },
+                        "trackName": { "en": "Track 2: Intelligent Signal Processing and Sensing", "ar": "المسار 2: معالجة الإشارات الذكية والاستشعار" },
                         "chairs": [
                             { "name": { "en": "Irfan Hussain", "ar": "عرفان حسين" }, "aff": { "en": "Khalifa University, Abu Dhabi, UAE ", "ar": "جامعة خليفة-أبو ظبي-الإمارات العربية المتحدة" }, "img": "images/chairs/irfan-hussain.jpg" },
                             { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
@@ -150,7 +151,7 @@ const content = {
                     {
                         "trackName": { "en": "Track 2: Intelligent Signal Processing and Sensing", "ar": "المسار 2: معالجة الإشارات الذكية والاستشعار" },
                         "chairs": [
-                            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "- حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
+                            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
                             { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
                             { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
                             { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
