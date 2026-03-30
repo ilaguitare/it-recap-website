@@ -139,7 +139,7 @@ const content = {
                             { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
                             { "name": { "en": "Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": "جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
                             { "name": { "en": "Ramez Koudsieh", "ar": "رامز قدسية" }, "aff": { "en": "Manara University, Syria", "ar": "جامعة المنارة-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" },
-                            { "name": { "en": "Abdul Aziz Shaqifah", "ar": "عبد العزيز شقيغة" }, "aff": { "en": "Ittihad Private University, Syria", "ar": "جامعة الاتحاد الخاصة" }, "img": "images/chairs/ramez-koudsiah.jpg" },
+                            { "name": { "en": "Abdul Aziz Shaqifah", "ar": "عبد العزيز شقيغة" }, "aff": { "en": "Ittihad Private University, Syria", "ar": "جامعة الاتحاد الخاصة" }, "img": "images/chairs/abdulaziz-shaqifah.jpg" },
                             { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
                             { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
                             { "name": { "en": "Iyad Alusta Halabi", "ar": "إياد الاسطة حلبي" }, "aff": { "en": "Alastool Oil Field Company, UAE", "ar": "شركة الأسطول، الإمارات" }, "img": "images/chairs/iyad-halabi.jpg" },
@@ -150,7 +150,7 @@ const content = {
                     {
                         "trackName": { "en": "Track 2: Intelligent Signal Processing and Sensing", "ar": "المسار 2: معالجة الإشارات الذكية والاستشعار" },
                         "chairs": [
-                            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France", "ar": "LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
+                            { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "- حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
                             { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
                             { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
                             { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
