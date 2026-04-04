@@ -179,7 +179,8 @@ const content = {
                 "trackName": { "en": "Track 4: Human-Centric AI and Strategic Planning", "ar": "المسار 4: الذكاء الاصطناعي المتمحور حول الإنسان" },
                 "chairs": [
                     { "name": { "en": "Talal Aboud", "ar": "طلال عبود" }, "aff": { "en": "Higher Institute of Business Administration (HIBA)", "ar": "المعهد العالي لإدارة الأعمال" }, "img": "images/chairs/talal-aboud.jpg" },
-                    { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" } },
+                    { "name": { "en": "Samer dakak", "ar": "سامر الدقاق" }, "aff": { "en": "HAIST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجبا-دمشق" } },
+                    { "name": { "en": "Sabri Mourad", "ar": "صبري مراد" }, "aff": { "en": "Châtenois, Grand Est, France", "ar": "شاتينوا، غراند إيست، فرنسا" }, "img": "images/chairs/sabri-mourad.jpg"  },
                     { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
                     { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
                 ]
@@ -191,12 +192,12 @@ const content = {
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
             { "name": { "en": "Dr. Ali Kazem", "ar": "الدكتور علي كاظم" }, "aff": { "en": "Co-Chair", "ar": "معاوناً للرئيس" }, "img": "images/chairs/ali-kazem.jpg" },
             { "name": { "en": "Dr. Yomen atassi", "ar": "الدكتورة يمن السيد سليمان الأتاسي" }, "aff": { "en": "Member", "ar": "عضواً" } },
-            { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" } },
-            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Dr. Khaldoun Khorzom", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" } }
+            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } },
         ]
     },
 
