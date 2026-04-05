@@ -138,6 +138,7 @@ const content = {
                 "chairs": [
                     { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
                     { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
+                    { "name": { "en": "Ammar Joukhadar", "ar": "عمار جوخدار" }, "aff": { "en": "Damascus University-Damascus", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/ammar-joukhdar.jpg" },
                     { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
                     { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
                     { "name": { "en": "Bassam Kurdy", "ar": "بسام كردي" }, "aff": { "en": "Mines ParisTech, France", "ar": "باريس، فرنسا" }, "img": "images/chairs/bassam-kurdy.jpg" },
@@ -179,7 +180,7 @@ const content = {
                 "trackName": { "en": "Track 4: Human-Centric AI and Strategic Planning", "ar": "المسار 4: الذكاء الاصطناعي المتمحور حول الإنسان" },
                 "chairs": [
                     { "name": { "en": "Talal Aboud", "ar": "طلال عبود" }, "aff": { "en": "Higher Institute of Business Administration (HIBA)", "ar": "المعهد العالي لإدارة الأعمال" }, "img": "images/chairs/talal-aboud.jpg" },
-                    { "name": { "en": "Samer dakak", "ar": "سامر الدقاق" }, "aff": { "en": "HAIST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجبا-دمشق" }, "img": "images/chairs/samer-dakak.jpg" },
+                    { "name": { "en": "Samer dakak", "ar": "سامر الدقاق" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجبا-دمشق" }, "img": "images/chairs/samer-dakak.jpg" },
                     { "name": { "en": "Sabri Mourad", "ar": "صبري مراد" }, "aff": { "en": "Châtenois, Grand Est, France", "ar": "شاتينوا، غراند إيست، فرنسا" }, "img": "images/chairs/sabri-mourad.jpg" },
                     { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" },  "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
                     { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
@@ -211,7 +212,6 @@ const content = {
             { "name": { "en": "ASAST", "ar": "ASAST" }, "desc": { "en": "Arab School of Science and Technology", "ar": "المدرسة العربية للعلوم والتكنولوجيا" }, "logo": "images/asast.png" },
             { "name": { "en": "SCS", "ar": "SCS" }, "desc": { "en": "Syrian Computer Society", "ar": "الجمعية العلمية السورية للمعلوماتية" }, "logo": "images/scs.jpg" },
             { "name": { "en": "IPU", "ar": "IPU" }, "desc": { "en": "Ithad Private University", "ar": "جامعة الاتحاد الخاصة" }, "logo": "images/ipu.png" },
-            { "name": { "en": "IEEE", "ar": "IEEE" }, "desc": { "en": "IEEE Tunisia Section (Technical Co-Sponsorship)", "ar": "قسم IEEE تونس (الرعاية الفنية)" }, "logo": "images/ieee.png" }
         ]
     },
 
