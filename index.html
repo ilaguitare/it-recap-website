@@ -166,6 +166,8 @@
                 <li><a href="#chairs" id="nav-committees"></a></li>
                 <li><a href="#sponsors" id="nav-sponsors"></a></li>
                 <li><a href="#submission" id="nav-submission"></a></li>
+                <li><a href="#registration" id="nav-registration"></a></li>
+                <li><a href="#travel" id="nav-travel"></a></li>
             </ul>
 
             <div class="lang-toggle">
@@ -204,6 +206,10 @@
             <h2 id="about-title" class="section-title"></h2>
             <div id="about-text1" class="section-intro" style="margin-bottom: 30px;"></div>
             <div id="about-text2" class="section-intro"></div>
+            <div style="text-align: center; margin: 40px auto; padding: 20px; background: rgba(212, 175, 55, 0.1); border-left: 4px solid var(--accent); max-width: 800px;">
+                <h3 id="about-why-title" style="color: var(--primary); margin-bottom: 10px;"></h3>
+                <p id="about-why-text" style="font-weight: 600; font-size: 1.2rem;"></p>
+            </div>
 
             <div style="margin-top: 80px;">
                 <h2 id="attendees-title" class="section-title"></h2>
@@ -277,12 +283,29 @@
             <h2 id="submission-title" class="section-title"></h2>
             <div class="section-intro">
                 <p id="submission-intro" style="margin-bottom: 20px;"></p>
+                <p id="submission-ieee" style="color: var(--primary); font-weight: bold; margin-bottom: 20px;"></p>
+                                <div style="margin-bottom: 40px;">
+                                    <a id="btn-template" href="#" class="btn" style="padding: 12px 30px; font-size: 1rem;" target="_blank"></a>
+                                </div>
                 <p><strong id="submission-req-title"></strong></p>
                 <ul id="submission-list" style="max-width: 600px; margin: 0 auto; list-style: none;"></ul>
             </div>
         </div>
     </section>
+    <section id="registration">
+            <div class="container">
+                <h2 id="registration-title" class="section-title"></h2>
+                <div id="registration-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; text-align: center; margin-top: 40px;">
+                    </div>
+            </div>
+        </section>
 
+        <section id="travel">
+            <div class="container">
+                <h2 id="travel-title" class="section-title"></h2>
+                <div id="travel-text" class="section-intro" style="max-width: 800px; padding: 30px; background: var(--white); box-shadow: 0 4px 20px var(--shadow); border-radius: 12px; margin: 0 auto;"></div>
+            </div>
+        </section>
     <section id="cultural">
         <div class="container">
             <h2 id="cultural-title" class="section-title"></h2>
@@ -310,7 +333,10 @@
     <footer>
         <div class="footer-content">
             <div id="footer-logo" class="footer-logo"></div>
-            <div id="footer-links" class="footer-links"></div>
+                <div style="margin-bottom: 20px;">
+                    <a id="footer-linkedin" href="#" target="_blank" style="color: var(--white); background: #0077b5; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-weight: bold;">in LinkedIn</a>
+                </div>
+                <div id="footer-links" class="footer-links"></div>
             <p id="footer-contact" class="footer-contact"></p>
             <div id="copyright" class="copyright"></div>
         </div>
@@ -426,6 +452,12 @@
                     setTxt('cta-title', content.buttons?.ready[lang]);
                     setTxt('cta-subtitle', content.buttons?.join[lang]);
 
+                    setTxt('nav-registration', content.nav?.registration[lang]);
+                    setTxt('nav-travel', content.nav?.travel[lang]);
+
+                    setTxt('about-why-title', content.about?.whyTitle[lang]);
+                    setTxt('about-why-text', content.about?.whyText[lang]);
+
                     const btnSponsor = document.getElementById('btn-sponsor');
                     if (btnSponsor && content.emailTemplates) {
                         btnSponsor.textContent = content.sponsorsSection?.btn[lang];
@@ -443,6 +475,22 @@
                         btnContact.textContent = content.buttons?.contact[lang];
                         btnContact.href = generateMailto(content.emailTemplates.contact.subject[lang], content.emailTemplates.contact.body[lang]);
                     }
+                    // IEEE et Template
+                                setTxt('submission-ieee', content.submissionSection?.ieeeNote[lang]);
+                                const btnTemplate = document.getElementById('btn-template');
+                                if (btnTemplate) {
+                                    btnTemplate.textContent = content.submissionSection?.templateBtn[lang];
+                                    btnTemplate.href = content.submissionSection?.templateLink;
+                                }
+
+                                // Registration et Travel
+                                setTxt('registration-title', content.registrationSection?.title[lang]);
+                                setTxt('travel-title', content.travelSection?.title[lang]);
+                                setTxt('travel-text', content.travelSection?.text[lang]);
+
+                                // LinkedIn
+                                const lnk = document.getElementById('footer-linkedin');
+                                if (lnk) lnk.href = content.settings?.linkedin;
 
                     setTxt('footer-logo', content.header?.title);
                     setHtml('footer-contact', `✉ <a href="mailto:${content.settings?.email}" style="color:var(--accent-light); text-decoration:none;">${content.settings?.email}</a> &nbsp; | &nbsp; ☎ <span dir="ltr">${content.settings?.phone}</span>`);
@@ -508,6 +556,17 @@
                             `;
                         });
                     }
+
+                    // Tarifs d'inscription (Registration Fees)
+                                const regGrid = document.getElementById('registration-grid');
+                                if (regGrid && content.registrationSection?.tiers) {
+                                    regGrid.innerHTML = content.registrationSection.tiers.map(tier => `
+                                        <div style="background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px var(--shadow); border-top: 4px solid var(--primary);">
+                                            <h3 style="color: var(--text-light); font-size: 1.1rem; margin-bottom: 15px;">${tier.name[lang]}</h3>
+                                            <p style="color: var(--primary); font-size: 1.8rem; font-weight: 700; font-family: 'Playfair Display', serif;">${tier.price}</p>
+                                        </div>
+                                    `).join('');
+                                }
                 }
 
                 function populateChairs(lang) {
