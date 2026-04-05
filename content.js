@@ -1,21 +1,21 @@
 const content = {
-    // --- Configuration Globale ---
     "settings": {
-        "defaultLang": "en",
-        "email": "itrecap@hiast.edu.sy",
-        "phone": "0963-11-5140030"
-    },
-
-    // --- Navigation (Menu) ---
-    "nav": {
-        "about": { "en": "About", "ar": "حول" },
-        "topics": { "en": "Topics", "ar": "المواضيع" },
-        "dates": { "en": "Dates", "ar": "التواريخ" },
-        "venue": { "en": "Venue", "ar": "المكان" },
-        "committees": { "en": "Committees", "ar": "اللجان" },
-        "sponsors": { "en": "Sponsors", "ar": "الرعاة" },
-        "submission": { "en": "Registration", "ar": "التسجيل" }
-    },
+            "defaultLang": "en",
+            "email": "itrecap@hiast.edu.sy",
+            "phone": "0963-11-5140030",
+            "linkedin": "https://www.linkedin.com/" 
+        },
+        "nav": {
+            "about": { "en": "About", "ar": "حول" },
+            "topics": { "en": "Topics", "ar": "المواضيع" },
+            "dates": { "en": "Dates", "ar": "التواريخ" },
+            "venue": { "en": "Venue", "ar": "المكان" },
+            "committees": { "en": "Committees", "ar": "اللجان" },
+            "sponsors": { "en": "Sponsors", "ar": "الرعاة" },
+            "submission": { "en": "Registration", "ar": "التسجيل" },
+            "travel": { "en": "Travel & Visa", "ar": "السفر والتأشيرة" },
+            "registration": { "en": "Fees", "ar": "الرسوم" }
+        },
 
     // --- En-tête (Header) ---
     "header": {
@@ -32,6 +32,8 @@ const content = {
     // --- Section À Propos (About) ---
     "about": {
         "title": { "en": "About the Workshop", "ar": "حول ورشة العمل" },
+                "whyTitle": { "en": "Why IT-RECAP?", "ar": "لماذا IT-RECAP؟" },
+                "whyText": { "en": "Bridging the gap between cutting-edge AI research and practical post-conflict reconstruction.", "ar": "سد الفجوة بين أبحاث الذكاء الاصطناعي المتطورة وإعادة الإعمار العملي بعد الصراعات." },
         "text1": {
             "en": "In an era defined by rapid environmental changes and the need for post-conflict recovery, the rehabilitation of social, economic, and educational structures is a global priority. This workshop centers on the intersection of Smart Planning, Advanced Technology, and Capacity Building. The aim is to highlight how integrated approaches, utilizing Artificial Intelligence, Big Data, and Robotics, can revolutionize the way we rebuild communities affected by disasters and conflict.",
             "ar": "في عصر يتميز بالتغيرات البيئية السريعة والحاجة إلى التعافي بعد الصراعات، أصبحت إعادة تأهيل الهياكل الاجتماعية والاقتصادية والتعليمية أولوية عالمية. تركز ورشة العمل هذه على تقاطع التخطيط الذكي والتكنولوجيا المتقدمة وبناء القدرات. الهدف هو تسليط الضوء على كيفية قيام النهج المتكاملة، باستخدام الذكاء الاصطناعي والبيانات الضخمة والروبوتات، بإحداث ثورة في الطريقة التي نعيد بها بناء المجتمعات المتأثرة بالكوارث والصراعات."
@@ -227,11 +229,11 @@ const content = {
 
     // --- Soumission ---
     "submissionSection": {
-        "title": { "en": "Submission & Registration", "ar": "إرشادات التقديم والتسجيل" },
-        "intro": {
-            "en": "The program committee invites authors to submit original, unpublished papers to be peer-reviewed for technical quality and relevance.",
-            "ar": "تدعو لجنة البرنامج المؤلفين إلى تقديم أوراق بحثية أصلية وغير منشورة ليتم مراجعتها من قبل الأقران."
-        },
+            "title": { "en": "Submission Guidelines", "ar": "إرشادات التقديم" },
+            "intro": { "en": "The program committee invites authors to submit...", "ar": "تدعو لجنة البرنامج المؤلفين..." },
+            "ieeeNote": { "en": "Accepted papers will be submitted for inclusion into IEEE Xplore.", "ar": "سيتم تقديم الأوراق المقبولة للإدراج في مكتبة IEEE Xplore." }, // <-- NOUVEAU
+            "templateBtn": { "en": "Download Paper Template", "ar": "تحميل قالب الورقة" }, // <-- NOUVEAU
+            "templateLink": "lien_vers_le_fichier_word.docx", // <-- NOUVEAU: Mets le vrai lien du template ici
         "requirementsTitle": { "en": "Requirements:", "ar": "المتطلبات:" },
         "requirements": {
             "en": [
@@ -248,7 +250,25 @@ const content = {
             ]
         }
     },
+    // --- NOUVEAU: Frais d'inscription ---
+        "registrationSection": {
+            "title": { "en": "Registration Fees", "ar": "رسوم التسجيل" },
+            "tiers": [
+                { "name": { "en": "International Author", "ar": "مؤلف دولي" }, "price": "$000" },
+                { "name": { "en": "Local Author", "ar": "مؤلف محلي" }, "price": "000 SYP" },
+                { "name": { "en": "Student", "ar": "طالب" }, "price": "$000 / 000 SYP" },
+                { "name": { "en": "Online Attendee", "ar": "حضور عبر الإنترنت" }, "price": "$000" }
+            ]
+        },
 
+        // --- NOUVEAU: Visa et Voyage ---
+        "travelSection": {
+            "title": { "en": "Travel & Visa Information", "ar": "معلومات السفر والتأشيرة" },
+            "text": { 
+                "en": "International participants requiring a visa to enter Syria will receive an official invitation letter upon registration. We provide full support for local logistics and security to ensure a safe and productive stay in Damascus.", 
+                "ar": "سيحصل المشاركون الدوليون الذين يحتاجون إلى تأشيرة لدخول سوريا على رسالة دعوة رسمية عند التسجيل. نحن نقدم الدعم الكامل للخدمات اللوجستية المحلية والأمن لضمان إقامة آمنة ومثمرة في دمشق." 
+            }
+        },
     // --- Programme Culturel ---
     "culturalSection": {
         "title": { "en": "Cultural Program", "ar": "البرنامج الثقافي" },
