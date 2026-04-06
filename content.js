@@ -3,7 +3,7 @@ const content = {
             "defaultLang": "en",
             "email": "itrecap@hiast.edu.sy",
             "phone": "0963-11-5140030",
-            "linkedin": "https://www.linkedin.com/" 
+            "linkedin": "https://www.linkedin.com/event/manage/7446631711624421376/" 
         },
         "nav": {
             "about": { "en": "About", "ar": "حول" },
