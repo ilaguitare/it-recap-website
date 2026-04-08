@@ -140,6 +140,7 @@ const content = {
                 "chairs": [
                     { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
                     { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
+  //                  { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/ali-kazem.jpg" },
                     { "name": { "en": "Ammar Joukhadar", "ar": "عمار جوخدار" }, "aff": { "en": "Damascus University-Damascus", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/ammar-joukhadar.jpg" },
                     { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
                     { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
@@ -170,6 +171,7 @@ const content = {
             {
                 "trackName": { "en": "Track 3: Smart Infrastructure and Resilient Networks", "ar": "المسار 3: البنية التحتية الذكية والشبكات المرنة" },
                 "chairs": [
+   //                 { "name": { "en": "Mohamed-Ali Alsayed-Ali", "ar": "محمد علي السيد علي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
                     { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
                     { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
