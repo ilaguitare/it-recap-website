@@ -163,7 +163,8 @@ const content = {
                     { "name": { "en": "Mussaab ALShbib", "ar": "مصعب الشبيب" }, "aff": { "en": "Faculty of Electrical and Electronics Engineering-Alep University", "ar": "كلية الهندسة الكهربائية والالكترونية-جامعة حلب" }, "img": "images/chairs/mussaab-alshbib.jpg" },
                     { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
                     { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
-                    { "name": { "en": "Iyad Alusta Halabi", "ar": "إياد الاسطة حلبي" }, "aff": { "en": "Alastool Oil Field Company, UAE", "ar": "شركة الأسطول، الإمارات" }, "img": "images/chairs/iyad-halabi.jpg" },
+                    { "name": { "en": "Mussaab ALShbib", "ar": "مصعب الشبيب" }, "aff": { "en": "Faculty of Electrical and Electronics Engineering-Alep University", "ar": "كلية الهندسة الكهربائية والالكترونية-جامعة حلب" }, "img": "images/chairs/mussaab-alshbib.jpg" },
+                    { "name": { "en": "Mohamad Malik Naanaa", "ar": "محمد مالك نعناع" }, "aff": { "en": "Cordoba Private university", "ar": "جامعة قرطبة الخاصة" }, "img": "images/chairs/malik-naanaa.jpg" },
                     { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
                     { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
                 ]
