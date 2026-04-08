@@ -1,21 +1,21 @@
 const content = {
     "settings": {
-            "defaultLang": "en",
-            "email": "itrecap@hiast.edu.sy",
-            "phone": "0963-11-5140030",
-            "linkedin": "https://www.linkedin.com/event/manage/7446631711624421376/" 
-        },
-        "nav": {
-            "about": { "en": "About", "ar": "حول" },
-            "topics": { "en": "Topics", "ar": "المواضيع" },
-            "dates": { "en": "Dates", "ar": "التواريخ" },
-            "venue": { "en": "Venue", "ar": "المكان" },
-            "committees": { "en": "Committees", "ar": "اللجان" },
-            "sponsors": { "en": "Sponsors", "ar": "الرعاة" },
-            "submission": { "en": "Registration", "ar": "التسجيل" },
-            "travel": { "en": "Travel & Visa", "ar": "السفر والتأشيرة" },
-            "registration": { "en": "Fees", "ar": "الرسوم" }
-        },
+        "defaultLang": "en",
+        "email": "itrecap@hiast.edu.sy",
+        "phone": "0963-11-5140030",
+        "linkedin": "https://www.linkedin.com/event/manage/7446631711624421376/"
+    },
+    "nav": {
+        "about": { "en": "About", "ar": "حول" },
+        "topics": { "en": "Topics", "ar": "المواضيع" },
+        "dates": { "en": "Dates", "ar": "التواريخ" },
+        "venue": { "en": "Venue", "ar": "المكان" },
+        "committees": { "en": "Committees", "ar": "اللجان" },
+        "sponsors": { "en": "Sponsors", "ar": "الرعاة" },
+        "submission": { "en": "Registration", "ar": "التسجيل" },
+        "travel": { "en": "Travel & Visa", "ar": "السفر والتأشيرة" },
+        "registration": { "en": "Fees", "ar": "الرسوم" }
+    },
 
     // --- En-tête (Header) ---
     "header": {
@@ -32,8 +32,8 @@ const content = {
     // --- Section À Propos (About) ---
     "about": {
         "title": { "en": "About the Workshop", "ar": "حول ورشة العمل" },
-                "whyTitle": { "en": "Why IT-RECAP?", "ar": "لماذا IT-RECAP؟" },
-                "whyText": { "en": "Bridging the gap between cutting-edge AI research and practical post-conflict reconstruction.", "ar": "سد الفجوة بين أبحاث الذكاء الاصطناعي المتطورة وإعادة الإعمار العملي بعد الصراعات." },
+        "whyTitle": { "en": "Why IT-RECAP?", "ar": "لماذا IT-RECAP؟" },
+        "whyText": { "en": "Bridging the gap between cutting-edge AI research and practical post-conflict reconstruction.", "ar": "سد الفجوة بين أبحاث الذكاء الاصطناعي المتطورة وإعادة الإعمار العملي بعد الصراعات." },
         "text1": {
             "en": "In an era defined by rapid environmental changes and the need for post-conflict recovery, the rehabilitation of social, economic, and educational structures is a global priority. This workshop centers on the intersection of Smart Planning, Advanced Technology, and Capacity Building. The aim is to highlight how integrated approaches, utilizing Artificial Intelligence, Big Data, and Robotics, can revolutionize the way we rebuild communities affected by disasters and conflict.",
             "ar": "في عصر يتميز بالتغيرات البيئية السريعة والحاجة إلى التعافي بعد الصراعات، أصبحت إعادة تأهيل الهياكل الاجتماعية والاقتصادية والتعليمية أولوية عالمية. تركز ورشة العمل هذه على تقاطع التخطيط الذكي والتكنولوجيا المتقدمة وبناء القدرات. الهدف هو تسليط الضوء على كيفية قيام النهج المتكاملة، باستخدام الذكاء الاصطناعي والبيانات الضخمة والروبوتات، بإحداث ثورة في الطريقة التي نعيد بها بناء المجتمعات المتأثرة بالكوارث والصراعات."
@@ -140,7 +140,7 @@ const content = {
                 "chairs": [
                     { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
                     { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
-  //                  { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/ali-kazem.jpg" },
+                    //                  { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/ali-kazem.jpg" },
                     { "name": { "en": "Ammar Joukhadar", "ar": "عمار جوخدار" }, "aff": { "en": "Damascus University-Damascus", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/ammar-joukhadar.jpg" },
                     { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
                     { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
@@ -172,7 +172,7 @@ const content = {
             {
                 "trackName": { "en": "Track 3: Smart Infrastructure and Resilient Networks", "ar": "المسار 3: البنية التحتية الذكية والشبكات المرنة" },
                 "chairs": [
-   //                 { "name": { "en": "Mohamed-Ali Alsayed-Ali", "ar": "محمد علي السيد علي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
+                    //                 { "name": { "en": "Mohamed-Ali Alsayed-Ali", "ar": "محمد علي السيد علي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
                     { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
                     { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
@@ -188,7 +188,7 @@ const content = {
                     { "name": { "en": "Talal Aboud", "ar": "طلال عبود" }, "aff": { "en": "Higher Institute of Business Administration (HIBA)", "ar": "المعهد العالي لإدارة الأعمال" }, "img": "images/chairs/talal-aboud.jpg" },
                     { "name": { "en": "Samer dakak", "ar": "سامر الدقاق" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجبا-دمشق" }, "img": "images/chairs/samer-dakak.jpg" },
                     { "name": { "en": "Sabri Mourad", "ar": "صبري مراد" }, "aff": { "en": "Châtenois, Grand Est, France", "ar": "شاتينوا، غراند إيست، فرنسا" }, "img": "images/chairs/sabri-mourad.jpg" },
-                    { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" },  "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
+                    { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
                     { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
                 ]
             }
@@ -233,11 +233,11 @@ const content = {
 
     // --- Soumission ---
     "submissionSection": {
-            "title": { "en": "Submission Guidelines", "ar": "إرشادات التقديم" },
-            "intro": { "en": "The program committee invites authors to submit...", "ar": "تدعو لجنة البرنامج المؤلفين..." },
-            "ieeeNote": { "en": "Accepted papers will be submitted for inclusion into IEEE Xplore.", "ar": "سيتم تقديم الأوراق المقبولة للإدراج في مكتبة IEEE Xplore." }, // <-- NOUVEAU
-            "templateBtn": { "en": "Download Paper Template", "ar": "تحميل قالب الورقة" }, // <-- NOUVEAU
-            "templateLink": "lien_vers_le_fichier_word.docx", // <-- NOUVEAU: Mets le vrai lien du template ici
+        "title": { "en": "Submission Guidelines", "ar": "إرشادات التقديم" },
+        "intro": { "en": "The program committee invites authors to submit...", "ar": "تدعو لجنة البرنامج المؤلفين..." },
+        "ieeeNote": { "en": "Accepted papers will be submitted for inclusion into IEEE Xplore.", "ar": "سيتم تقديم الأوراق المقبولة للإدراج في مكتبة IEEE Xplore." }, // <-- NOUVEAU
+        "templateBtn": { "en": "Download Paper Template", "ar": "تحميل قالب الورقة" }, // <-- NOUVEAU
+        "templateLink": "lien_vers_le_fichier_word.docx", // <-- NOUVEAU: Mets le vrai lien du template ici
         "requirementsTitle": { "en": "Requirements:", "ar": "المتطلبات:" },
         "requirements": {
             "en": [
@@ -255,24 +255,24 @@ const content = {
         }
     },
     // --- NOUVEAU: Frais d'inscription ---
-        "registrationSection": {
-            "title": { "en": "Registration Fees", "ar": "رسوم التسجيل" },
-            "tiers": [
-                { "name": { "en": "International Author", "ar": "مؤلف دولي" }, "price": "$000" },
-                { "name": { "en": "Local Author", "ar": "مؤلف محلي" }, "price": "000 SYP" },
-                { "name": { "en": "Student", "ar": "طالب" }, "price": "$000 / 000 SYP" },
-                { "name": { "en": "Online Attendee", "ar": "حضور عبر الإنترنت" }, "price": "$000" }
-            ]
-        },
+    "registrationSection": {
+        "title": { "en": "Registration Fees", "ar": "رسوم التسجيل" },
+        "tiers": [
+            { "name": { "en": "International Author", "ar": "مؤلف دولي" }, "price": "$000" },
+            { "name": { "en": "Local Author", "ar": "مؤلف محلي" }, "price": "000 SYP" },
+            { "name": { "en": "Student", "ar": "طالب" }, "price": "$000 / 000 SYP" },
+            { "name": { "en": "Online Attendee", "ar": "حضور عبر الإنترنت" }, "price": "$000" }
+        ]
+    },
 
-        // --- NOUVEAU: Visa et Voyage ---
-        "travelSection": {
-            "title": { "en": "Travel & Visa Information", "ar": "معلومات السفر والتأشيرة" },
-            "text": { 
-                "en": "International participants requiring a visa to enter Syria will receive an official invitation letter upon registration. We provide full support for local logistics and security to ensure a safe and productive stay in Damascus.", 
-                "ar": "سيحصل المشاركون الدوليون الذين يحتاجون إلى تأشيرة لدخول سوريا على رسالة دعوة رسمية عند التسجيل. نحن نقدم الدعم الكامل للخدمات اللوجستية المحلية والأمن لضمان إقامة آمنة ومثمرة في دمشق." 
-            }
-        },
+    // --- NOUVEAU: Visa et Voyage ---
+    "travelSection": {
+        "title": { "en": "Travel & Visa Information", "ar": "معلومات السفر والتأشيرة" },
+        "text": {
+            "en": "International participants requiring a visa to enter Syria will receive an official invitation letter upon registration. We provide full support for local logistics and security to ensure a safe and productive stay in Damascus.",
+            "ar": "سيحصل المشاركون الدوليون الذين يحتاجون إلى تأشيرة لدخول سوريا على رسالة دعوة رسمية عند التسجيل. نحن نقدم الدعم الكامل للخدمات اللوجستية المحلية والأمن لضمان إقامة آمنة ومثمرة في دمشق."
+        }
+    },
     // --- Programme Culturel ---
     "culturalSection": {
         "title": { "en": "Cultural Program", "ar": "البرنامج الثقافي" },
