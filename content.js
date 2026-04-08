@@ -136,7 +136,7 @@ const content = {
         "tpcTracks": [
             {
                 //     "trackName": { "en": "Track 1: Autonomous Systems for Reconstruction", "ar": "المسار 1: الأنظمة المستقلة لإعادة الإعمار" },
-                "trackName": { "en": "Track 1: Intelligent Signal Processing and Sensing", "ar": "المسار 2: معالجة الإشارات الذكية والاستشعار" },
+                "trackName": { "en": "Track 1: Intelligent Signal Processing and Sensing", "ar": "المسار 1: معالجة الإشارات الذكية والاستشعار" },
                 "chairs": [
                     { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
                     { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
@@ -153,14 +153,13 @@ const content = {
             },
             {
                 //        "trackName": { "en": "Track 2: Intelligent Signal Processing and Sensing", "ar": "المسار 2: معالجة الإشارات الذكية والاستشعار" },
-                "trackName": { "en": "Track 2: Autonomous Systems for Reconstruction", "ar": "المسار 1: الأنظمة المستقلة لإعادة الإعمار" },
+                "trackName": { "en": "Track 2: Autonomous Systems for Reconstruction", "ar": "المسار 2: الأنظمة المستقلة لإعادة الإعمار" },
                 "chairs": [
                     { "name": { "en": "Irfan Hussain", "ar": "عرفان حسين" }, "aff": { "en": "Khalifa University, Abu Dhabi, UAE ", "ar": "جامعة خليفة-أبو ظبي-الإمارات العربية المتحدة" }, "img": "images/chairs/irfan-hussain.jpg" },
                     { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
                     { "name": { "en": "Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": "جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
                     { "name": { "en": "Ramez Koudsieh", "ar": "رامز قدسية" }, "aff": { "en": "Manara University, Syria", "ar": "جامعة المنارة-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" },
                     { "name": { "en": "Abdul Aziz Shaqifah", "ar": "عبد العزيز شقيغة" }, "aff": { "en": "Ittihad Private University, Syria", "ar": "جامعة الاتحاد الخاصة" }, "img": "images/chairs/abdulaziz-shaqifah.jpg" },
-                    { "name": { "en": "Mussaab ALShbib", "ar": "مصعب الشبيب" }, "aff": { "en": "Faculty of Electrical and Electronics Engineering-Alep University", "ar": "كلية الهندسة الكهربائية والالكترونية-جامعة حلب" }, "img": "images/chairs/mussaab-alshbib.jpg" },
                     { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
                     { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
                     { "name": { "en": "Mussaab ALShbib", "ar": "مصعب الشبيب" }, "aff": { "en": "Faculty of Electrical and Electronics Engineering-Alep University", "ar": "كلية الهندسة الكهربائية والالكترونية-جامعة حلب" }, "img": "images/chairs/mussaab-alshbib.jpg" },
