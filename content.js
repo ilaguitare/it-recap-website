@@ -193,7 +193,6 @@ const content = {
                 ]
             }
         ],
-
         "adminTitle": { "en": "Administrative Committee", "ar": "اللجنة الإدارية" },
         "adminCommittee": [
             { "name": { "en": "Dr. Mohamed-Ali Alsayed-Ali", "ar": "الدكتور محمد علي السيد علي" }, "aff": { "en": "Chair", "ar": "رئيساً" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
@@ -205,7 +204,7 @@ const content = {
             { "name": { "en": "Dr. Iyad Zoukar", "ar": "الدكتور إياد زوكار" }, "aff": { "en": "Member", "ar": "عضواَ" }, "img": "images/chairs/iyad-zoukar.jpg" },
             { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" } },
-//            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
+            //            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
         ]
     },
 
