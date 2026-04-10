@@ -202,9 +202,10 @@ const content = {
             { "name": { "en": "Dr. Khaldoun Khorzom", "ar": "الدكتور خلدون خرزوم" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" } },
+            { "name": { "en": "Dr. Iyad Zoukar", "ar": "الدكتور إياد زوكار" }, "aff": { "en": "Member", "ar": "عضواَ" }, "img": "images/chairs/iyad-zoukar.jpg" },
             { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" } },
-            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
+//            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
         ]
     },
 
