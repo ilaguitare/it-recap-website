@@ -139,8 +139,8 @@ const content = {
                 "trackName": { "en": "Track 1: Intelligent Signal Processing and Sensing", "ar": "المسار 1: معالجة الإشارات الذكية والاستشعار" },
                 "chairs": [
                     { "name": { "en": "Jean-Paul Haton", "ar": "جون بول هاتون" }, "aff": { "en": "LORIA - France, Prix Nobel de physique et chimie 2024", "ar": "حائز على جائزة نوبل بالفيزياء والكيمياء لعام 2024LORIA -فرنسا" }, "img": "images/chairs/jean-paul.jpg" },
+                    { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/ali-kazem.jpg" },
                     { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
-                    //                  { "name": { "en": "Ali Kazem", "ar": "علي كاظم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/ali-kazem.jpg" },
                     { "name": { "en": "Ammar Joukhadar", "ar": "عمار جوخدار" }, "aff": { "en": "Damascus University-Damascus", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/ammar-joukhadar.jpg" },
                     { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
                     { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
@@ -148,7 +148,8 @@ const content = {
                     { "name": { "en": "Bassem Alachkar", "ar": "باسم الأشقر" }, "aff": { "en": "SKA Observatory, UK", "ar": "مانشيستر, انكلترا" }, "img": "images/chairs/bassem-alachkar.jpg" },
                     { "name": { "en": "Abdulhalim Dandoush", "ar": "عبد الحليم دندش" }, "aff": { "en": "UDST-Qatar", "ar": "جامعة الدوحة" }, "img": "images/chairs/abdulhalim-dandoush.jpg" },
                     { "name": { "en": "Hussein Charara", "ar": "حسين شرارة" }, "aff": { "en": "Lebanese University, Lebanon", "ar": "الجامعة اللبنانية، لبنان" }, "img": "images/chairs/hussein-charara.jpg" },
-                    { "name": { "en": "Mohamad Khalil", "ar": " محمد خليل" }, "aff": { "en": "Lebanese University", "ar": "الجامعة اللبنانية" }, "img": "images/chairs/mohamad-khalil.jpg" }
+                    { "name": { "en": "Mohamad Khalil", "ar": " محمد خليل" }, "aff": { "en": "Lebanese University", "ar": "الجامعة اللبنانية" }, "img": "images/chairs/mohamad-khalil.jpg" },
+                    { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } }
                 ]
             },
             {
@@ -165,16 +166,20 @@ const content = {
                     { "name": { "en": "Mussaab ALShbib", "ar": "مصعب الشبيب" }, "aff": { "en": "Faculty of Electrical and Electronics Engineering-Alep University", "ar": "كلية الهندسة الكهربائية والالكترونية-جامعة حلب" }, "img": "images/chairs/mussaab-alshbib.jpg" },
                     { "name": { "en": "Mohamad Malik Naanaa", "ar": "محمد مالك نعناع" }, "aff": { "en": "Cordoba Private university", "ar": "جامعة قرطبة الخاصة" }, "img": "images/chairs/malik-naanaa.jpg" },
                     { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
+                    { "name": { "en": "Abdullah horieh", "ar": " عبد الله حورية" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
                     { "name": { "en": "Hamza Chaal", "ar": "حمزة شال" }, "aff": { "en": "Siemens Wind Power, UK", "ar": "سيمينز, انكلترا" }, "img": "images/chairs/hamza_chaal.jpg" }
                 ]
             },
             {
                 "trackName": { "en": "Track 3: Smart Infrastructure and Resilient Networks", "ar": "المسار 3: البنية التحتية الذكية والشبكات المرنة" },
                 "chairs": [
-                    //                 { "name": { "en": "Mohamed-Ali Alsayed-Ali", "ar": "محمد علي السيد علي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
+                    { "name": { "en": "Mohamed-Ali Alsayed-Ali", "ar": "محمد علي السيد علي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" }, "img": "images/chairs/mohamed-ali-alsayed.jpg" },
+                    { "name": { "en": "Yomen atassi", "ar": "يمن السيد سليمان الأتاسي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
+                    { "name": { "en": "Khaldoun Khorzom", "ar": "خلدون خرزوم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
                     { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
                     { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
+                    { "name": { "en": "Iyad Seyd Darwish ", "ar": "إياد السيد درويش" }, "aff": { "en": "Department of Physics in UAEU ", "ar": "قسم الفيزياء-جامعة الإمارات العربية المتحدة" }, "img": "iyad-darwish.jpg" },
                     { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Damascus University", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
                     { "name": { "en": "Rami Yared", "ar": "رامي يارد" }, "aff": { "en": "Arab International University", "ar": "الجامعة العربية الدولية" }, "img": "images/chairs/rami-yared.jpg" },
                     { "name": { "en": "Sevil Şen", "ar": "سيفيل سين" }, "aff": { "en": " Hacettepe University-Ankara", "ar": " أنقرة-Hacettepe جامعة" }, "img": "images/chairs/sevil-sen.jpg" },
@@ -204,7 +209,7 @@ const content = {
             { "name": { "en": "Dr. Iyad Zoukar", "ar": "الدكتور إياد زوكار" }, "aff": { "en": "Member", "ar": "عضواَ" }, "img": "images/chairs/iyad-zoukar.jpg" },
             { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" } },
-            //            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
+            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
         ]
     },
 
