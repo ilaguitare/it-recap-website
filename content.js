@@ -160,6 +160,7 @@ const content = {
                     { "name": { "en": "Moustafa Alhazouri", "ar": "مصطفى الحزوري" }, "aff": { "en": "Damascus University, Syria", "ar": "جامعة دمشق، سوريا" }, "img": "images/chairs/moustafa-alhazouri.jpg" },
                     { "name": { "en": "Maryam Saei", "ar": "مريم ساعي" }, "aff": { "en": "Latakia University, Syria", "ar": "جامعة اللاذقية، سوريا" }, "img": "images/chairs/maryam-saei.jpg" },
                     { "name": { "en": "Ramez Koudsieh", "ar": "رامز قدسية" }, "aff": { "en": "Manara University, Syria", "ar": "جامعة المنارة-سوريا" }, "img": "images/chairs/ramez-koudsiah.jpg" },
+                    { "name": { "en": "ali skaf", "ar": "علي سكاف" }, "aff": { "en": "    University of Göttingen, Germany", "ar": "جامعة Göttingenألمانيا " }, "img": "images/chairs/ali-skaf.jpg" },
                     { "name": { "en": "Abdul Aziz Shaqifah", "ar": "عبد العزيز شقيغة" }, "aff": { "en": "Ittihad Private University, Syria", "ar": "جامعة الاتحاد الخاصة" }, "img": "images/chairs/abdulaziz-shaqifah.jpg" },
                     { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
                     { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
