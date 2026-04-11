@@ -194,6 +194,7 @@ const content = {
                     { "name": { "en": "Samer dakak", "ar": "سامر الدقاق" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجبا-دمشق" }, "img": "images/chairs/samer-dakak.jpg" },
                     { "name": { "en": "Sabri Mourad", "ar": "صبري مراد" }, "aff": { "en": "Châtenois, Grand Est, France", "ar": "شاتينوا، غراند إيست، فرنسا" }, "img": "images/chairs/sabri-mourad.jpg" },
                     { "name": { "en": "Iyad Zoukar", "ar": "إياد زوكار" }, "aff": { "en": "HIAST/Syrian Computer Society; DAMAS", "ar": "الجمعية العلمية السورية للمعلوماتية/HIAST-دمشق" }, "img": "images/chairs/iyad-zoukar.jpg" },
+                    { "name": { "en": "Munir Abas", "ar": "منير عباس" }, "aff": { "en": "Syrian Private Unibersity; DAMAS", "ar": "الجامعة السورية الخاصة-دمشق" }, "img": "images/chairs/munir-abas.jpg" },
                     { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
                     { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
                 ]
