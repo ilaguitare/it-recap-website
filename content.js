@@ -165,7 +165,7 @@ const content = {
                     { "name": { "en": "Ammar Aryan", "ar": "عمار عريان" }, "aff": { "en": "OPmobility-Venette -France", "ar": "فاليت-فرنسا" }, "img": "images/chairs/ammar-aryan.jpg" },
                     { "name": { "en": "Abdullatif Baba", "ar": "عبد اللطيف بابا" }, "aff": { "en": "College of Science and Technology, Kuwait", "ar": "كلية العلوم والتكنولوجيا، الكويت" }, "img": "images/chairs/abdullatif-baba.jpg" },
                     { "name": { "en": "Mussaab ALShbib", "ar": "مصعب الشبيب" }, "aff": { "en": "Faculty of Electrical and Electronics Engineering-Alep University", "ar": "كلية الهندسة الكهربائية والالكترونية-جامعة حلب" }, "img": "images/chairs/mussaab-alshbib.jpg" },
-                    { "name": { "en": "Mohamad Malik Naanaa", "ar": "محمد مالك نعناع" }, "aff": { "en": "Cordoba Private university", "ar": "جامعة قرطبة الخاصة" }, "img": "images/chairs/malik-naanaa.jpg" },
+                    { "name": { "en": "Mohamad Malik Naanaa", "ar": "محمد مالك نعناع" }, "aff": { "en": "Cordoba Private university-Alep", "ar": "جامعة قرطبة الخاصة-حلب" }, "img": "images/chairs/malik-naanaa.jpg" },
                     { "name": { "en": "Yaser Alaiwi", "ar": "ياسر عليوي" }, "aff": { "en": "sasmo-Syria", "ar": "هيئة المواصفات والمقاييس العربية السورية" }, "img": "images/chairs/yaser-alaiwi.jpg" },
                     { "name": { "en": "Abdulkarim Assalem", "ar": "عبد الكريم السالم" }, "aff": { "en": "WPU, Hama-Syria", "ar": "الجامعة الوظنية الخاصة-حماة" }, "img": "images/chairs/abdulkarim-assalem.jpg" },
                     { "name": { "en": "Abdullah horieh", "ar": " عبد الله حورية" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
