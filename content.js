@@ -95,19 +95,19 @@ const content = {
         "title": { "en": "Important Dates", "ar": "التواريخ المهمة" },
         "timeline": [
             {
-                "date": { "en": "May 15, 2026", "ar": "15 مايو 2026" },
+                "date": { "en": "August 15, 2026", "ar": "15, أغسطس 2026" },
                 "event": { "en": "Paper Submission Deadline", "ar": "الموعد النهائي لتقديم الأوراق" }
             },
             {
-                "date": { "en": "July 1, 2026", "ar": "1 يوليو 2026" },
+                "date": { "en": "September 1, 2026", "ar": "1, سبتمبر 2026" },
                 "event": { "en": "Notification of Acceptance", "ar": "إخطار القبول" }
             },
             {
-                "date": { "en": "July 15, 2026", "ar": "15 يوليو 2026" },
+                "date": { "en": "October 15, 2026", "ar": "15, اكتوبر 2026" },
                 "event": { "en": "Camera Ready Manuscript", "ar": "المخطوطة النهائية للطباعة" }
             },
             {
-                "date": { "en": "October 13-15, 2026", "ar": "13-15 أكتوبر 2026" },
+                "date": { "en": "December 21-23, 2026", "ar": "21-23 أكتوبر 2026" },
                 "event": { "en": "Workshop Event", "ar": "فعالية ورشة العمل" }
             }
         ]
