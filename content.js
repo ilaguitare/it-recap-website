@@ -25,7 +25,7 @@ const content = {
             "en": "International Workshop on Intelligent Technologies for<br>Reconstruction and Capacity Building",
             "ar": "ورشة العمل الدولية حول التقنيات الذكية<br>لإعادة الإعمار وبناء القدرات"
         },
-        "date": { "en": "October 13-15, 2026", "ar": "13-15 أكتوبر 2026" },
+        "date": { "en": "December 21-23, 2026", "ar": "21-23 ديسمبر 2026" },
         "location": { "en": "Damascus, Syria", "ar": "دمشق، سوريا" }
     },
 
