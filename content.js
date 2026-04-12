@@ -245,7 +245,7 @@ const content = {
         "intro": { "en": "The program committee invites authors to submit...", "ar": "تدعو لجنة البرنامج المؤلفين..." },
         "ieeeNote": { "en": "Accepted papers will be submitted for inclusion into IEEE Xplore.", "ar": "سيتم تقديم الأوراق المقبولة للإدراج في مكتبة IEEE Xplore." }, // <-- NOUVEAU
         "templateBtn": { "en": "Download Paper Template", "ar": "تحميل قالب الورقة" }, // <-- NOUVEAU
-        "templateLink": "lien_vers_le_fichier_word.docx", // <-- NOUVEAU: Mets le vrai lien du template ici
+        "templateLink": "Docx/ITrecap-Paper Template.docx", // <-- NOUVEAU: Mets le vrai lien du template ici
         "requirementsTitle": { "en": "Requirements:", "ar": "المتطلبات:" },
         "requirements": {
             "en": [
