@@ -181,7 +181,7 @@ const content = {
                     { "name": { "en": "Yomen atassi", "ar": "يمن السيد سليمان الأتاسي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
                     { "name": { "en": "Khaldoun Khorzom", "ar": "خلدون خرزوم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
                     { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
-                    { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/lyad-dayoub.jpg" },
+                    { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
                     { "name": { "en": "Iyad Seyd Darwish ", "ar": "إياد السيد درويش" }, "aff": { "en": "Department of Physics in UAEU ", "ar": "قسم الفيزياء-جامعة الإمارات العربية المتحدة" }, "img": "images/chairs/iyad-darwish.jpg" },
                     { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Damascus University", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
