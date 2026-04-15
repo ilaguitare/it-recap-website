@@ -180,7 +180,7 @@ const content = {
                     { "name": { "en": "Yomen atassi", "ar": "يمن السيد سليمان الأتاسي" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
                     { "name": { "en": "Khaldoun Khorzom", "ar": "خلدون خرزوم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
                     { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
-                    { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
+                    { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/lara-kadid.jpg" },
                     { "name": { "en": "wael-salloum", "ar": "وائل السلوم" }, "aff": { "en": "Faculty of Mechanical Eng, University of Aleppo", "ar": "كلية الهندسة الميكانيكية-جامعة حلب" }, "img": "images/chairs/wael-salloum.jpg" },
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
                     { "name": { "en": "Iyad Seyd Darwish ", "ar": "إياد السيد درويش" }, "aff": { "en": "Department of Physics in UAEU ", "ar": "قسم الفيزياء-جامعة الإمارات العربية المتحدة" }, "img": "images/chairs/iyad-darwish.jpg"},
