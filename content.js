@@ -230,6 +230,7 @@ const content = {
             { "name": { "en": "SCS", "ar": "SCS" }, "desc": { "en": "Syrian Computer Society", "ar": "الجمعية العلمية السورية للمعلوماتية" }, "logo": "images/scs.jpg" },
             { "name": { "en": "IPU", "ar": "IPU" }, "desc": { "en": "Ithad Private University", "ar": "جامعة الاتحاد الخاصة" }, "logo": "images/ipu.png" },
             { "name": { "en": "CPU", "ar": "CPU" }, "desc": { "en": "Cordoba Private University", "ar": "جامعة قرطبة الخاصة" }, "logo": "images/cpu.png" },
+            { "name": { "en": "SASMO", "ar": "SASMO" }, "desc": { "en": "The Syrian Arab Organization For Standardization & Metrology", "ar": "هيئة المواصفات والمقاييس العربية السورية" }, "logo": "images/sasmo.png" },
         ]
     },
 
