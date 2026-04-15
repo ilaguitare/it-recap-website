@@ -143,13 +143,14 @@ const content = {
                     { "name": { "en": "Kassem Kallas", "ar": "قاسم كلاس" }, "aff": { "en": "INSERM, France", "ar": "بريست-فرنسا" }, "img": "images/chairs/kassem-kallas.jpg" },
                     { "name": { "en": "Ammar Joukhadar", "ar": "عمار جوخدار" }, "aff": { "en": "Damascus University-Damascus", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/ammar-joukhadar.jpg" },
                     { "name": { "en": "Mohamed Farah", "ar": "محمد فرح" }, "aff": { "en": "Manouba University, Tunisia", "ar": "جامعة منوبة-تونس" }, "img": "images/chairs/mohamed-farah.jpg" },
+                    { "name": { "en": "Lara Kadid", "ar": "لارا قديد" }, "aff": { "en": "Cordoba Private University,Alep", "ar": "جامعة قرطبة الخاصة-حلب" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
                     { "name": { "en": "Riadh Abdelfattah", "ar": "رياض عبد الفتاح" }, "aff": { "en": "University of Carthage, Tunisia", "ar": "جامعة قرطاج-تونس" }, "img": "images/chairs/riadh-abdelfattah.jpg" },
                     { "name": { "en": "Bassam Kurdy", "ar": "بسام كردي" }, "aff": { "en": "Mines ParisTech, France", "ar": "باريس، فرنسا" }, "img": "images/chairs/bassam-kurdy.jpg" },
                     { "name": { "en": "Bassem Alachkar", "ar": "باسم الأشقر" }, "aff": { "en": "SKA Observatory, UK", "ar": "مانشيستر, انكلترا" }, "img": "images/chairs/bassem-alachkar.jpg" },
                     { "name": { "en": "Abdulhalim Dandoush", "ar": "عبد الحليم دندش" }, "aff": { "en": "UDST-Qatar", "ar": "جامعة الدوحة" }, "img": "images/chairs/abdulhalim-dandoush.jpg" },
                     { "name": { "en": "Hussein Charara", "ar": "حسين شرارة" }, "aff": { "en": "Lebanese University, Lebanon", "ar": "الجامعة اللبنانية، لبنان" }, "img": "images/chairs/hussein-charara.jpg" },
                     { "name": { "en": "Mohamad Khalil", "ar": " محمد خليل" }, "aff": { "en": "Lebanese University", "ar": "الجامعة اللبنانية" }, "img": "images/chairs/mohamad-khalil.jpg" },
-                    { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } }
+                    { "name": { "en": "Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } }
                 ]
             },
             {
@@ -180,6 +181,7 @@ const content = {
                     { "name": { "en": "Khaldoun Khorzom", "ar": "خلدون خرزوم" }, "aff": { "en": "HIAST-Damas", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا-دمشق" } },
                     { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
                     { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/iyad-dayoub.jpg" },
+                    { "name": { "en": "wael-salloum", "ar": "وائل السلوم" }, "aff": { "en": "Faculty of Mechanical Eng, University of Aleppo", "ar": "كلية الهندسة الميكانيكية-جامعة حلب" }, "img": "images/chairs/wael-salloum.jpg" },
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
                     { "name": { "en": "Iyad Seyd Darwish ", "ar": "إياد السيد درويش" }, "aff": { "en": "Department of Physics in UAEU ", "ar": "قسم الفيزياء-جامعة الإمارات العربية المتحدة" }, "img": "images/chairs/iyad-darwish.jpg"},
                     { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Damascus University", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
@@ -221,11 +223,13 @@ const content = {
         "title": { "en": "Organizers", "ar": "المنظمون" },
         "list": [
             { "name": { "en": "HIAST", "ar": "HIAST" }, "desc": { "en": "Higher Institute for Applied Sciences and Technology", "ar": "المعهد العالي للعلوم التطبيقية والتكنولوجيا" }, "logo": "images/hiast.png" },
-            { "name": { "en": "Damas univ", "ar": "DamasU" }, "desc": { "en": "Damascus University", "ar": "جامعة دمشق" }, "logo": "images/damas-univ.jpg" },
+            { "name": { "en": "Damas University", "ar": "DamasU" }, "desc": { "en": "Damascus University", "ar": "جامعة دمشق" }, "logo": "images/damas-univ.jpg" },
+            { "name": { "en": "Alep University", "ar": "DamasU" }, "desc": { "en": "Alep University", "ar": "جامعة حلب" }, "logo": "images/alep-univ.jpg" },
             { "name": { "en": "SVU", "ar": "SVU" }, "desc": { "en": "Syrian Virtual University", "ar": "الجامعة الافتراضية السورية" }, "logo": "images/svu.png" },
             { "name": { "en": "ASAST", "ar": "ASAST" }, "desc": { "en": "Arab School of Science and Technology", "ar": "المدرسة العربية للعلوم والتكنولوجيا" }, "logo": "images/asast.png" },
             { "name": { "en": "SCS", "ar": "SCS" }, "desc": { "en": "Syrian Computer Society", "ar": "الجمعية العلمية السورية للمعلوماتية" }, "logo": "images/scs.jpg" },
             { "name": { "en": "IPU", "ar": "IPU" }, "desc": { "en": "Ithad Private University", "ar": "جامعة الاتحاد الخاصة" }, "logo": "images/ipu.png" },
+            { "name": { "en": "CPU", "ar": "CPU" }, "desc": { "en": "Cordoba Private University", "ar": "جامعة قرطبة الخاصة" }, "logo": "images/cpu.png" },
         ]
     },
 
