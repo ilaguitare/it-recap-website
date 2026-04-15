@@ -183,7 +183,7 @@ const content = {
                     { "name": { "en": "Samer Alfayad", "ar": "سامر الفياض" }, "aff": { "en": "Paris-Saclay university", "ar": "جامعة باريس-فرنسا" }, "img": "images/chairs/samer-alfayad.jpg" },
                     { "name": { "en": "Iyad Dayoub", "ar": "إياد ديوب" }, "aff": { "en": "Concordia University, Canada", "ar": "جامعة كونكورديا-كندا" }, "img": "images/chairs/lyad-dayoub.jpg" },
                     { "name": { "en": "Mohammad Moammar Karjo", "ar": "محمد معمر كرجو" }, "aff": { "en": "Kingspan Insulation, Belgium", "ar": "Kingspan Insulation، بلجيكا" }, "img": "images/chairs/mohammad-karjo.jpg" },
-                    { "name": { "en": "Iyad Seyd Darwish ", "ar": "إياد السيد درويش" }, "aff": { "en": "Department of Physics in UAEU ", "ar": "قسم الفيزياء-جامعة الإمارات العربية المتحدة" }, "img": "images/chairs/iyad-darwish.jpg"},
+                    { "name": { "en": "Iyad Seyd Darwish ", "ar": "إياد السيد درويش" }, "aff": { "en": "Department of Physics in UAEU ", "ar": "قسم الفيزياء-جامعة الإمارات العربية المتحدة" }, "img": "images/chairs/iyad-darwish.jpg" },
                     { "name": { "en": "Mohammad Saeed Abou Trab", "ar": "محمد سعيد أبو تراب" }, "aff": { "en": "Damascus University", "ar": "جامعة دمشق-سوريا" }, "img": "images/chairs/saeed-aboutrab.jpg" },
                     { "name": { "en": "Sevil Şen", "ar": "سيفيل سين" }, "aff": { "en": " Hacettepe University-Ankara", "ar": " أنقرة-Hacettepe جامعة" }, "img": "images/chairs/sevil-sen.jpg" },
                     { "name": { "en": "Rami Yared", "ar": "رامي يارد" }, "aff": { "en": "Arab International University", "ar": "الجامعة العربية الدولية" }, "img": "images/chairs/rami-yared.jpg" },
