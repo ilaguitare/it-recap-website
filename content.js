@@ -212,9 +212,9 @@ const content = {
             { "name": { "en": "Dr. Samer dakak", "ar": "الدكتور سامر الدقاق" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Dr. Riad Sonbol", "ar": "الدكتور رياض سنبل" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Dr. Iyad Zoukar", "ar": "الدكتور إياد زوكار" }, "aff": { "en": "Member", "ar": "عضواَ" }, "img": "images/chairs/iyad-zoukar.jpg" },
+            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
             { "name": { "en": "Mr. Abdulmalek alsaid", "ar": "الأستاذ عبد الملك السيد" }, "aff": { "en": "Member", "ar": "عضواً" } },
             { "name": { "en": "Ms. Marwa alsamara", "ar": "الآنسة مروة السمارة" }, "aff": { "en": "Secretary", "ar": "أميناً للسر" } },
-            { "name": { "en": "Dr. Abdullah horieh", "ar": "الدكتور عبد الله حورية" }, "aff": { "en": "Member", "ar": "عضواً" } }
         ]
     },
 
@@ -257,13 +257,15 @@ const content = {
                 "Submissions must be formatted according to the conference templates",
                 "Maximum six pages for final camera-ready versions",
                 "Extended abstracts are welcome for initial evaluation",
-                "All accepted papers require at least one full author registration"
+                "All accepted papers require at least one full author registration",
+                "Papers accepted in the workshop will be published in the Damascus University Journal."
             ],
             "ar": [
                 "يجب تنسيق المقالات وفقاً لقوالب المؤتمر",
                 "ستة صفحات كحد أقصى للنسخ النهائية الجاهزة للطباعة",
                 "الملخصات الموسعة مرحب بها للتقييم الأولي",
-                "تتطلب جميع الأوراق المقبولة تسجيل مؤلف واحد على الأقل"
+                "تتطلب جميع الأوراق المقبولة تسجيل مؤلف واحد على الأقل",
+                "الأوراق المقبولة في ورشة العمل سوف يتم نشرها في مجلة جامعة دمشق"
             ]
         }
     },
@@ -271,10 +273,10 @@ const content = {
     "registrationSection": {
         "title": { "en": "Registration Fees", "ar": "رسوم التسجيل" },
         "tiers": [
-            { "name": { "en": "International Author", "ar": "مؤلف دولي" }, "price": "$000" },
-            { "name": { "en": "Local Author", "ar": "مؤلف محلي" }, "price": "000 SYP" },
-            { "name": { "en": "Student", "ar": "طالب" }, "price": "$000 / 000 SYP" },
-            { "name": { "en": "Online Attendee", "ar": "حضور عبر الإنترنت" }, "price": "$000" }
+            { "name": { "en": "International Author", "ar": "مؤلف دولي" }, "price": "$200" },
+            { "name": { "en": "Local Author", "ar": "مؤلف محلي" }, "price": "600 SYP" },
+            { "name": { "en": "Student", "ar": "طالب" }, "price": "$250 SYP" },
+            { "name": { "en": "Online Attendee", "ar": "حضور عبر الإنترنت" }, "price": "$100" }
         ]
     },
 
