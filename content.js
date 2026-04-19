@@ -232,7 +232,7 @@ const content = {
             { "name": { "en": "CPU", "ar": "CPU" }, "desc": { "en": "Cordoba Private University", "ar": "جامعة قرطبة الخاصة" }, "logo": "images/cpu.jpg" },
             { "name": { "en": "SPU", "ar": "SPU" }, "desc": { "en": "Syrian Private University", "ar": "الجامعة السورية الخاصة" }, "logo": "images/spu.jpg" },
             { "name": { "en": "HIBA", "ar": "HIBA" }, "desc": { "en": "The Higher Institute of Business Administration", "ar": "المعهد العالي لإدارة الأعمال" }, "logo": "images/hiba.jpg" },
-            { "name": { "en": "SASMO", "ar": "SASMO" }, "desc": { "en": "The Syrian Arab Organization For Standardization & Metrology", "ar": "هيئة المواصفات والمقاييس العربية السورية" }, "logo": "images/sasmo.jpg" },
+            { "name": { "en": "SASMO", "ar": "SASMO" }, "desc": { "en": "The Syrian Arab Organization For Standardization & Metrology", "ar": "هيئة المواصفات والمقاييس العربية السورية" }, "logo": "images/sasmo.jpg" }
         ]
     },
 
