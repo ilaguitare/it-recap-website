@@ -260,14 +260,14 @@ const content = {
                 "Maximum six pages for final camera-ready versions",
                 "Extended abstracts are welcome for initial evaluation",
                 "All accepted papers require at least one full author registration",
-                "Papers accepted in the workshop will be published in the Damascus University Journal."
+                "Papers accepted in the workshop will be published in the Damascus University Journal.",
             ],
             "ar": [
                 "يجب تنسيق المقالات وفقاً لقوالب المؤتمر",
                 "ستة صفحات كحد أقصى للنسخ النهائية الجاهزة للطباعة",
                 "الملخصات الموسعة مرحب بها للتقييم الأولي",
                 "تتطلب جميع الأوراق المقبولة تسجيل مؤلف واحد على الأقل",
-                "الأوراق المقبولة في ورشة العمل سوف يتم نشرها في مجلة جامعة دمشق"
+                "الأوراق المقبولة في ورشة العمل سوف يتم نشرها في مجلة جامعة دمشق",
             ]
         }
     },
