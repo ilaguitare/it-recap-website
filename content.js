@@ -229,8 +229,8 @@ const content = {
             { "name": { "en": "ASAST", "ar": "ASAST" }, "desc": { "en": "Arab School of Science and Technology", "ar": "المدرسة العربية للعلوم والتكنولوجيا" }, "logo": "images/asast.png" },
             { "name": { "en": "SCS", "ar": "SCS" }, "desc": { "en": "Syrian Computer Society", "ar": "الجمعية العلمية السورية للمعلوماتية" }, "logo": "images/scs.jpg" },
             { "name": { "en": "IPU", "ar": "IPU" }, "desc": { "en": "Ithad Private University", "ar": "جامعة الاتحاد الخاصة" }, "logo": "images/ipu.png" },
-//            { "name": { "en": "CPU", "ar": "CPU" }, "desc": { "en": "Cordoba Private University", "ar": "جامعة قرطبة الخاصة" }, "logo": "images/cpu.jpg" },
-//            { "name": { "en": "SPU", "ar": "SPU" }, "desc": { "en": "Syrian Private University", "ar": "الجامعة السورية الخاصة" }, "logo": "images/spu.jpg" },
+            { "name": { "en": "CPU", "ar": "CPU" }, "desc": { "en": "Cordoba Private University", "ar": "جامعة قرطبة الخاصة" }, "logo": "images/cpu.jpg" },
+            { "name": { "en": "SPU", "ar": "SPU" }, "desc": { "en": "Syrian Private University", "ar": "الجامعة السورية الخاصة" }, "logo": "images/spu.png" },
             { "name": { "en": "HIBA", "ar": "HIBA" }, "desc": { "en": "The Higher Institute of Business Administration", "ar": "المعهد العالي لإدارة الأعمال" }, "logo": "images/hiba.jpg" },
             { "name": { "en": "SASMO", "ar": "SASMO" }, "desc": { "en": "The Syrian Arab Organization For Standardization & Metrology", "ar": "هيئة المواصفات والمقاييس العربية السورية" }, "logo": "images/sasmo.jpg" }
         ]
