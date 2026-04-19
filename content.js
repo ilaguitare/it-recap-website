@@ -230,8 +230,8 @@ const content = {
             { "name": { "en": "SCS", "ar": "SCS" }, "desc": { "en": "Syrian Computer Society", "ar": "الجمعية العلمية السورية للمعلوماتية" }, "logo": "images/scs.jpg" },
             { "name": { "en": "IPU", "ar": "IPU" }, "desc": { "en": "Ithad Private University", "ar": "جامعة الاتحاد الخاصة" }, "logo": "images/ipu.png" },
             { "name": { "en": "CPU", "ar": "CPU" }, "desc": { "en": "Cordoba Private University", "ar": "جامعة قرطبة الخاصة" }, "logo": "images/cpu.jpg" },
-            { "name": { "en": "SPU", "ar": "SPU" }, "desc": { "en": "Syrian Private University", "ar": "الجامعة السورية الخاصة" }, "logo": "images/spu.jpg" },
-            { "name": { "en": "HIBA", "ar": "HIBA" }, "desc": { "en": "The Higher Institute of Business Administration", "ar": "المعهد العالي لإدارة الأعمال" }, "logo": "images/hiba.jpg" },
+    //        { "name": { "en": "SPU", "ar": "SPU" }, "desc": { "en": "Syrian Private University", "ar": "الجامعة السورية الخاصة" }, "logo": "images/spu.jpg" },
+    //        { "name": { "en": "HIBA", "ar": "HIBA" }, "desc": { "en": "The Higher Institute of Business Administration", "ar": "المعهد العالي لإدارة الأعمال" }, "logo": "images/hiba.jpg" },
             { "name": { "en": "SASMO", "ar": "SASMO" }, "desc": { "en": "The Syrian Arab Organization For Standardization & Metrology", "ar": "هيئة المواصفات والمقاييس العربية السورية" }, "logo": "images/sasmo.jpg" }
         ]
     },
@@ -260,14 +260,14 @@ const content = {
                 "Maximum six pages for final camera-ready versions",
                 "Extended abstracts are welcome for initial evaluation",
                 "All accepted papers require at least one full author registration",
-                "Papers accepted in the workshop will be published in the Damascus University Journal.",
+                "Papers accepted in the workshop will be published in the Damascus University Journal."
             ],
             "ar": [
                 "يجب تنسيق المقالات وفقاً لقوالب المؤتمر",
                 "ستة صفحات كحد أقصى للنسخ النهائية الجاهزة للطباعة",
                 "الملخصات الموسعة مرحب بها للتقييم الأولي",
                 "تتطلب جميع الأوراق المقبولة تسجيل مؤلف واحد على الأقل",
-                "الأوراق المقبولة في ورشة العمل سوف يتم نشرها في مجلة جامعة دمشق",
+                "الأوراق المقبولة في ورشة العمل سوف يتم نشرها في مجلة جامعة دمشق"
             ]
         }
     },
