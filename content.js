@@ -277,7 +277,7 @@ const content = {
         "tiers": [
             { "name": { "en": "International Author", "ar": "مؤلف دولي" }, "price": "$200" },
             { "name": { "en": "Local Author", "ar": "مؤلف محلي" }, "price": "600 SYP" },
-            { "name": { "en": "Student", "ar": "طالب" }, "price": "$250 SYP" },
+            { "name": { "en": "Student", "ar": "طالب" }, "price": "250 SYP" },
             { "name": { "en": "Online Attendee", "ar": "حضور عبر الإنترنت" }, "price": "$100" }
         ]
     },
