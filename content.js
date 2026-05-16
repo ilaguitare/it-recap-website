@@ -25,7 +25,7 @@ const content = {
             "en": "International Workshop on Intelligent Technologies for<br>Reconstruction and Capacity Building",
             "ar": "ورشة العمل الدولية حول التقنيات الذكية<br>لإعادة الإعمار وبناء القدرات"
         },
-        "date": { "en": "December 21-23, 2026", "ar": "21-23 ديسمبر 2026" },
+        "date": { "en": "Due to maintenance work in the halls of the Higher Institute, the workshop has been postponed to a later date.", "ar": "بسبب أعمال الصيانة في قاعات المعهد العالي تم تأجيل موعد ورشة العمل لتاريخ يحدد لاحقاً" },
         "location": { "en": "Damascus, Syria", "ar": "دمشق، سوريا" }
     },
 
@@ -95,19 +95,19 @@ const content = {
         "title": { "en": "Important Dates", "ar": "التواريخ المهمة" },
         "timeline": [
             {
-                "date": { "en": "August 1, 2026", "ar": "1, أغسطس 2026" },
+                "date": { "en": "....", "ar": "...." },
                 "event": { "en": "Paper Submission Deadline", "ar": "الموعد النهائي لتقديم الأوراق" }
             },
             {
-                "date": { "en": "September 1, 2026", "ar": "1, سبتمبر 2026" },
+                "date": { "en": "....", "ar": "...." },
                 "event": { "en": "Notification of Acceptance", "ar": "إخطار القبول" }
             },
             {
-                "date": { "en": "October 15, 2026", "ar": "15, اكتوبر 2026" },
+                "date": { "en": "....", "ar": "...." },
                 "event": { "en": "Camera Ready Manuscript", "ar": "المخطوطة النهائية للطباعة" }
             },
             {
-                "date": { "en": "December 21-23, 2026", "ar": "21-23 ديسمبر 2026" },
+                "date": { "en": ".....", "ar": "...." },
                 "event": { "en": "Workshop Event", "ar": "فعالية ورشة العمل" }
             }
         ]
@@ -197,7 +197,6 @@ const content = {
                     { "name": { "en": "Sabri Mourad", "ar": "صبري مراد" }, "aff": { "en": "Châtenois, Grand Est, France", "ar": "شاتينوا، غراند إيست، فرنسا" }, "img": "images/chairs/sabri-mourad.jpg" },
                     { "name": { "en": "Iyad Zoukar", "ar": "إياد زوكار" }, "aff": { "en": "HIAST/Syrian Computer Society; DAMAS", "ar": "الجمعية العلمية السورية للمعلوماتية/HIAST-دمشق" }, "img": "images/chairs/iyad-zoukar.jpg" },
                     { "name": { "en": "Munir Abas", "ar": "منير عباس" }, "aff": { "en": "Syrian Private Unibersity; DAMAS", "ar": "الجامعة السورية الخاصة-دمشق" }, "img": "images/chairs/munir-abas.jpg" },
-                    { "name": { "en": "Gregory Lesouble", "ar": "غريغوري لوسوبل" }, "aff": { "en": "RATP Paris, France", "ar": "RATP باريس، فرنسا" }, "img": "images/chairs/gregory-lesouble.jpg" },
                     { "name": { "en": "Charles Lim", "ar": "شارل ليم" }, "aff": { "en": "Geometer in IGN, France", "ar": "IGN، فرنسا" }, "img": "images/chairs/charles-lim.jpg" },
                 ]
             }
